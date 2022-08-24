@@ -1,0 +1,50 @@
+
+Tema da Pesquisa: Proposta de uma metodologia de robótica educacional co-mo um instrumento redutor de evasão em escolas públicas
+
+
+- Qual é o problema?
+
+ * Conhecer a percepção dos discentes colabora para a realização de
+  um levantamento de indicadores da amostra do estudo, e, a partir 
+  disso, é possível fazer uma comparação com os resultados finais da 
+  metodologia proposta. Consequentemente, validar a metodologia e 
+  reestruturar ou elaborar práticas pedagógicas que possam amenizar os
+  impactos negativos, caso necessário. Logo, a aplicação do questionário 
+  final é feita com o objetivo de avaliar se a metodologia proposta permitiu
+  ao aluno a constru-ção de conhecimentos de maneira mais ativa e sólida, 
+  diminuindo a evasão e favorecen-do o pensamento lógico.
+
+ 
+ - Qual a motivação ?
+  
+  * O índice de evasão escolar no ensino médio no Brasil é elevado
+
+
+
+ - Qual é a metodologia?
+
+ * A divisão dos módulos segue um quadro de progressão fundamental para 
+  desencadear o pensamento computacional. Em cada
+  módulo aborda-se um conteúdo teórico em paralelo com atividades práticas. 
+  O conteúdo teórico, além de introduzir os conceitos básicos a serem desenvolvidos 
+  nas atividades práticas, correlaciona a robótica a outros conteúdos, favorecendo a 
+  interpretação e a compreensão de textos . A inserção de atividades práticas considera 
+  a ideia de que a robótica educacional promove a integração dos conhecimentos 
+  trabalhados no curso garantindo um olhar crítico do aluno .
+  No final de cada módulo há um desafio com o intuito de gerar uma metodologia de 
+  aprendizagem baseada na resolução de problemas. Nessa estratégia formativa,
+  são apresentados desafios contextualizados aos alunos no qual eles devem buscar 
+  possíveis soluções, desenvolvendo o raciocínio lógico, o pensamento crítico e a criatividade 
+
+
+ 
+ - Quais foram os resultados?
+  
+  * Acredita-se que a motivação promoverá melhor nivelamento entre os alunos, 
+   maior rendimento acadêmico, desenvolvimento de novas aptidões e 
+  satisfação por conhecerem novos conceitos. Consequentemente, gerará 
+  contribuições no combate ao analfabetismo tecnológico e reduzirá a evasão escolar.
+  Portanto, como trabalhos futuros, tem-se a realização dos módulos do 
+  curso de robótica educacional e o preenchimento do questionário final. Validada 
+  a metodologia, faz-se necessário a inserção e treinamento dos professores para 
+  reprodução da metodo-logia e, consequentemente, redução da evasão escolar.
