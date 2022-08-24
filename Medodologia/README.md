@@ -2,5 +2,5 @@
 
 
 ### Execícios
-- Execicio 1
-    - [Estratégia diagrama UML ](https://github.com/Jose-dos-Santos/bertoti/blob/main/Diagrama-Estrategia-Composi%C3%A7%C3%A3o.png)
+
+- [Execicio 1 ](https://github.com/Jose-dos-Santos/bertoti/blob/main/Medodologia/Metodo-cientifico.txt)
