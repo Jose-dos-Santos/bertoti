@@ -12,16 +12,16 @@ Tenho 34 anos e trabalho como Desenvolvedor de Software Estagiario. <br/>
 
 ### Meus principais conhecimentos
 
+#### C#
+
+C# foi a primeiras linguagem que estudei, ainda antes da graduação. Mesmo nunca tendo atuado profissionalmente com Python, diversos projetos pessoais e acadêmicos foram feitos com esta linguagem e seus frameworks e bibliotecas, como o Flask, Django e Pandas;
+Este contato de anos com a linguagem me dá segurança para criar soluções em Python, algo que já se tornou frequente em minha trajetória como desenvolvedor.
+
 #### Java
 
 Minha atuação como desenvolvedor júnior tem como a principal stack a linguagem Java, na versão 1.8, desde março de 2021.
 Trabalho desenvolvendo API's e serviços com o auxílio do framework Spring Boot e também do framework ORM Hibernate. 
 Por conta desta experiência, Java e seu ecossistema para desenvolvimento web é onde possuo maior domínio e conhecimento. 
-
-#### C#
-
-Python foi a primeiras linguagem que estudei, ainda antes da graduação. Mesmo nunca tendo atuado profissionalmente com Python, diversos projetos pessoais e acadêmicos foram feitos com esta linguagem e seus frameworks e bibliotecas, como o Flask, Django e Pandas;
-Este contato de anos com a linguagem me dá segurança para criar soluções em Python, algo que já se tornou frequente em minha trajetória como desenvolvedor.
 
 #### Projetos Integradores durante a graduação 
 Durante a minha gradução, trabalhei no desenvolvimento de trabalhos chamados de "Projetos integradores". Um projeto integrador tem o objetivo de solucionar um problema do mundo real, utilizando os conhecimentos adquiridos durante a graduação.<br/>
@@ -60,32 +60,8 @@ Link do repositório do projeto: https://github.com/
 
 ### Tecnologias adotadas na solução
 
-#### GeoPandas
+#### API PromoAll
 
-O GeoPandas é uma biblioteca de análise de dados geográficos. Com ela, é possível trabalhar com diversas fontes de dados geográficos, incluindo shapefiles e 
-bases de dados geográficos, que eram as duas fontes necessárias para os requisitos do projeto.
-
-Com o GeoPandas foi possível extrair, realizar conversões e ajustes necessários nos shapefiles, e realizar as cargas necessárias na base de dados selecionada 
-pelo usuário da ferramenta.
-
-Para saber mais sobre o GeoPandas, acesse sua [página oficial.](https://geopandas.org/)
-
-
-#### Flask
-
-Neste projeto os membros de nossa equipe obtiveram o primeiro contato com um framework web, e o utilizado neste momento foi o Flask.
-
-O Flask é um microframework web, que funciona com base na linguagem de programação Python. O radical "micro" em "microframework" é empregado pois o escopo base 
-do Flask é enxuto. Ou seja, o Flask não determina ou limita o modo com o qual o seu projeto web será construído. Ele falicita a implamentação básica de um sistema web, permitindo diversos modos de desenvolvimento. Por ser leve, enxuto e dinâmico no desenvolvimento de projetos, ele recebe esta denominação.
-
-Saiba mais sobre o Flask em sua [página oficial.](https://flask.palletsprojects.com/en/2.0.x/).
-
-O Flask foi um dos frameworks utilizados no sistema. Nossa ferramenta trabalhou com dois serviços principais. Um deles era responsável pelo serviço de ETL, que era o núcleo de nossa ferramenta. E outro framework (Express, citado a seguir) foi responsável por disponibilizar o serviço de criação e autenticação de usuários, outro requisito do sistema.
-
-#### Express
-
-O Express é um microframework web, que roda sobre o motor do Node.js
-O Express é uma ótima solução para a construção de sistemas web, por meio dele, os serviços de autenticação e criação de usuários foram disponibilizados para nossa aplicação.
 
 
 ### Contribuições pessoais
@@ -104,7 +80,7 @@ Esta extensão adiciona ao sistema gerenciador de banco de dados diversas funç�
 
 Após profunda pesquisa sobre todos estes tópicos, fui responsável por construir os serviços que permitiram a transformação dos registros dos shapefiles em formatos compatíveis com os bancos de dados geográficos. Assim como o caminho inverso, extraindo dados de tabelas, convertendo-os em shapefiles e disponibilizando-os para download para os usuários da ferramenta. 
 
-### Aprendizados Efetivos HS
+### Aprendizados Efetivos 
 
 No desenvolvimento dos serviços da VisGeo, aprendi mais sobre arquitetura de software. Foi a primeira vez em que trabalhei de fato com uma aplicação frontend separada dos serviços chamados de "backend".
 Por conta desta experiência, fui inserido a um novo nível de exigência para a contrução de um sistema web, tendo que me preocupar com o formato e conteúdo específico das requisições possíveis de entrada no serviço desenvolvido.
