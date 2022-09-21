@@ -61,10 +61,9 @@ no carrinho de compras
 
 
 
-- Criação de serviços de extração e carga de dados geográficos: sei fazer com autonomia
+- 
 
-- Criação de API que se provê serviços e se comunica com outros aplicações: sei fazer com autonomia
-<br/>
+- 
 
 
 
