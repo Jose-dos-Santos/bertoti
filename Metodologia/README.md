@@ -37,7 +37,7 @@ Visiona <br/>
 
 
 
-![Usabilidade VisGeo](https://user-images.)
+![](https://user-images.)
 ##### *Figura 04. Utilização da Visgeo - Carga de shapefile em banco geográfico, realizando a configuração de-para*
 
 
