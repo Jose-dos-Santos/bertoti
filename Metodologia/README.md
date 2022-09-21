@@ -37,8 +37,8 @@ Visiona <br/>
 
 
 
-![](https://user-images.)
-##### *Figura 04. Utilização da Visgeo - Carga de shapefile em banco geográfico, realizando a configuração de-para*
+<img src="https://github.com/Doc-Docker/APIMidAll/blob/main/Images/logo2promoall.png" width="500"/>
+
 
 
 Link do repositório do projeto: https://github.com/
@@ -50,6 +50,10 @@ Link do repositório do projeto: https://github.com/
 
 
 ### Contribuições pessoais
+Fui responsável pela implementação da lógica do motor de regras da API,
+criei um algoritmo capaz de calcular os valores recebidos como parâmetro, 
+devolvendo como resultado após verificação a melhor promoção a ser aplicada
+no carrinho  de compras
 
  
 
