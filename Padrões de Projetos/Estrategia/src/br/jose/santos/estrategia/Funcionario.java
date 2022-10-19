@@ -1,10 +1,12 @@
 package br.jose.santos.estrategia;
 
+import br.jose.santos.estrategia.Bonificacao;
+
 public class Funcionario {
 	
    private String nome;
    private double salario;
-   private Bonificacao bonificacao; //composição
+   private Bonificacao bonificacao; //composiï¿½ï¿½o
    
    
    

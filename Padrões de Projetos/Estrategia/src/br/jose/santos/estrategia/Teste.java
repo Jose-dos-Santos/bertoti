@@ -1,5 +1,9 @@
 package br.jose.santos.estrategia;
 
+import br.jose.santos.estrategia.Funcionario;
+import br.jose.santos.estrategia.Gerente;
+import br.jose.santos.estrategia.Programador;
+
 public class Teste {
 
 	public static void main(String[] args) {

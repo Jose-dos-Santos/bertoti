@@ -1,5 +1,7 @@
 package br.jose.santos.estrategia;
 
+import br.jose.santos.estrategia.Bonificacao;
+
 public class Programador implements Bonificacao {
 
 	@Override
