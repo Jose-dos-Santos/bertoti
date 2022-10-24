@@ -1,14 +1,12 @@
-package br.jose.santos.facade;
+package facade;
 
 import java.time.LocalDate;
-import java.util.Iterator;
-import java.util.List;
 
-public class ContaCorrente extends ContaBancaria{
+public class ContaCorrenteFacade extends ContaBancaria {
 
-	private List<ValidacaoConta> validacoes;
-	
-	public ContaCorrente(LocalDate validadeConta, double saldo, String titular) {
+	private ValidacaoConta validaConta = new ValidacaoConta();
+
+	public ContaCorrenteFacade(LocalDate validadeConta, double saldo, String titular) {
 		super(validadeConta, saldo, titular);
 
 	}
@@ -23,31 +21,35 @@ public class ContaCorrente extends ContaBancaria{
 
 	}
 
-	public void transfeir(int valor, ContaBancaria outra) {
+	public boolean transfeir(int valor, ContaBancaria outra) {
 
+		if(!validarConta(outra)) {
+			System.err.println("Conta invalida" +"\nvalidade da conta vencida: " + outra.getValidadeConta());
+			return false;
+		}
 		if (!verificaSaldo(valor)) {
 			System.out.println("Saldo insuficiente para transferência");
+			return false;
 		} else {
 			double novoValor = super.getSaldo();
 			super.setSaldo(novoValor - valor);
 			double novoValorOutraConta = outra.getSaldo() + valor;
 			outra.setSaldo(novoValorOutraConta);
+			return true;
 		}
+		
 
 	}
-	
+
 	public boolean validarConta(ContaBancaria conta) {
-	
-	for (ValidacaoConta validacaoConta : validacoes) {
-		
-		System.out.println("Tetse");
-		if(!validacaoConta.validar(conta)) {
+
+		if (!validaConta.ValidarConta(conta)) {
+
 			return false;
 		}
-		
-	}
-	return true;
-		
+
+		return true;
+
 	}
 
 }

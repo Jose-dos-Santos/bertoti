@@ -1,4 +1,4 @@
-package facade;
+package nopatter;
 
 import java.time.LocalDate;
 
@@ -39,8 +39,8 @@ public abstract class ContaBancaria {
 		this.titular = titular;
 	}
 
-	protected abstract boolean transfeir(int i, ContaBancaria contaCorrente2);
+	protected abstract void transfeir(double valor, ContaBancaria contaCorrente2);
 
-	protected abstract boolean validarConta(ContaBancaria contaCorrente);
+	
 
 }

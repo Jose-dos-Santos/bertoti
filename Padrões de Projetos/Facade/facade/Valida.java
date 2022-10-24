@@ -1,7 +1,7 @@
-package br.jose.santos.facade;
+package facade;
 
 public interface Valida {
 	
-	public boolean validar(ContaBancaria conta);
+	public boolean ValidarConta(ContaBancaria conta);
 
 }

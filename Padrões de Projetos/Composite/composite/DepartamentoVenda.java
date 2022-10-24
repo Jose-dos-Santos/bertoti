@@ -1,4 +1,4 @@
-package br.jose.santos.composite;
+package composite;
 
 public class DepartamentoVenda implements Departamento {
 

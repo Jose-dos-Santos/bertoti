@@ -1,4 +1,4 @@
-package br.jose.santos.obsever;
+package obsever;
 
 public class Pedido {
 	

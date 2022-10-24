@@ -1,4 +1,4 @@
-package br.jose.santos.singleton;
+package singleton;
 
 public class Log {
 
