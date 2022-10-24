@@ -55,7 +55,34 @@ criei um algoritmo capaz de calcular os valores recebidos como parâmetro,
 devolvendo como resultado a melhor promoção a ser aplicada
 no carrinho de compras
 
- 
+ <details>
+  <summary>Principais Atuações</summary>
+  
+  ### Lideranças
+   1. Criação de algoritmos de cálculo para retorno dos valores das promoções.
+     
+   ```js
+   
+   public ResponseEntity<?> retornaProdutoPromocao(@RequestBody Integer id, Integer quantidade, Integer total,
+			  Integer categoria) {
+
+		       List<ProductPromotion> promotios = productPromotionRepository.findAll();
+		       List<ProductPromotion> productPromotion = new ArrayList<ProductPromotion>();
+
+		       Product product = productService.findById(id);
+		       productPromotion.addAll(product.getProductPromotions());
+		       int n = productPromotion.size();
+         
+         ...
+         
+         return new ResponseEntity<>(desconto, HttpStatus.OK);     
+   ```
+     
+     - Mais detalhes do Código 
+     
+     <a href=“https://www.github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java“>Class Code</a>
+  
+</details>
 
 ### Aprendizados Efetivos 
 
