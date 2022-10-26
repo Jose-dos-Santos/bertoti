@@ -79,9 +79,9 @@ no carrinho de compras
    ```
      
   </details>   
-<details open></summary>Abra o link</summary>
+<details open></summary>Mais detalhes do Código</summary>
 
-   Mais detalhes do Código  [GitHub]( https://www.github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-       midall/src/main/java/com/backend/backend/service/ProductPromotionService.java)
+   Click aqui  [GitHub]( https://www.github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-       midall/src/main/java/com/backend/backend/service/ProductPromotionService.java)
 
 </details>
 
