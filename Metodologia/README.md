@@ -76,8 +76,8 @@ no carrinho de compras
          
          return new ResponseEntity<>(desconto, HttpStatus.OK);     
    ```
-   - Esse é o trecho do metodo na classe responsavel por tratar informações 
-     referente as promoções, dentro do pacote service
+   - Acima está parte do codigo no end-point responsavel por receber os parametros vindos do 
+     front-end
      
 
 <details close></summary></summary>
