@@ -78,11 +78,9 @@ no carrinho de compras
    ```
      
 
-<details></summary>Open by default</summary>
+<details open></summary>Open by default</summary>
 
-
-Click aqui  [GitHub](https://www.github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-         midall/src/main/java/com/backend/backend/service/ProductPromotionService.java)
-
+Hello world! See [HTML details tag - W3Schools](https://www.w3schools.com/TAGS/tag_details.asp) for more info :)
 
 </details>
 
