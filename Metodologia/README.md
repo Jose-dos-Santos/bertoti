@@ -78,11 +78,13 @@ no carrinho de compras
          return new ResponseEntity<>(desconto, HttpStatus.OK);     
    ```
      
-     - Mais detalhes do Código 
-     
-     <a href=“https://www.github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java“>Class Code</a>
-  
+      
+<details open></summary>Open by default</summary>
+
+ Mais detalhes do Código  [HTML details tag - GitHub]( https://www.github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java)
+
 </details>
+   
 
 ### Aprendizados Efetivos 
 
