@@ -81,7 +81,7 @@ no carrinho de compras
       
 <details open></summary>Open by default</summary>
 
- Mais detalhes do Código  [HTML details tag - GitHub]( https://www.github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java)
+ Mais detalhes do Código  [GitHub]( https://www.github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java)
 
 </details>
    
