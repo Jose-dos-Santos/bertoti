@@ -78,7 +78,7 @@ no carrinho de compras
          return new ResponseEntity<>(desconto, HttpStatus.OK);     
    ```
      
-  </details>   
+
 <details open></summary>Open by default</summary>
 
    Click aqui  [GitHub]( https://www.github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-       midall/src/main/java/com/backend/backend/service/ProductPromotionService.java)
