@@ -55,10 +55,10 @@ criei um algoritmo capaz de calcular os valores recebidos como parâmetro,
 devolvendo como resultado a melhor promoção a ser aplicada
 no carrinho de compras
 
- <details><summary>Principais Atuações</summary>
+ <details open><summary>Principais Atuações</summary>
   
   
-   1. Criação de algoritmos de cálculo para retorno dos valores das promoções.
+   1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
      
    ```js
    
@@ -78,9 +78,9 @@ no carrinho de compras
    ```
      
 
-<details open></summary>Open by default</summary>
+<details open></summary></summary>
 
-Hello world! See [HTML details tag - W3Schools](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) for more info :)
+Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
 
 </details>
 
