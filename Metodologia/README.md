@@ -85,7 +85,8 @@ no carrinho de compras
 
 </details>
 
-   
+
+</details>   
 
 ### Aprendizados Efetivos 
 
