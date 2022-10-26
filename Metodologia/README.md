@@ -55,7 +55,7 @@ criei um algoritmo capaz de calcular os valores recebidos como parâmetro,
 devolvendo como resultado a melhor promoção a ser aplicada
 no carrinho de compras
 
- <details open><summary>Principais Atuações</summary>
+ <details open><summary>Mais informações</summary>
   
   
    1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
