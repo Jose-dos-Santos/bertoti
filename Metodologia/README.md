@@ -80,7 +80,7 @@ no carrinho de compras
 
 <details open></summary>Open by default</summary>
 
-Hello world! See [HTML details tag - W3Schools](https://www.w3schools.com/TAGS/tag_details.asp) for more info :)
+Hello world! See [HTML details tag - W3Schools](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) for more info :)
 
 </details>
 
