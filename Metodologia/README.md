@@ -76,14 +76,13 @@ no carrinho de compras
          
          return new ResponseEntity<>(desconto, HttpStatus.OK);     
    ```
-   - Acima está parte do codigo no end-point responsavel por receber os parametros vindos do 
-     front-end
+   - O codígo acima é um trecho do end-point responsavel por receber os parametros vindos do front-end
      
 
 <details close></summary></summary>
 
 Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
-
+- O link acima traz detalhes da implementação da classe de serviço reponsavel por todos os metodos da promoção
 </details>
 
 
