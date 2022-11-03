@@ -3,10 +3,9 @@ package obsever;
 public class SalvaPedidoBancoDados implements AcaoAposGerarPedido {
 
 	@Override
-	public void executarAcao(Pedido pedido) {
+		public void executarAcao(String acao) {
 
-       System.out.println("Pedido salvo no banco com sucesso");
-		
+		System.out.println("Informação salva com sucesso " + acao);
+
 	}
-
 }
