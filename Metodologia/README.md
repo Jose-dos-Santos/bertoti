@@ -90,6 +90,39 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 
 - Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
 
+ <details close><summary>Mais informações</summary>
+  
+  
+   1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
+     
+   ```js
+   
+   public ResponseEntity<?> retornaProdutoPromocao(@RequestBody Integer id, Integer quantidade, Integer total,
+			  Integer categoria) {
+
+		       List<ProductPromotion> promotios = productPromotionRepository.findAll();
+		       List<ProductPromotion> productPromotion = new ArrayList<ProductPromotion>();
+
+		       Product product = productService.findById(id);
+		       productPromotion.addAll(product.getProductPromotions());
+		       int n = productPromotion.size();
+         
+         ...
+         
+         return new ResponseEntity<>(desconto, HttpStatus.OK);     
+   ```
+   - O código acima é um trecho do endpoint responsável por receber os parâmetros vindos do front end
+     
+
+<details close></summary></summary>
+
+Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
+- O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
+</details>
+
+
+</details>   
+
 ### Aprendizados Efetivos 
 
 
