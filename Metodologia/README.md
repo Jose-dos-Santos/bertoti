@@ -76,8 +76,11 @@ no carrinho de compras
          
          return new ResponseEntity<>(desconto, HttpStatus.OK);     
    ```
-   - O código acima é um trecho do endpoint responsável por receber os parâmetros vindos do front end
-     
+   - O código acima é um trecho do endpoint responsável por receber os parâmetros vindos do front end.
+
+   - Esse método foi implementado na camada service, por questão de organização do projeto.
+     Sendo consumido na camada controller através de um método com uma anotação HTTP, no caso dessa
+     requisição foi utilizado o verbo HttpPost. 
 
 <details close></summary></summary>
 
@@ -94,6 +97,7 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
   
   
    1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
+   
      
    ```js
    
