@@ -50,7 +50,7 @@ Link do repositório do projeto: https://github.com/
 
 
 ### Contribuições pessoais
-Fui responsável pela implementação da lógica do motor de regras da API,
+- Fui responsável pela implementação da lógica do motor de regras da API,
 criei um algoritmo capaz de calcular os valores recebidos como parâmetro, 
 devolvendo como resultado a melhor promoção a ser aplicada
 no carrinho de compras
@@ -87,6 +87,8 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 
 
 </details>   
+
+- Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
 
 ### Aprendizados Efetivos 
 
