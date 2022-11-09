@@ -97,15 +97,18 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
      
    ```js
    
-   public ResponseEntity<?> retornaProdutoPromocao(@RequestBody Integer id, Integer quantidade, Integer total,
-			  Integer categoria) {
+        this.total = this.noDiscount += (element.price  * element.quantidade);
 
-		       List<ProductPromotion> promotios = productPromotionRepository.findAll();
-		       List<ProductPromotion> productPromotion = new ArrayList<ProductPromotion>();
-
-		       Product product = productService.findById(id);
-		       productPromotion.addAll(product.getProductPromotions());
-		       int n = productPromotion.size();
+        this.service.getDiscount(this.id, this.quantidade, this.total, this.categoria).subscribe(
+            response =>
+            { const product : Product = new Product();
+              this.discount = response;
+              this.product.discount = this.discount
+              this.finalPrice = this.finalPrice += (element.price * element.quantidade)-(this.discount)
+              console.log("teste", this.categoria)
+            errorResponse => console.log(errorResponse)
+        })
+    });
          
          ...
          
