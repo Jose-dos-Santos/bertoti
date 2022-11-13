@@ -11,7 +11,7 @@ public class GeraPedido {
 		this.acoes = acoes;
 	}
 
-	public void execute(String acao) {
+	public void notify(String acao) {
 
 		this.acoes.forEach(a -> a.executarAcao(acao));
 
@@ -21,26 +21,15 @@ public class GeraPedido {
 
 		pedidos.add(pedido);
 
-		this.execute("pedido adicionado");
+		this.notify("pedido adicionado");
 	}
 
 	public void unsubscribe(Pedido pedido) {
 		pedidos.remove(pedido);
-		this.execute("Pedido removido");
+		this.notify("Pedido removido");
 	}
 
-	public void notify(Pedido pedido, int index) {
 
-		for (int i = 0; i < pedidos.size(); i++) {
-
-			if (i == index) {
-				pedidos.add(index, pedido);
-				this.execute("Pedido modificado");
-
-			}
-
-		}
-	}
 
 	public List<Pedido> getPedidos() {
 		return pedidos;
