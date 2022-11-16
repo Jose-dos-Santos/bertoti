@@ -55,7 +55,7 @@ criei um algoritmo capaz de calcular os valores recebidos como parâmetro,
 devolvendo como resultado a melhor promoção a ser aplicada
 no carrinho de compras
 
- <details close><summary>Informações código Back-End</summary>
+ <details open><summary>Informações código Back-End</summary>
   
   
    1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
@@ -87,7 +87,7 @@ no carrinho de compras
       o resultado para a interface.
 
 
-<details open></summary></summary>
+<details close></summary></summary>
 
 Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
 - O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
@@ -98,7 +98,7 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 
 - Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
 
- <details close><summary>Informações código Front-End</summary>
+ <details open><summary>Informações código Front-End</summary>
   
   
    1. Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
@@ -128,7 +128,7 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 
      
 
-<details open></summary></summary>
+<details close></summary></summary>
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-midall/src/app/cart.service.ts) para mais detalhes :)
 - O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
