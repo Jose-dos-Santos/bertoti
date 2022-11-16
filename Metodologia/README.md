@@ -144,7 +144,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 - O Framework Spring-Boot foi a principal tecnologia necessária para iniciar o projeto,
 uma ferramenta com muitos rescurso para facilitar o ambiente de programação para que codifica em java.
 Aprendi desde a criação inicial do projeto que é de facil implementação através 
-spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes :)
+spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes 
 
 
 
