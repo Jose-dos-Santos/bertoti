@@ -55,7 +55,7 @@ criei um algoritmo capaz de calcular os valores recebidos como parâmetro,
 devolvendo como resultado a melhor promoção a ser aplicada
 no carrinho de compras
 
- <details close><summary>Mais informações</summary>
+ <details close><summary>Informações código Back-End</summary>
   
   
    1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
@@ -98,10 +98,10 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 
 - Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
 
- <details close><summary>Mais informações</summary>
+ <details close><summary>Informações código Front-End</summary>
   
   
-   1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
+   1. Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
    
      
    ```js
@@ -123,7 +123,9 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
          
          return new ResponseEntity<>(desconto, HttpStatus.OK);     
    ```
-   - O código acima é um trecho do endpoint responsável por receber os parâmetros vindos do front end
+   - Esse método é responsável por passar os parâmetros para o back-end, processar a informação e direcionar o retorno para a camada de visualização do usuário,
+  sendo um trecho importante pois enviar dados, processa o retorno e já devolve os resultados para usuário.
+
      
 
 <details close></summary></summary>
