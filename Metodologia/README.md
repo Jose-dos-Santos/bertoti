@@ -76,11 +76,16 @@ no carrinho de compras
          
          return new ResponseEntity<>(desconto, HttpStatus.OK);     
    ```
-   - O código acima é um trecho do endpoint responsável por receber os parâmetros vindos do front end.
-
-   - Esse método foi implementado na camada service, por questão de organização do projeto.
+   
+   - Esse método foi implementado na camada de service, por questão de organização do projeto.
      Sendo consumido na camada controller através de um método com uma anotação HTTP, no caso dessa
      requisição foi utilizado o verbo HttpPost. 
+     
+   - O algoritmo implementado é responsável por receber os parâmetros vindos do front end, 
+      esses parâmetros são filtrados por uma camada de condições, verificando o melhor valor de retorno para uma 
+      determinado produto que esteja em uma promoção, esse retorno é devolvido para camada controller que por sua vez devolve 
+      o resultado para a interface.
+
 
 <details close></summary></summary>
 
