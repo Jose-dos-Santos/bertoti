@@ -140,8 +140,10 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 ### Aprendizados Efetivos 
 
 
-
-- 
+# Back-End
+- O Framework Spring-Boot foi a principal tecnologia que foi preciso conhecer para iniciar o projeto,
+uma ferramenta com muitos rescurso para facilitar o ambiente de programação para que codifica em java.
+Aprendi desde a criação inicial do projeto que é de facil implementação através
 
 - 
 
