@@ -148,7 +148,7 @@ spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes
 
 
 
-- 
+- API REST, também chamada de API RESTful, é uma interface de programação de aplicações (API ou API web) que está em conformidade com as restrições do estilo de arquitetura REST, permitindo a interação com serviços web RESTful. REST é a sigla em inglês para transferência representacional de estado.
 
 
 
