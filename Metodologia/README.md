@@ -130,7 +130,7 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 
 <details close></summary></summary>
 
-Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
+Click aqui [GitHub](https://https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-midall/src/app/cart.service.ts) para mais detalhes :)
 - O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
 </details>
 
