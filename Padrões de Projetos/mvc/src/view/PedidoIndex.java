@@ -1,24 +1,21 @@
 package view;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 import controller.PedidoController;
+import controller.PedidoDescontoMaisController;
+import controller.PedidoDescontoMenosController;
 import model.Email;
-import model.NotificandoPedido;
 import model.Pedido;
+
 
 public class PedidoIndex {
 	private Scanner ler = new Scanner(System.in);
 	private PedidoController pedidoController = new PedidoController();
 	private List<PedidoView> notificacoes = new ArrayList<>();
-
-	public void notify(String acao) {
-
-		this.notificacoes.forEach(a -> a.notificar(acao));
-
-	}
 
 	public PedidoIndex(List<PedidoView> notificacoes) {
 		this.notificacoes = notificacoes;
@@ -53,12 +50,20 @@ public class PedidoIndex {
 		Email email = new Email(nomeCliente, emailusuario);
 
 		Pedido pedido = new Pedido(numeroPedido, nomeCliente, dataPedido, email, tipo);
+		
+		if(tipo == 1) {
+			PedidoDescontoMaisController desconto = new PedidoDescontoMaisController();
+			desconto.verificarTipo("Desconto maior");
+		}else {
+			PedidoDescontoMenosController desconto = new PedidoDescontoMenosController();
+			desconto.verificarTipo("Desconto menor ");
+		}
 
 		pedidoController.adicionarPedido(pedido);
 
 		menssagemUsuario = "Adicionado na";
 
-		this.notify(menssagemUsuario);
+		
 
 	}
 
@@ -71,7 +76,6 @@ public class PedidoIndex {
 
 		menssagemUsuario = "Removido da";
 
-		this.notify(menssagemUsuario);
 	}
 
 }

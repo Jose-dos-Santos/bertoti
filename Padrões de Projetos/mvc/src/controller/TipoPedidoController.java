@@ -1,11 +1,7 @@
 package controller;
 
-import model.Pedido;
-
 public interface TipoPedidoController {
 
-	public void verificarTipo(Pedido pedido);
-
-	
+	public void verificarTipo(String desconto);
 
 }

@@ -5,14 +5,7 @@ import java.util.Scanner;
 
 import model.NotificandoPedido;
 
-public class PedidoView implements NotificandoPedido {
-
-	@Override
-	public void notificar(String acao) {
-
-		System.out.println("Pedido " + acao + " sua lista");
-
-	}
+public class PedidoView {
 
 	public void iniciar() {
 		Scanner ler = new Scanner(System.in);

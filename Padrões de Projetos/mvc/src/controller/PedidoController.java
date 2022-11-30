@@ -1,50 +1,42 @@
 package controller;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
 import model.CadastrandoPedido;
-import model.Email;
-import model.EmailPedido;
 import model.Pedido;
-import model.SalvandoPedido;
 
-public class PedidoController implements TipoPedidoController {
+public class PedidoController {
 
-	private CadastrandoPedido pedido = new CadastrandoPedido(Arrays.asList(new EmailPedido(),new SalvandoPedido()));
-	@Override
-	public void verificarTipo(Pedido pedido) {
+	private CadastrandoPedido pedido = new CadastrandoPedido();
 
-		if (pedido.getTipo() == 1) {
-			System.out.println("Pedido com 10 % de desconto");
-		}
+	private List<TipoPedidoController> notificacoes = new ArrayList<>();
+
+	
+	public PedidoController() {
+		
+	}
+	
+	public PedidoController(List<TipoPedidoController> notificacoes) {
+		this.notificacoes = notificacoes;
+	}
+
+	public void notify(String desconto) {
+
+		this.notificacoes.forEach(a -> a.verificarTipo(desconto));
 
 	}
 
 	public void adicionarPedido(Pedido pedido) {
-        this.verificarTipo(pedido);
+
 		this.pedido.subscribe(pedido);
+		this.notify("");
 
 	}
 
-	public void removerPedido(int indexPedido) {
-		Pedido pedidoRemove = new Pedido();
-		Pedido pedidoList = new Pedido();
+	public String removerPedido(int id) {
 
-		List<Pedido> pedidos = pedidoList.getPedidos();
-		
-		for (int i = 0; i < pedidos.size(); i++) {
-			System.out.println("Teste");
-			if (i == indexPedido) {
-				pedidoRemove = pedidos.get(i);
-				
-				System.out.println(pedidoRemove.getNomeCliente());
-			}
-
-		}
-
-		this.pedido.unsubscribe(pedidoRemove);
+		this.pedido.unsubscribe(id);
+		return "Pedido removido";
 
 	}
 
