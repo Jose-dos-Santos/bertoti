@@ -55,7 +55,7 @@ criei um algoritmo capaz de calcular os valores recebidos como parâmetro,
 devolvendo como resultado a melhor promoção a ser aplicada
 no carrinho de compras
 
- <details close><summary>Mais informações</summary>
+ <details open><summary>Informações código Back-End</summary>
   
   
    1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
@@ -76,11 +76,16 @@ no carrinho de compras
          
          return new ResponseEntity<>(desconto, HttpStatus.OK);     
    ```
-   - O código acima é um trecho do endpoint responsável por receber os parâmetros vindos do front end.
-
-   - Esse método foi implementado na camada service, por questão de organização do projeto.
+   
+   - Esse método foi implementado na camada de service, por questão de organização do projeto.
      Sendo consumido na camada controller através de um método com uma anotação HTTP, no caso dessa
      requisição foi utilizado o verbo HttpPost. 
+     
+   - O algoritmo implementado é responsável por receber os parâmetros vindos do front end, 
+      esses parâmetros são filtrados por uma camada de condições, verificando o melhor valor de retorno para uma 
+      determinado produto que esteja em uma promoção, esse retorno é devolvido para camada controller que por sua vez devolve 
+      o resultado para a interface.
+
 
 <details close></summary></summary>
 
@@ -93,10 +98,10 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 
 - Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
 
- <details close><summary>Mais informações</summary>
+ <details open><summary>Informações código Front-End</summary>
   
   
-   1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
+   1. Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
    
      
    ```js
@@ -118,13 +123,15 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
          
          return new ResponseEntity<>(desconto, HttpStatus.OK);     
    ```
-   - O código acima é um trecho do endpoint responsável por receber os parâmetros vindos do front end
+   - Esse método é responsável por passar os parâmetros para o back-end, processar a informação e direcionar o retorno para a camada de visualização do usuário,
+  sendo um trecho importante pois enviar dados, processa o retorno e já devolve os resultados para usuário.
+
      
 
 <details close></summary></summary>
 
-Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
-- O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
+Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-midall/src/app/cart.service.ts) para mais detalhes :)
+-O link acima traz detalhes da implementação do método responsável por enviar a requisição para back-end. 
 </details>
 
 
@@ -133,10 +140,15 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 ### Aprendizados Efetivos 
 
 
+#### Back-End
+- O Framework Spring-Boot foi a principal tecnologia necessária para iniciar o projeto,
+uma ferramenta com muitos rescurso para facilitar o ambiente de programação para que codifica em java.
+Aprendi desde a criação inicial do projeto que é de facil implementação através 
+spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes 
 
-- 
 
-- 
+
+- API REST, também chamada de API RESTful, é uma interface de programação de aplicações (API ou API web) que está em conformidade com as restrições do estilo de arquitetura REST, permitindo a interação com serviços web RESTful. REST é a sigla em inglês para transferência representacional de estado.
 
 
 
