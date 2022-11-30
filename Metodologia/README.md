@@ -145,7 +145,23 @@ spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes
 
 - API REST, também chamada de API RESTful, é uma interface de programação de aplicações (API ou API web) que está em conformidade com as restrições do estilo de arquitetura REST, permitindo a interação com serviços web RESTful. REST é a sigla em inglês para transferência representacional de estado.
 
+  Dentro do desenvolvimento do sistema de E-commerce para a MidAll obtive diversos aprendizados novos, e aprofundei em outros, foram eles:
+  
+* Desenvolvimento de telas com Angular; </br>
+   Para criação das telas foi utilizado o html e css, além do bootstrap como framework para o frontend. 
+* Desenvolvimento com a linguagem TypeScript; </br>
+   Foi necessário aprender sobre a linguagem TypeScript para criação dos arquivos service para efetivar as requisições HTTP
+* Protocolo HTTP;
+* Requisições GET, POST, PUT e DELETE; </br>
+   Aprendi mais sobre essas requisições e como efetuar elas utilizando o Angular.
+* Criação de um objeto JSON para envio nas requisições;
+* Aprendi como fazer requisições no backend utilizando a api httpClient do Angular;
+* Aprofundamento em aprendizados de banco de dados, DML, DQL, criação arquitetura de tabelas ;   
+* Criação de um projeto em Vue; </br>
+   Foi necessário aprender a estrutura de pastas de um projeto em Angular.</br>
+   
 
+  Os conhecimentos adquiridos em aula foram essencias para desenvolvimento desse projeto, aplicamos os conhecimentos aprendidos para seguir os padrões de arquitetura, torná-lo componentizável e seguindo modos de construção comuns aos utilizados no mercado e comunidade. Criação do banco de dados utilizado na aplicação, seguindo o padrão de chaves primaria e estrangeiras nas tabelas, criação do modelo e entidades do banco. Criação do padrão de pastas tanto no frontend como no backend. Aprendizados dos frameworks utilizados, vue e spring.
 
 ## Contatos:
 
