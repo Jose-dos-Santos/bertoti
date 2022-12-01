@@ -1,51 +1,46 @@
-# José Maria
-
-## Introdução
-
-Olá, seja bem-vindo. Sou o José Maria, estudante de Banco de Dados pela FATEC Prof. Jessen Vidal. 
-
-Tenho 34 anos e trabalho como Desenvolvedor de Software Estagiario. <br/>
-
-<img src="" width="300"/>
-
-##### *Figura 00. Eu*
-
-### Meus principais conhecimentos
-
-#### C#
-
-
-
-#### Java
-
+# Projeto 3: 1º semestre de 2022
  
+ 
+ ## Parceiro Acadêmico
+MidAll</br>
 
-#### Projetos Integradores durante a graduação 
+![image](https://static.wixstatic.com/media/456d95_16b15ab71cf54b9aa97150aaefefbbde~mv2.png/v1/fill/w_178,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%2520MidAll_edited.png)
+##### *Figura 01. Fonte(www.midall.com.br)*
 
-
-
-# Projeto 3: 2º semestre de 2020
-
-
-## Parceiro Acadêmico
-Visiona <br/>
-![image](https://user-images.)
-##### *Figura 05. SPC Brasil*
+A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
 
 
 ### Visão do Projeto
 
+Criação de um motor de promoções em um Ecommerce, onde a criação, edição e exclusão de promoções possam ser feitas de forma ágil e intuitiva. Com requisitos funcionais:
+* Interface de cadastro de produtos e promoções;
+* Edição de produtos;
+* Carrinho de compras;
+* Criação de promoções;
+* Categoria de promoções;
+* Listagem de produtos e promoções.
 
 
-<img src="https://github.com/Doc-Docker/APIMidAll/blob/main/Images/logo2promoall.png" width="500"/>
+Dessa forma, foi desenvolvido o PromoAll
 
+<img src ="https://github.com/Doc-Docker/APIMidAll/blob/main/Images/logo2promoall.png" width="300" height="300"/>
 
+##### *Figura 02. Fonte(www.github.com/Doc-Docker/APIMidAll)*
 
-Link do repositório do projeto: https://github.com/
+### Tecnologias utilizadas:
 
-### Tecnologias adotadas na solução
+<div style="display: inline_block"><br> 
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"  width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original-wordmark.svg" width="100" height="100"  />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="100" height="100" />
+</div>
 
-#### API PromoAll
+</br>
+
+Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typescript, para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 que é um sistema de gerenciamento de banco de dados relacional em memória
 
 
 
@@ -140,22 +135,35 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 ### Aprendizados Efetivos 
 
 
-#### Back-End
-- O Framework Spring-Boot foi a principal tecnologia necessária para iniciar o projeto,
+
+* O Framework Spring-Boot foi a principal tecnologia necessária para iniciar o projeto,
 uma ferramenta com muitos rescurso para facilitar o ambiente de programação para que codifica em java.
 Aprendi desde a criação inicial do projeto que é de facil implementação através 
 spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes 
 
 
 
-- API REST, também chamada de API RESTful, é uma interface de programação de aplicações (API ou API web) que está em conformidade com as restrições do estilo de arquitetura REST, permitindo a interação com serviços web RESTful. REST é a sigla em inglês para transferência representacional de estado.
+* API REST, também chamada de API RESTful, é uma interface de programação de aplicações (API ou API web) que está em conformidade com as restrições do estilo de arquitetura REST, permitindo a interação com serviços web RESTful. REST é a sigla em inglês para transferência representacional de estado.
+
+  Dentro do desenvolvimento do sistema de E-commerce para a MidAll obtive diversos aprendizados novos, e aprofundei em outros, foram eles:
+  
+* Desenvolvimento de telas com Angular; </br>
+   Para criação das telas foi utilizado o html e css, além do bootstrap como framework para o frontend. 
+* Desenvolvimento com a linguagem TypeScript; </br>
+   Foi necessário aprender sobre a linguagem TypeScript para criação dos arquivos service para efetivar as requisições HTTP
+* Protocolo HTTP;
+* Requisições GET, POST, PUT e DELETE; </br>
+   Aprendi mais sobre essas requisições e como efetuar elas utilizando o Angular.
+* Criação de um objeto JSON para envio nas requisições;
+* Aprendi como fazer requisições no backend utilizando a api httpClient do Angular;
+* Aprofundamento em aprendizados de banco de dados, DML, DQL, criação arquitetura de tabelas ;   
+* Criação de um projeto em Angular; </br>
+   Foi necessário aprender a estrutura de pastas de um projeto em Angular.</br>
+   
+
+  Os conhecimentos adquiridos em aula foram essencias para desenvolvimento desse projeto, aplicamos os conhecimentos aprendidos para seguir os padrões de arquitetura, torná-lo componentizável e seguindo modos de construção comuns aos utilizados no mercado e comunidade. Criação do banco de dados utilizado na aplicação, seguindo o padrão de chaves primaria e estrangeiras nas tabelas, criação do modelo e entidades do banco. Criação do padrão de pastas tanto no frontend como no backend. Aprendizados dos frameworks utilizados, vue e spring.
 
 
-
-## Contatos:
-
-- [LinkedIn;](https://)
-- [GitHub.](https://) 
 
 
 
