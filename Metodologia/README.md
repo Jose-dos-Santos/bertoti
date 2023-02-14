@@ -2,10 +2,10 @@
 # Projeto 1: 1º semestre de 2021
  
  
- ## Parceiro Acadêmico
-MidAll</br>
+ ## Fatec
 
-![image](https://static.wixstatic.com/media/456d95_16b15ab71cf54b9aa97150aaefefbbde~mv2.png/v1/fill/w_178,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%2520MidAll_edited.png)
+![image](https://user-images.githubusercontent.com/80988756/218878798-d33629bc-acf9-4edb-b463-b14fd8a90404.png)
+
 ##### *Figura 01. Fonte(www.midall.com.br)*
 
 A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
