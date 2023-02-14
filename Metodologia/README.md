@@ -28,11 +28,11 @@ Projeto Julius consiste em um assistente virtual que auxilia o usuário na tomad
 * Não pode utilizar de plataforma de implementação de terceiros, seja gratuita ou não.
 
 
-Dessa forma, foi desenvolvido o PromoAll
+Dessa forma, foi desenvolvido o Assistente Virtual Julius
 
-<img src ="https://github.com/Doc-Docker/APIMidAll/blob/main/Images/logo2promoall.png" width="300" height="300"/>
+<img src ="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/julius.png?raw=true"/>
 
-##### *Figura 02. Fonte(www.github.com/Doc-Docker/APIMidAll)*
+##### *Figura 02. Fonte([TheLooksDatabase/Julius](https://github.com/TheLooksDatabase/Julius))*
 
 ### Tecnologias utilizadas:
 
