@@ -6,20 +6,26 @@
 
 ![image](https://user-images.githubusercontent.com/80988756/218878798-d33629bc-acf9-4edb-b463-b14fd8a90404.png)
 
-##### *Figura 01. Fonte(www.midall.com.br)*
+##### *Banco de Dados([fatecsjc-prd.azurewebsites.net](https://fatecsjc-prd.azurewebsites.net/curso-banco-de-dados.php))*
 
-A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
+A Fatec é uma Faculdade Pública Estadual e todos os cursos oferecidos são gratuitos.
+De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envolve também, uma base de caráter social, 
+ético, filosófico e ambiental que faz deste cidadão um profissional ciente de sua inserção e responsabilidades no meio social que integra.
 
 
 ### Visão do Projeto
 
-Criação de um motor de promoções em um Ecommerce, onde a criação, edição e exclusão de promoções possam ser feitas de forma ágil e intuitiva. Com requisitos funcionais:
-* Interface de cadastro de produtos e promoções;
-* Edição de produtos;
-* Carrinho de compras;
-* Criação de promoções;
-* Categoria de promoções;
-* Listagem de produtos e promoções.
+Projeto Julius consiste em um assistente virtual que auxilia o usuário na tomada de decisões relacionadas a investimentos financeiros. Entre as funcionalidades estão código de ações, cotação do dia, conversor de moedas entre outros. O diferencial de nossa aplicação é trazer informações em tempo real entregando o máximo de interatividade ao cliente. O nosso aplicativo traz o que há de mais inovador no mercado financeiro nacional.
+
+- -  -  -  -  -  - 
+
+*  Responder a comando de voz ou sons específicos (palma, estalar de dedos, etc.);
+* Possuir no mínimo 8 ações distintas e de natureza distintas;
+* Ser mobile, web ou desktop;
+* Retornar o comando em qualquer forma (som, texto ou ação);
+* Ter um contexto específico de aplicação;
+* Não pode usar 100% de APIs prontas e disponíveis no mercado, seja gratuita ou não;
+* Não pode utilizar de plataforma de implementação de terceiros, seja gratuita ou não.
 
 
 Dessa forma, foi desenvolvido o PromoAll
