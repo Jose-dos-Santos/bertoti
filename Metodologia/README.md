@@ -112,9 +112,9 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
  
  
  ## Parceiro Acadêmico
-MidAll</br>
+Nector</br>
 
-![image](https://static.wixstatic.com/media/456d95_16b15ab71cf54b9aa97150aaefefbbde~mv2.png/v1/fill/w_178,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%2520MidAll_edited.png)
+![image](https://user-images.githubusercontent.com/80851038/133914328-794317fa-31e1-4279-afb0-d986acb5db45.png)
 ##### *Figura 01. Fonte(www.midall.com.br)*
 
 A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
