@@ -30,152 +30,83 @@ Projeto Julius consiste em um assistente virtual que auxilia o usuário na tomad
 
 Dessa forma, foi desenvolvido o Assistente Virtual Julius
 
-<img src ="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/julius.png?raw=true"/>
+<img src ="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/julius.png?raw=true" width="200" height="200" />
 
 ##### *Figura 02. Fonte([TheLooksDatabase/Julius](https://github.com/TheLooksDatabase/Julius))*
 
 ### Tecnologias utilizadas:
 
 <div style="display: inline_block"><br> 
+  <p align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" width="100"    height="100" />
-  
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vscode/vscode-original-wordmark.svg" width="100" height="100" />
- 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/github/github-original-wordmark.svg" width="100" height="100" />
- 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mysql/mysql-original-wordmark.svg" width="100" height="100" />
- 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
-
-
 
 </br>
 
-Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typescript, para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 que é um sistema de gerenciamento de banco de dados relacional em memória
-
-
+- Beautifulsoup4, selenium e requests foram usadas para requisição de informações de páginas HTML para possuir a informação correta e atualizada.
+- SpeechRecognition foi usada para reconhecimento e voz usando microfone.
+- Pyttsx3: Foi usada para síntese de texto-voz.
+- Google-api-python-client API utilizada para usufruir dos recursos de reconhecimento de voz do Google.
+- Pycoingecko  utilizada para conversão de moedas utilizando código do Banco Central.
 
 ### Contribuições pessoais
-- Fui responsável pela implementação da lógica do motor de regras da API,
-criei um algoritmo capaz de calcular os valores recebidos como parâmetro, 
-devolvendo como resultado a melhor promoção a ser aplicada
-no carrinho de compras
+- Fui responsável pela implementação da funcionalidade "Metas financeiras", também pela refatoração e teste da aplicação para melhor desempenho e performace.
 
  <details open><summary>Informações código Back-End</summary>
   
   
    1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
      
-   ```js
+   ```py
    
-   public ResponseEntity<?> retornaProdutoPromocao(@RequestBody Integer id, Integer quantidade, Integer total,
-			  Integer categoria) {
+   def calculadora():
+    resposta_erro_aleatoria = choice(lista_erros)
+    try:
 
-		       List<ProductPromotion> promotios = productPromotionRepository.findAll();
-		       List<ProductPromotion> productPromotion = new ArrayList<ProductPromotion>();
+        sai_som('Qual o valor inicial que você investirá?')
+        valor_inicial = float(input(''))
 
-		       Product product = productService.findById(id);
-		       productPromotion.addAll(product.getProductPromotions());
-		       int n = productPromotion.size();
-         
-         ...
-         
-         return new ResponseEntity<>(desconto, HttpStatus.OK);     
+        sai_som('Quanto investirá por mês?')
+        aporte = float(input(''))
+
+        sai_som('Qual a taxa de rendimento mensal, em %?')
+        taxa_porc = float(input(''))
+
+        sai_som('Em quantos meses pretende resgatar seu investimento?')
+        mes = int(input(''))
+
+        taxa = taxa_porc/100
+        ##o calculo a seguir se refere a um aporte mensal de dinheiro
+        result_aporte = aporte*(((1+taxa)**mes)-1)/taxa
+        ##já esse cálculo é o de juros compostos, considerando o investimento de um valor inicial e resgate em alguns meses.
+        result_vinicial = valor_inicial*((1+taxa)**mes)
+        valor_final = result_aporte + result_vinicial
+        sai_som(f'O total acumulado será de R${valor_final:.2f} reais')
+                        
+
+    except: 
+        sai_som(resposta_erro_aleatoria)
+
+        
+              
    ```
    
-   - Esse método foi implementado na camada de service, por questão de organização do projeto.
-     Sendo consumido na camada controller através de um método com uma anotação HTTP, no caso dessa
-     requisição foi utilizado o verbo HttpPost. 
+   - O método foi implementado para facilitar o usuário no início do investimento, simulando o quanto seu investimento renderia em um determinado período de aplicação. 
      
-   - O algoritmo implementado é responsável por receber os parâmetros vindos do front end, 
-      esses parâmetros são filtrados por uma camada de condições, verificando o melhor valor de retorno para uma 
-      determinado produto que esteja em uma promoção, esse retorno é devolvido para camada controller que por sua vez devolve 
-      o resultado para a interface.
-
-
-<details close></summary></summary>
-
-Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
-- O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
-</details>
-
-
-</details>   
-
-- Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
-
- <details open><summary>Informações código Front-End</summary>
-  
-  
-   1. Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
-   
-     
-   ```js
-   
-        this.total = this.noDiscount += (element.price  * element.quantidade);
-
-        this.service.getDiscount(this.id, this.quantidade, this.total, this.categoria).subscribe(
-            response =>
-            { const product : Product = new Product();
-              this.discount = response;
-              this.product.discount = this.discount
-              this.finalPrice = this.finalPrice += (element.price * element.quantidade)-(this.discount)
-              console.log("teste", this.categoria)
-            errorResponse => console.log(errorResponse)
-        })
-    });
-         
-         ...
-         
-         return new ResponseEntity<>(desconto, HttpStatus.OK);     
-   ```
-   - Esse método é responsável por passar os parâmetros para o back-end, processar a informação e direcionar o retorno para a camada de visualização do usuário,
-  sendo um trecho importante pois enviar dados, processa o retorno e já devolve os resultados para usuário.
-
-     
-
-<details close></summary></summary>
-
-Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-midall/src/app/cart.service.ts) para mais detalhes :)
--O link acima traz detalhes da implementação do método responsável por enviar a requisição para back-end. 
-</details>
-
-
-</details>   
+   - Esse algoritmo recebe os inputs digitados e sua resposta é através de um comando de voz.
 
 ### Aprendizados Efetivos 
 
-
-
-* O Framework Spring-Boot foi a principal tecnologia necessária para iniciar o projeto,
-uma ferramenta com muitos rescurso para facilitar o ambiente de programação para que codifica em java.
-Aprendi desde a criação inicial do projeto que é de facil implementação através 
-spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes 
-
-
-
-* API REST, também chamada de API RESTful, é uma interface de programação de aplicações (API ou API web) que está em conformidade com as restrições do estilo de arquitetura REST, permitindo a interação com serviços web RESTful. REST é a sigla em inglês para transferência representacional de estado.
-
-  Dentro do desenvolvimento do sistema de E-commerce para a MidAll obtive diversos aprendizados novos, e aprofundei em outros, foram eles:
-  
-* Desenvolvimento de telas com Angular; </br>
-   Para criação das telas foi utilizado o html e css, além do bootstrap como framework para o frontend. 
-* Desenvolvimento com a linguagem TypeScript; </br>
-   Foi necessário aprender sobre a linguagem TypeScript para criação dos arquivos service para efetivar as requisições HTTP
-* Protocolo HTTP;
-* Requisições GET, POST, PUT e DELETE; </br>
-   Aprendi mais sobre essas requisições e como efetuar elas utilizando o Angular.
-* Criação de um objeto JSON para envio nas requisições;
-* Aprendi como fazer requisições no backend utilizando a api httpClient do Angular;
-* Aprofundamento em aprendizados de banco de dados, DML, DQL, criação arquitetura de tabelas ;   
-* Criação de um projeto em Angular; </br>
-   Foi necessário aprender a estrutura de pastas de um projeto em Angular.</br>
-   
-
-  Os conhecimentos adquiridos em aula foram essencias para desenvolvimento desse projeto, aplicamos os conhecimentos aprendidos para seguir os padrões de arquitetura, torná-lo componentizável e seguindo modos de construção comuns aos utilizados no mercado e comunidade. Criação do banco de dados utilizado na aplicação, seguindo o padrão de chaves primaria e estrangeiras nas tabelas, criação do modelo e entidades do banco. Criação do padrão de pastas tanto no frontend como no backend. Aprendizados dos frameworks utilizados, vue e spring.
-
-
-
+* Primeiro contato com uma linguagem de programação, que no nosso caso foi Python.
+* Conhecendo e entendendo a metodologia agil, através do Scrum.
+* Entendendo a importancia de trabalhar em equipe.
 
 # Projeto 2: 2º semestre de 2022
  
