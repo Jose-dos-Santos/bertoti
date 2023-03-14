@@ -115,7 +115,7 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 Nector</br>
 
 ![image](https://user-images.githubusercontent.com/80851038/133914328-794317fa-31e1-4279-afb0-d986acb5db45.png)
-##### *Figura 01. Fonte(www.midall.com.br)*
+##### *Figura 01. Fonte(https://necto.com.br/?gclid=EAIaIQobChMIu4_FvLfc_QIVwhXUAR2B-gXFEAAYASAAEgJ2DPD_BwE)*
 Necto Systems foi criada para prover soluções de software.
 A principal ferramenta desde de 2006 é a linguagem Python.
 Participamos de grandes projetos em diferentes áreas, desenvolvendo soluções de software que dão suporte a processos complexos com engenharia de dados e "DataScience"
