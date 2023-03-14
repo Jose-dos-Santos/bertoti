@@ -200,50 +200,6 @@ Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/blob/main/api
 - O link acima traz detalhes da implementação do algoritmo
 </details>
 
-
-</details>   
-
-- Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
-
- <details open><summary>Informações código Front-End</summary>
-  
-  
-   1. Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
-   
-     
-   ```js
-   
-        this.total = this.noDiscount += (element.price  * element.quantidade);
-
-        this.service.getDiscount(this.id, this.quantidade, this.total, this.categoria).subscribe(
-            response =>
-            { const product : Product = new Product();
-              this.discount = response;
-              this.product.discount = this.discount
-              this.finalPrice = this.finalPrice += (element.price * element.quantidade)-(this.discount)
-              console.log("teste", this.categoria)
-            errorResponse => console.log(errorResponse)
-        })
-    });
-         
-         ...
-         
-         return new ResponseEntity<>(desconto, HttpStatus.OK);     
-   ```
-   - Esse método é responsável por passar os parâmetros para o back-end, processar a informação e direcionar o retorno para a camada de visualização do usuário,
-  sendo um trecho importante pois enviar dados, processa o retorno e já devolve os resultados para usuário.
-
-     
-
-<details close></summary></summary>
-
-Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-midall/src/app/cart.service.ts) para mais detalhes :)
--O link acima traz detalhes da implementação do método responsável por enviar a requisição para back-end. 
-</details>
-
-
-</details>   
-
 ### Aprendizados Efetivos 
 
 
