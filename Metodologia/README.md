@@ -37,7 +37,6 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 ### Tecnologias utilizadas:
 
 <div style="display: inline_block"><br> 
-  <p align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" width="100"    height="100" />
  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vscode/vscode-original-wordmark.svg" width="100" height="100" />
  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/github/github-original-wordmark.svg" width="100" height="100" />
@@ -146,61 +145,59 @@ Dessa forma, foi desenvolvido o SGBD Health
 
 <div style="display: inline_block"><br> 
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="100" height="100" />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"  width="100" height="100" />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width="100" height="100" />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original-wordmark.svg" width="100" height="100"  />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="100" height="100" />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="100" height="100" />
+ <img src="https://icongr.am/devicon/postgresql-original-wordmark.svg?size=128&color=currentColor" width="100" height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/sqlite/sqlite-original.svg" width="100" height="100" />
+ <img src="https://icongr.am/devicon/github-original.svg?size=128&color=currentColor" width="100" height="100" />
 </div>
 
 </br>
 
-Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typescript, para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 que é um sistema de gerenciamento de banco de dados relacional em memória
+Como foi uma aplicação voltada para métricas de um servidor monitorando o sistema SGBT, utilizamos conexão JDBC do Java para conectar ao SGBD PostgreSql, SqLite para armazenar config da aplicação, GitHub para versionamento do código.
 
 
 
 ### Contribuições pessoais
-- Fui responsável pela implementação da lógica do motor de regras da API,
-criei um algoritmo capaz de calcular os valores recebidos como parâmetro, 
-devolvendo como resultado a melhor promoção a ser aplicada
-no carrinho de compras
-
+- Fui responsável pela implementação do algoritmo que parametriza as informações vindas do banco e com esses parâmetros salva os resultados no formato csv.
  <details open><summary>Informações código Back-End</summary>
   
   
-   1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
+   1. Criação do algoritmos de parametrização dos dados.
      
-   ```js
+   ```java
    
-   public ResponseEntity<?> retornaProdutoPromocao(@RequestBody Integer id, Integer quantidade, Integer total,
-			  Integer categoria) {
+   	if (i == 4 && j == 6) {
+					quantidadeColuna[i - 4] = (result.getString(i - 3));
+					quantidadeColuna[i - 3] = (result.getString(i - 2).replaceAll("\\r\\n|\\n", "").substring(0, 25)
+							+ "...");
+					quantidadeColuna[i - 2] = (result.getString(i - 1));
+					quantidadeColuna[i - 1] = (result.getString(i));
+					st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
+							quantidadeColuna[i - 1]);
 
-		       List<ProductPromotion> promotios = productPromotionRepository.findAll();
-		       List<ProductPromotion> productPromotion = new ArrayList<ProductPromotion>();
-
-		       Product product = productService.findById(id);
-		       productPromotion.addAll(product.getProductPromotions());
-		       int n = productPromotion.size();
-         
-         ...
-         
-         return new ResponseEntity<>(desconto, HttpStatus.OK);     
+				} else if (i == 4 && j == 7) {
+					quantidadeColuna[i - 4] = (result.getString(i - 3));
+					quantidadeColuna[i - 3] = (result.getString(i - 2).replaceAll("\\r\\n|\\n", ""));
+					quantidadeColuna[i - 2] = (result.getString(i - 1));
+					quantidadeColuna[i - 1] = (result.getString(i));
+					st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
+							quantidadeColuna[i - 1]);
+				} else if (i == 4) {
+					quantidadeColuna[i - 4] = (result.getString(i - 3));
+					quantidadeColuna[i - 3] = (result.getString(i - 2));
+					quantidadeColuna[i - 2] = (result.getString(i - 1));
+					quantidadeColuna[i - 1] = (result.getString(i));
+					st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
+							quantidadeColuna[i - 1]);    
    ```
    
-   - Esse método foi implementado na camada de service, por questão de organização do projeto.
-     Sendo consumido na camada controller através de um método com uma anotação HTTP, no caso dessa
-     requisição foi utilizado o verbo HttpPost. 
+   - Esse algoritmo valida as informações de retorno da query, padronizando esse resultado conforme número de colunas e linhas, para ser salvo no formato csv. 
+	
+   	
      
-   - O algoritmo implementado é responsável por receber os parâmetros vindos do front end, 
-      esses parâmetros são filtrados por uma camada de condições, verificando o melhor valor de retorno para uma 
-      determinado produto que esteja em uma promoção, esse retorno é devolvido para camada controller que por sua vez devolve 
-      o resultado para a interface.
-
-
 <details close></summary></summary>
 
-Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
-- O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
+Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/blob/main/api1.2/src/conectar/Csv.java) para mais detalhes :)
+- O link acima traz detalhes da implementação do algoritmo
 </details>
 
 
@@ -342,7 +339,7 @@ no carrinho de compras
   
    1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
      
-   ```js
+   ```java
    
    public ResponseEntity<?> retornaProdutoPromocao(@RequestBody Integer id, Integer quantidade, Integer total,
 			  Integer categoria) {
@@ -386,7 +383,7 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
    1. Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
    
      
-   ```js
+   ```java
    
         this.total = this.noDiscount += (element.price  * element.quantidade);
 
