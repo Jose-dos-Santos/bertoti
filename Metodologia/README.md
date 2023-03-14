@@ -124,20 +124,27 @@ Participamos de grandes projetos em diferentes áreas, desenvolvendo soluções 
 ### Visão do Projeto
 
 É uma aplicação de monitoramento voltada somente à SGBDs, focada na performance e desempenho. Através da coleta de dados do SGBD (memória, tempo de consultas, espaço em disco, transações, evolução da memória, caches e registros) que influenciam na saúde e manutenção periódica:
-* Interface de cadastro de produtos e promoções;
-* Edição de produtos;
-* Carrinho de compras;
-* Criação de promoções;
-* Categoria de promoções;
-* Listagem de produtos e promoções.
 
+* Conexão SGBD;
+* Coleta de métricas de um ou mais SGBDs (PostgreSQL) remoto;
+* Tratamento das métricas (histórico, registro, relatórios, disponibilidade, alertas e valores atingidos durante a operação):
+* Tratamento de métricas de forma tabular;
+* Salvar consultas em CSV;
+* Tabular métricas;
+* Coleta periódica de métricas;
+* Histórico de métricas;
+* Relatórios de métricas;
+* Alertas por email;
+* Funcionamento do BD (tempo e quantidade de queries e uso de índices).
+* Ativar ou Desativar Interface Gráfica;
+* Cadastro de dados de conexão dos SGBDs (acesso à estastítica por tabelas).
 
-Dessa forma, foi desenvolvido o PromoAll
+Dessa forma, foi desenvolvido o SGBD Health
 
 
 <img src ="https://github.com/DolphinDatabase/SGBD_Health/blob/main/Images/LogoPNG.png?raw=true" width="300" height="300"/>
 
-##### *Figura 02. Fonte(www.github.com/Doc-Docker/APIMidAll)*
+##### *Figura 02. Fonte(https://github.com/DolphinDatabase/SGBD_Health)*
 
 ### Tecnologias utilizadas:
 
