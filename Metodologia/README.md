@@ -116,13 +116,14 @@ Nector</br>
 
 ![image](https://user-images.githubusercontent.com/80851038/133914328-794317fa-31e1-4279-afb0-d986acb5db45.png)
 ##### *Figura 01. Fonte(www.midall.com.br)*
-
-A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
+Necto Systems foi criada para prover soluções de software.
+A principal ferramenta desde de 2006 é a linguagem Python.
+Participamos de grandes projetos em diferentes áreas, desenvolvendo soluções de software que dão suporte a processos complexos com engenharia de dados e "DataScience"
 
 
 ### Visão do Projeto
 
-Criação de um motor de promoções em um Ecommerce, onde a criação, edição e exclusão de promoções possam ser feitas de forma ágil e intuitiva. Com requisitos funcionais:
+É uma aplicação de monitoramento voltada somente à SGBDs, focada na performance e desempenho. Através da coleta de dados do SGBD (memória, tempo de consultas, espaço em disco, transações, evolução da memória, caches e registros) que influenciam na saúde e manutenção periódica:
 * Interface de cadastro de produtos e promoções;
 * Edição de produtos;
 * Carrinho de compras;
@@ -133,7 +134,8 @@ Criação de um motor de promoções em um Ecommerce, onde a criação, edição
 
 Dessa forma, foi desenvolvido o PromoAll
 
-<img src ="https://github.com/Doc-Docker/APIMidAll/blob/main/Images/logo2promoall.png" width="300" height="300"/>
+
+<img src ="https://github.com/DolphinDatabase/SGBD_Health/blob/main/Images/LogoPNG.png?raw=true" width="300" height="300"/>
 
 ##### *Figura 02. Fonte(www.github.com/Doc-Docker/APIMidAll)*
 
