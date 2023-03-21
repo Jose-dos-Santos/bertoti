@@ -204,38 +204,11 @@ Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/blob/main/api
 
 
 
-* O Framework Spring-Boot foi a principal tecnologia necessária para iniciar o projeto,
-uma ferramenta com muitos rescurso para facilitar o ambiente de programação para que codifica em java.
-Aprendi desde a criação inicial do projeto que é de facil implementação através 
-spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes 
+*O primeiro projeto implementado na linguagem Java, aplicamos o conhecimento aprendido em aula desenvolvendo classes e métodos conforme exigido para o semestre.
 
-
-
-* API REST, também chamada de API RESTful, é uma interface de programação de aplicações (API ou API web) que está em conformidade com as restrições do estilo de arquitetura REST, permitindo a interação com serviços web RESTful. REST é a sigla em inglês para transferência representacional de estado.
-
-  Dentro do desenvolvimento do sistema de E-commerce para a MidAll obtive diversos aprendizados novos, e aprofundei em outros, foram eles:
+* Também foi o primeiro contato com um SGBD no caso PostGreSQL e com a linguagem SQL, realizando a criação do banco de dados e consultas para construir as informações necessárias exigidas no projeto. 
   
-* Desenvolvimento de telas com Angular; </br>
-   Para criação das telas foi utilizado o html e css, além do bootstrap como framework para o frontend. 
-* Desenvolvimento com a linguagem TypeScript; </br>
-   Foi necessário aprender sobre a linguagem TypeScript para criação dos arquivos service para efetivar as requisições HTTP
-* Protocolo HTTP;
-* Requisições GET, POST, PUT e DELETE; </br>
-   Aprendi mais sobre essas requisições e como efetuar elas utilizando o Angular.
-* Criação de um objeto JSON para envio nas requisições;
-* Aprendi como fazer requisições no backend utilizando a api httpClient do Angular;
-* Aprofundamento em aprendizados de banco de dados, DML, DQL, criação arquitetura de tabelas ;   
-* Criação de um projeto em Angular; </br>
-   Foi necessário aprender a estrutura de pastas de um projeto em Angular.</br>
-   
-
-  Os conhecimentos adquiridos em aula foram essencias para desenvolvimento desse projeto, aplicamos os conhecimentos aprendidos para seguir os padrões de arquitetura, torná-lo componentizável e seguindo modos de construção comuns aos utilizados no mercado e comunidade. Criação do banco de dados utilizado na aplicação, seguindo o padrão de chaves primaria e estrangeiras nas tabelas, criação do modelo e entidades do banco. Criação do padrão de pastas tanto no frontend como no backend. Aprendizados dos frameworks utilizados, vue e spring.
-
-
-
-
-
-
+* Outro ponto importante foi realizar a conexão do software desenvolvido com um banco de dados, coletando as entradas através da nossa implementação e armazenado, utilizando esses dados para construir as métricas necessárias para atender os requisitos. 
 
 
 # Projeto 3: 1º semestre de 2022
