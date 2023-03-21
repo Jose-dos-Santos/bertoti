@@ -204,7 +204,7 @@ Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/blob/main/api
 
 
 
-*O primeiro projeto implementado na linguagem Java, aplicamos o conhecimento aprendido em aula desenvolvendo classes e métodos conforme exigido para o semestre.
+* O primeiro projeto implementado na linguagem Java, aplicamos o conhecimento aprendido em aula desenvolvendo classes e métodos conforme exigido para o semestre.
 
 * Também foi o primeiro contato com um SGBD no caso PostGreSQL e com a linguagem SQL, realizando a criação do banco de dados e consultas para construir as informações necessárias exigidas no projeto. 
   
