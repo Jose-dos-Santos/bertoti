@@ -405,59 +405,58 @@ Temos um desafio de sincronização dos dados administrativos, financeiros e ope
 
 <div style="display: inline_block"><br> 
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="100" height="100" />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"  width="100" height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/oracle/oracle-original.svg"  width="100" height="100" />
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width="100" height="100" />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original-wordmark.svg" width="100" height="100"  />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vuejs/vuejs-original.svg" width="100" height="100"  />
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="100" height="100" />
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="100" height="100" />
 </div>
 
 </br>
 
-Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typescript, para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 que é um sistema de gerenciamento de banco de dados relacional em memória
+Para o front-end foi utilizado o Vue.js , para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
 
 
 
 ### Contribuições pessoais
-- Fui responsável pela implementação da lógica do motor de regras da API,
-criei um algoritmo capaz de calcular os valores recebidos como parâmetro, 
-devolvendo como resultado a melhor promoção a ser aplicada
-no carrinho de compras
+- Nesse projeto atuei de forma integral no time do back-end, ajudando na criação das ORMS e toda a estrutura do back, criando algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
 
  <details open><summary>Informações código Back-End</summary>
   
   
-   1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
+   1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
      
    ```java
    
-   public ResponseEntity<?> retornaProdutoPromocao(@RequestBody Integer id, Integer quantidade, Integer total,
-			  Integer categoria) {
+   @Autowired
+	private EquipamentoSerieRepository equipamentoSerieRepository;
 
-		       List<ProductPromotion> promotios = productPromotionRepository.findAll();
-		       List<ProductPromotion> productPromotion = new ArrayList<ProductPromotion>();
+	public Agendamento save(Agendamento agendamento) {
 
-		       Product product = productService.findById(id);
-		       productPromotion.addAll(product.getProductPromotions());
-		       int n = productPromotion.size();
-         
-         
-         return new ResponseEntity<>(desconto, HttpStatus.OK);     
+		Chamado chamado = chamadoRepository.getById(agendamento.getChamadoAgendamento().getId());
+
+		if (chamado.getAgendamento() != null) {
+
+			if (chamado.getAgendamento().getId() != 0) {
+
+				return agendamentoRepository.findById(-1)
+						.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+								"Esse Chamado já possui um agendamento"));
+
+			}
+		}
+   
    ```
    
-   - Esse método foi implementado na camada de service, por questão de organização do projeto.
-     Sendo consumido na camada controller através de um método com uma anotação HTTP, no caso dessa
-     requisição foi utilizado o verbo HttpPost. 
+   - Esse método está na camada service, com a simples tarefa de verificar a tentativa de inserção de um novo Agendamento.
+     Como um agendamento tem relação direta com chamado, sempre que houver uma tentativa de inserção será verificado se existe um chamado existente. 
      
-   - O algoritmo implementado é responsável por receber os parâmetros vindos do front end, 
-      esses parâmetros são filtrados por uma camada de condições, verificando o melhor valor de retorno para uma 
-      determinado produto que esteja em uma promoção, esse retorno é devolvido para camada controller que por sua vez devolve 
-      o resultado para a interface.
+   -Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
 
 
 <details close></summary></summary>
 
-Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
+Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
 - O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
 
 </details>   
