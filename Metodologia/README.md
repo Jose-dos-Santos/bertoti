@@ -399,11 +399,7 @@ Temos um desafio de sincronização dos dados administrativos, financeiros e ope
  * Front-End para entrada e interpretação de dados.
 
 
-Dessa forma, foi desenvolvido o PromoAll
-
-<img src ="https://github.com/Doc-Docker/APIMidAll/blob/main/Images/logo2promoall.png" width="300" height="300"/>
-
-##### *Figura 02. Fonte(https://www.subiter.com/)*
+##### *Figura 02. Fonte(https://github.com/Doc-Docker/APISubiter)*
 
 ### Tecnologias utilizadas:
 
