@@ -392,12 +392,11 @@ A Subiter é uma empresa de base tecnológica especializada em visão infraverme
 
 Temos um desafio de sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados, e confusão na interpretação dos indicadores comerciais e financeiros.
 
-* Interface de cadastro de produtos e promoções;
-* Edição de produtos;
-* Carrinho de compras;
-* Criação de promoções;
-* Categoria de promoções;
-* Listagem de produtos e promoções.
+ * Cadastros de Usuários, Equipamentos e Horários;
+ * Usuários devem ter perfis diferentes (administrador, suporte, cliente);
+ * Registro de chamados;
+ * Acompanhamento de chamados de ponta a ponta;
+ * Front-End para entrada e interpretação de dados.
 
 
 Dessa forma, foi desenvolvido o PromoAll
