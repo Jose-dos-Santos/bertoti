@@ -382,7 +382,7 @@ spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes
  ## Parceiro Acadêmico
 Subiter</br>
 
-![image](https://github.com/Doc-Docker/APISubiter/blob/main/docs/Imagens/logosubiter.png?raw=true)
+![image](https://www.subiter.com/)
 ##### *Figura 01. Fonte(www.midall.com.br)*
 
 A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
