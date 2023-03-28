@@ -372,7 +372,7 @@ spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes
    Foi necessário aprender a estrutura de pastas de um projeto em Angular.</br>
    
 
-  Os conhecimentos adquiridos em aula foram essencias para desenvolvimento desse projeto, aplicamos os conhecimentos aprendidos para seguir os padrões de arquitetura, torná-lo componentizável e seguindo modos de construção comuns aos utilizados no mercado e comunidade. Criação do banco de dados utilizado na aplicação, seguindo o padrão de chaves primaria e estrangeiras nas tabelas, criação do modelo e entidades do banco. Criação do padrão de pastas tanto no frontend como no backend. Aprendizados dos frameworks utilizados, vue e spring.
+  Os conhecimentos adquiridos em aula foram essencias para desenvolvimento desse projeto, aplicamos os conhecimentos aprendidos para seguir os padrões de arquitetura, torná-lo componentizável e seguindo modos de construção comuns aos utilizados no mercado e comunidade. Criação do banco de dados utilizado na aplicação, seguindo o padrão de chaves primaria e estrangeiras nas tabelas, criação do modelo e entidades do banco. Criação do padrão de pastas tanto no frontend como no backend. Aprendizados dos frameworks utilizados, Angular e spring.
 
 
 
@@ -457,48 +457,7 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
 <details close></summary></summary>
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
-- O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
-
-</details>   
-
-- Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
-
- <details open><summary>Informações código Front-End</summary>
-  
-  
-   1. Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
-   
-     
-   ```java
-   
-        this.total = this.noDiscount += (element.price  * element.quantidade);
-
-        this.service.getDiscount(this.id, this.quantidade, this.total, this.categoria).subscribe(
-            response =>
-            { const product : Product = new Product();
-              this.discount = response;
-              this.product.discount = this.discount
-              this.finalPrice = this.finalPrice += (element.price * element.quantidade)-(this.discount)
-              console.log("teste", this.categoria)
-            errorResponse => console.log(errorResponse)
-        })
-    });
-         
-         
-         
-         return new ResponseEntity<>(desconto, HttpStatus.OK);     
-   ```
-   - Esse método é responsável por passar os parâmetros para o back-end, processar a informação e direcionar o retorno para a camada de visualização do usuário,
-  sendo um trecho importante pois enviar dados, processa o retorno e já devolve os resultados para usuário.
-
-     
-
-<details close></summary></summary>
-
-Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-midall/src/app/cart.service.ts) para mais detalhes :)
--O link acima traz detalhes da implementação do método responsável por enviar a requisição para back-end. 
-</details>
-
+- O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
 
 </details>   
 
@@ -506,30 +465,16 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 
 
 
-* O Framework Spring-Boot foi a principal tecnologia necessária para iniciar o projeto,
-uma ferramenta com muitos rescurso para facilitar o ambiente de programação para que codifica em java.
-Aprendi desde a criação inicial do projeto que é de facil implementação através 
+* Framework Spring-Boot, segundo semestre sendo utilizando como a principal tecnologia para back-end,
+uma ferramenta com muitos recursos para facilitar o ambiente de programação para que codifica em java.
+Aprimorei o conhecimento na linguagem java e na utilização desse framework com recursos que facilita muito na construção do projeto 
 spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes 
 
-
-
-* API REST, também chamada de API RESTful, é uma interface de programação de aplicações (API ou API web) que está em conformidade com as restrições do estilo de arquitetura REST, permitindo a interação com serviços web RESTful. REST é a sigla em inglês para transferência representacional de estado.
-
-  Dentro do desenvolvimento do sistema de E-commerce para a MidAll obtive diversos aprendizados novos, e aprofundei em outros, foram eles:
+* API REST, também foi aprimorado o conhecimento nesse recurso da programação, trabalhando pelo segundo semestre consecutivo com essa tecnologia, que padroniza a forma que os dados são trafegados entre o cliente e servidor.
   
-* Desenvolvimento de telas com Angular; </br>
-   Para criação das telas foi utilizado o html e css, além do bootstrap como framework para o frontend. 
-* Desenvolvimento com a linguagem TypeScript; </br>
-   Foi necessário aprender sobre a linguagem TypeScript para criação dos arquivos service para efetivar as requisições HTTP
-* Protocolo HTTP;
-* Requisições GET, POST, PUT e DELETE; </br>
-   Aprendi mais sobre essas requisições e como efetuar elas utilizando o Angular.
-* Criação de um objeto JSON para envio nas requisições;
-* Aprendi como fazer requisições no backend utilizando a api httpClient do Angular;
-* Aprofundamento em aprendizados de banco de dados, DML, DQL, criação arquitetura de tabelas ;   
-* Criação de um projeto em Angular; </br>
-   Foi necessário aprender a estrutura de pastas de um projeto em Angular.</br>
-   
+* Security, nesse projeto foi implementado a camada de segurança da aplicação, tivemos nosso primeiro contato com um dos requisitos mais importante de qualquer software.
+
+* Oracle cloud, o banco de dados da nossa aplicação foi disponibilizado em nuvem, sendo nosso primeiro desafio de armazenar dados fora do nosso ambiente local.
 
   Os conhecimentos adquiridos em aula foram essencias para desenvolvimento desse projeto, aplicamos os conhecimentos aprendidos para seguir os padrões de arquitetura, torná-lo componentizável e seguindo modos de construção comuns aos utilizados no mercado e comunidade. Criação do banco de dados utilizado na aplicação, seguindo o padrão de chaves primaria e estrangeiras nas tabelas, criação do modelo e entidades do banco. Criação do padrão de pastas tanto no frontend como no backend. Aprendizados dos frameworks utilizados, vue e spring.
 
