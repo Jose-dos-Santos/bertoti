@@ -295,8 +295,6 @@ no carrinho de compras
       o resultado para a interface.
 
 
-<details close></summary></summary>
-
 Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
 - O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
 
@@ -453,8 +451,6 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
      
    - Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
 
-
-<details close></summary></summary>
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
 * O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
