@@ -451,13 +451,13 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
    - Esse método está na camada service, com a simples tarefa de verificar a tentativa de inserção de um novo Agendamento.
      Como um agendamento tem relação direta com chamado, sempre que houver uma tentativa de inserção será verificado se existe um chamado existente. 
      
-   -Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
+   - Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
 
 
 <details close></summary></summary>
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
-- O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
+* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
 
 </details>   
 
@@ -476,5 +476,5 @@ spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes
 
 * Oracle cloud, o banco de dados da nossa aplicação foi disponibilizado em nuvem, sendo nosso primeiro desafio de armazenar dados fora do nosso ambiente local.
 
-  Os conhecimentos adquiridos em aula foram essencias para desenvolvimento desse projeto, aplicamos os conhecimentos aprendidos para seguir os padrões de arquitetura, torná-lo componentizável e seguindo modos de construção comuns aos utilizados no mercado e comunidade. Criação do banco de dados utilizado na aplicação, seguindo o padrão de chaves primaria e estrangeiras nas tabelas, criação do modelo e entidades do banco. Criação do padrão de pastas tanto no frontend como no backend. Aprendizados dos frameworks utilizados, vue e spring.
+ 
 
