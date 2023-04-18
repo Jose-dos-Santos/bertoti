@@ -57,7 +57,7 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
  <details open><summary>Informações código Back-End</summary>
   
   
-   1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
+   1. Função responsavel por coletar informações do investimento.
      
    ```py
    
@@ -93,18 +93,43 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 	
 </details>
 
-   <details close></summary></summary>
+<details close></summary></summary>
    
    - O método foi implementado para facilitar o usuário no início do investimento, simulando o quanto seu investimento renderia em um determinado período de aplicação. 
      
    - Esse algoritmo recebe os inputs digitados e sua resposta é através de um comando de voz.
+   
+   - Também criamos uma função responsavel por retonar uma mensagem de erro caso a aplicação não compreenda a pergunda realizada. 
+   
 </details>
+
+
+<details open><summary>Metas</summary>
+    1. Função para calcular as metas.
+     
+   ```py
+	def metas():
+
+	   sai_som('Quanto deseja investir? ')
+	   num1 = float(input(''))
+
+	   sai_som('Quanto deseja alcançar? ')
+	   num2 = float(input(''))
+
+	   Vf=  num2 / num1
+	   sai_som(f'Você vai alcançar R${num2:.2f} em cerca de {Vf:.2f} meses se investir R${num1:.2f} por mês! ')
+   ```
+
+</details>
+
 
 ### Aprendizados Efetivos 
 
 * Primeiro contato com uma linguagem de programação, que no nosso caso foi Python.
 * Conhecendo e entendendo a metodologia agil, através do Scrum.
-* Entendendo a importancia de trabalhar em equipe.
+* Utilizamos o paradigma de programação imperativo, costruindo nosso projeto de forma estrutural.
+* Iniciei o aprendizado referente a logica de programação, buscando encontrando a melhor maneira computacional para resolver um problema.
+* Intrudução as primeiras estrudura de dados utilizada em um projeto, no caso utilizando a linguagem python.
 
 # Projeto 2: 2º semestre de 2022
  
@@ -161,6 +186,7 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 
 ### Contribuições pessoais
 - Fui responsável pela implementação do algoritmo que parametriza as informações vindas do banco e com esses parâmetros salva os resultados no formato csv.
+
  <details open><summary>Informações código Back-End</summary>
   
   
