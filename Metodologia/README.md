@@ -527,6 +527,32 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 </details> 
 
 
+<details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
+     
+   ```java
+   
+	  @PreAuthorize("hasAnyRole('CLIENT', 'SUPORTE')")
+	    @PatchMapping("/{id}")
+	    @JsonView(View.ChamadoView.class)
+	    public Chamado updateChamadoById(@PathVariable Integer id, @RequestBody Chamado chamado){
+
+		return chamadoService.updateChamadoById(id, chamado);
+	    }
+
+   ```
+   
+* Esse código apresenta uma implementação de segurança por meio do uso da anotação @PreAuthorize, que permite limitar o acesso aos endpoints da API somente a usuários com permissões específicas. No caso desse método, somente usuários com as roles "CLIENT" ou "SUPORTE" têm acesso ao endpoint.
+
+* Além disso, a anotação @PatchMapping é utilizada para indicar que esse endpoint está preparado para receber requisições HTTP do tipo PATCH, que permitem a atualização parcial de recursos existentes. Já a anotação @JsonView é utilizada para limitar o conteúdo da resposta à visualização definida na classe View.ChamadoView.
+
+* Por fim, o método chama o serviço chamadoService.updateChamadoById, que é responsável por atualizar um chamado existente no banco de dados com as informações passadas no corpo da requisição.
+
+</details> 
+
+
 ### Aprendizados Efetivos 
 
 
