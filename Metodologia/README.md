@@ -466,16 +466,14 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 
 
 
-* Framework Spring-Boot, segundo semestre sendo utilizando como a principal tecnologia para back-end,
-uma ferramenta com muitos recursos para facilitar o ambiente de programação para que codifica em java.
-Aprimorei o conhecimento na linguagem java e na utilização desse framework com recursos que facilita muito na construção do projeto 
-spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes 
+* O Framework Spring-Boot foi utilizado como a principal tecnologia para back-end, sendo uma ferramenta que oferece diversos recursos para facilitar o ambiente de programação em Java. O aprendizado foi aprimorado em relação à linguagem Java e à utilização desse framework, que apresenta recursos que facilitam muito a construção do projeto, por meio do Spring Initializr [start.spring.io](https://start.spring.io/) para mais detalhes.
 
-* API REST, também foi aprimorado o conhecimento nesse recurso da programação, trabalhando pelo segundo semestre consecutivo com essa tecnologia, que padroniza a forma que os dados são trafegados entre o cliente e servidor.
-  
-* Security, nesse projeto foi implementado a camada de segurança da aplicação, tivemos nosso primeiro contato com um dos requisitos mais importante de qualquer software.
+* Aprendemos a aprimorar o conhecimento na API REST, que é um recurso da programação que trabalhamos pelo segundo semestre consecutivo. Essa tecnologia padroniza a forma que os dados são trafegados entre o cliente e o servidor.
 
-* Oracle cloud, o banco de dados da nossa aplicação foi disponibilizado em nuvem, sendo nosso primeiro desafio de armazenar dados fora do nosso ambiente local.
+* Foi implementada a camada de segurança da aplicação no projeto, por meio do aprendizado e entendimento da importância dos requisitos de segurança em qualquer software.
 
+* O banco de dados da aplicação foi disponibilizado na Oracle Cloud, o que representou o primeiro desafio de armazenar dados fora do ambiente local.
+
+* Aprendemos e entendemos a importância dos padrões de projetos em uma aplicação, aplicando o conhecimento adquirido para tornar nosso projeto seguindo as boas práticas de Pattern.
  
 
