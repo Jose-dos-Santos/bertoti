@@ -462,6 +462,65 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 
 </details>   
 
+ <details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
+     
+   ```java
+   
+   public Chamado updateChamadoById(Integer id, Chamado chamado) {
+		Chamado chamadoSelector = this.getChamadoById(id);
+		String Ns = "";
+		if(chamadoSelector.getAgendamento() != null) {
+			Ns = chamadoSelector.getAgendamento().getNumerosSerie();
+		}
+		
+
+		EquipamentoSerie equipamentoSerie = this.equipamentoSerie.getById(Ns);
+
+		if (chamado.getSituacaoChamado().equals("F") || chamado.getSituacaoChamado().equals("f")) {
+
+			equipamentoSerie.setDisponibilidade(true);
+			chamadoSelector.setEncerramentoChamado(LocalDate.now());
+			this.equipamentoSerie.save(equipamentoSerie);
+
+		}
+
+		chamadoSelector.setCriticidadeChamado(chamado.getCriticidadeChamado());
+
+		chamadoSelector.setDataChamado(chamado.getDataChamado());
+
+		chamadoSelector.setDescricaoChamado(chamado.getDescricaoChamado());
+
+		chamadoSelector.setSituacaoChamado(chamado.getSituacaoChamado());
+
+		chamadoSelector.setSolucaoChamado(chamado.getSolucaoChamado());
+
+		
+
+		return chamadoRepository.save(chamadoSelector);
+	}
+   
+   ```
+   
+* Verificação da disponibilidade do equipamento: <br>
+O método inicia com uma verificação da disponibilidade do equipamento associado ao chamado, por meio do número de série (variável "Ns"). Caso o agendamento do chamado já tenha um número de série definido, esse valor é atribuído à variável "Ns". Em seguida, é feita uma busca no banco de dados pelo equipamento com o número de série informado.<br>
+Se a situação do chamado informada for "F" ou "f" (ou seja, o chamado está sendo finalizado), o equipamento é marcado como disponível e a data de encerramento do chamado é definida como a data atual. Em seguida, é feito o salvamento do equipamento no banco de dados.
+
+* Atualização das informações do chamado: <br>
+Após a verificação da disponibilidade do equipamento, são atualizadas as informações do chamado com base nos valores informados pelo usuário. As informações atualizadas incluem a criticidade do chamado, a data do chamado, a descrição do chamado, a situação do chamado e a solução do chamado.
+
+* Salvamento das alterações no banco de dados: <br>
+Por fim, o método realiza o salvamento das informações atualizadas no banco de dados e retorna o objeto do tipo Chamado atualizado.
+
+
+Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
+* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
+
+</details> 
+
+
 ### Aprendizados Efetivos 
 
 
