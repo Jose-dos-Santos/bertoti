@@ -91,18 +91,17 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
               
    ```
 	
+  * O método foi desenvolvido para prover uma experiência de usuário mais intuitiva durante o processo de inicialização do investimento, simulando a rentabilidade do      investimento em um período definido.
+	
+  * Este algoritmo recebe entradas de dados inseridas pelo usuário e responde por meio de uma saída de voz.
+	
+  *  Adicionalmente, foi criada uma função que trata possíveis erros ou perguntas incompreensíveis, retornando uma mensagem de erro personalizada para o usuário.
+	
 </details>
 
-<details close></summary></summary>
    
-   - O método foi implementado para facilitar o usuário no início do investimento, simulando o quanto seu investimento renderia em um determinado período de aplicação. 
-     
-   - Esse algoritmo recebe os inputs digitados e sua resposta é através de um comando de voz.
+  
    
-   - Também criamos uma função responsavel por retonar uma mensagem de erro caso a aplicação não compreenda a pergunda realizada. 
-   
-</details>
-
 
 <details open><summary>Metas</summary>
     1. Função para calcular as metas.
@@ -119,7 +118,14 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 	   Vf=  num2 / num1
 	   sai_som(f'Você vai alcançar R${num2:.2f} em cerca de {Vf:.2f} meses se investir R${num1:.2f} por mês! ')
    ```
+ 
+A função "metas" é um algoritmo simples que tem como objetivo calcular o tempo necessário para alcançar uma meta de investimento mensal com base no valor a ser investido e na meta a ser alcançada. A função pode ser dividida em dois tópicos:
 
+* Inputs e cálculos: <br>
+A função começa solicitando ao usuário o valor que deseja investir e o valor que deseja alcançar. Esses valores são armazenados nas variáveis num1 e num2, respectivamente. Em seguida, é feito um cálculo simples para determinar o tempo necessário para alcançar a meta, com base na razão entre o valor desejado e o valor a ser investido mensalmente. O resultado é armazenado na variável Vf.
+
+* Output:<br>
+Por fim, a função imprime uma mensagem informando ao usuário quanto tempo será necessário para alcançar a meta, considerando o valor investido mensalmente. A mensagem é impressa com a função sai_som, que converte a mensagem em áudio, além de ser impressa no console.
 </details>
 
 
@@ -465,7 +471,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
  <details open><summary>Informações código Back-End</summary>
   
   
-   1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
+   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
      
    ```java
    
@@ -515,7 +521,7 @@ Após a verificação da disponibilidade do equipamento, são atualizadas as inf
 Por fim, o método realiza o salvamento das informações atualizadas no banco de dados e retorna o objeto do tipo Chamado atualizado.
 
 
-Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
+Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/ChamadoService.java) para mais detalhes :)
 * O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
 
 </details> 
@@ -529,10 +535,10 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 
 * Aprendemos a aprimorar o conhecimento na API REST, que é um recurso da programação que trabalhamos pelo segundo semestre consecutivo. Essa tecnologia padroniza a forma que os dados são trafegados entre o cliente e o servidor.
 
-* Foi implementada a camada de segurança da aplicação no projeto, por meio do aprendizado e entendimento da importância dos requisitos de segurança em qualquer software.
+* A implementação da camada de segurança da aplicação foi um passo importante para garantir a proteção dos dados e informações dos usuários. Aprendi sobre as melhores práticas de segurança, como criptografia de dados, controle de acesso, autenticação e autorização. Com isso, foi possível criar um ambiente mais seguro e confiável para os usuários, minimizando riscos de ataques e vazamentos de dados.
 
-* O banco de dados da aplicação foi disponibilizado na Oracle Cloud, o que representou o primeiro desafio de armazenar dados fora do ambiente local.
+* O armazenamento do banco de dados na Oracle Cloud foi um grande desafio, mas trouxe muitos benefícios, como a facilidade de gerenciamento e a alta disponibilidade dos dados. Para garantir a segurança dos dados, aprendi sobre a configuração de políticas de segurança, backup e recuperação de dados, além de ter conhecimentos em gerenciamento de infraestrutura em nuvem.
 
-* Aprendemos e entendemos a importância dos padrões de projetos em uma aplicação, aplicando o conhecimento adquirido para tornar nosso projeto seguindo as boas práticas de Pattern.
+* Aprendi sobre a importância dos padrões de projetos, que são soluções pré-definidas para problemas comuns de desenvolvimento de software. Com a aplicação desses padrões em nosso projeto, foi possível melhorar a manutenibilidade, escalabilidade e modularidade do código, tornando-o mais organizado e fácil de entender. Isso resultou em um código mais eficiente, redução de erros e melhor qualidade de software em geral.
  
 
