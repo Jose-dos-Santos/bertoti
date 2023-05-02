@@ -125,11 +125,11 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 
 ### Aprendizados Efetivos 
 
-* Primeiro contato com uma linguagem de programação, que no nosso caso foi Python.
-* Conhecendo e entendendo a metodologia agil, através do Scrum.
-* Utilizamos o paradigma de programação imperativo, costruindo nosso projeto de forma estrutural.
-* Iniciei o aprendizado referente a logica de programação, buscando encontrando a melhor maneira computacional para resolver um problema.
-* Intrudução as primeiras estrudura de dados utilizada em um projeto, no caso utilizando a linguagem python.
+* O primeiro contato com uma linguagem de programação ocorreu por meio do uso do Python.
+* Foi realizada a compreensão da metodologia ágil Scrum, buscando entender e aplicar seus conceitos.
+* O paradigma de programação imperativo foi adotado na construção do projeto, seguindo uma abordagem estrutural.
+* Foi iniciado o aprendizado da lógica de programação, buscando encontrar a melhor solução computacional para a resolução de problemas.
+* Houve a introdução às primeiras estruturas de dados utilizadas no projeto, tendo como base a linguagem Python.
 
 # Projeto 2: 2º semestre de 2022
  
@@ -230,12 +230,10 @@ Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/blob/main/api
 ### Aprendizados Efetivos 
 
 
-
-* O primeiro projeto implementado na linguagem Java, aplicamos o conhecimento aprendido em aula desenvolvendo classes e métodos conforme exigido para o semestre.
-
-* Também foi o primeiro contato com um SGBD no caso PostGreSQL e com a linguagem SQL, realizando a criação do banco de dados e consultas para construir as informações necessárias exigidas no projeto. 
-  
-* Outro ponto importante foi realizar a conexão do software desenvolvido com um banco de dados, coletando as entradas através da nossa implementação e armazenado, utilizando esses dados para construir as métricas necessárias para atender os requisitos. 
+* O projeto inaugural de desenvolvimento em Java consistiu em aplicar os conceitos aprendidos em aula para implementar classes e métodos, seguindo as exigências do semestre.
+* Durante esse período, foi adotado o paradigma de programação orientada a objetos (POO) para desenvolver o projeto, conhecendo e aplicando seus conceitos.
+* Esse foi o primeiro contato com um sistema gerenciador de banco de dados (SGBD), especificamente o PostGreSQL, e com a linguagem SQL. Nesse sentido, foi realizada a criação do banco de dados e a construção de consultas para atender aos requisitos do projeto.
+* Outro aspecto relevante foi a conexão do software desenvolvido com o banco de dados, possibilitando a coleta de entradas por meio da implementação e o armazenamento desses dados. Com base nesses dados, foram construídas as métricas necessárias para atender às exigências do projeto.
 
 
 # Projeto 3: 1º semestre de 2022
@@ -370,33 +368,14 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 ### Aprendizados Efetivos 
 
 
+* O Framework Spring-Boot foi a tecnologia principal utilizada para iniciar o projeto, oferecendo diversos recursos para facilitar o ambiente de programação ao codificar em Java. Foi utilizado o Spring Initializr (start.spring.io) para criar o projeto inicial com facilidade.
+* API REST, também conhecida como API RESTful, é uma interface de programação de aplicações que segue as restrições do estilo de arquitetura REST, permitindo interação com serviços web RESTful. REST significa Transferência Representacional de Estado.
+* No desenvolvimento do sistema de E-commerce para a MidAll, foi possível adquirir novos aprendizados e aprofundar outros, incluindo o desenvolvimento de telas com Angular, utilizando HTML e CSS, além do framework Bootstrap para o frontend.
+* Também foi necessário aprender sobre a linguagem TypeScript para criar os arquivos service e efetivar as requisições HTTP, além de aprofundar conhecimentos sobre o protocolo HTTP e as requisições GET, POST, PUT e DELETE.
+* Outros aprendizados incluíram a criação de um objeto JSON para envio nas requisições, como fazer requisições no backend utilizando a API httpClient do Angular e aprofundamento em aprendizados de banco de dados, DML, DQL e criação de arquitetura de tabelas.
+* A criação do projeto em Angular exigiu conhecimento sobre a estrutura de pastas utilizada na plataforma.
 
-* O Framework Spring-Boot foi a principal tecnologia necessária para iniciar o projeto,
-uma ferramenta com muitos rescurso para facilitar o ambiente de programação para que codifica em java.
-Aprendi desde a criação inicial do projeto que é de facil implementação através 
-spring initializr [start.spring.io](https://start.spring.io/) para mais detalhes 
-
-
-
-* API REST, também chamada de API RESTful, é uma interface de programação de aplicações (API ou API web) que está em conformidade com as restrições do estilo de arquitetura REST, permitindo a interação com serviços web RESTful. REST é a sigla em inglês para transferência representacional de estado.
-
-  Dentro do desenvolvimento do sistema de E-commerce para a MidAll obtive diversos aprendizados novos, e aprofundei em outros, foram eles:
-  
-* Desenvolvimento de telas com Angular; </br>
-   Para criação das telas foi utilizado o html e css, além do bootstrap como framework para o frontend. 
-* Desenvolvimento com a linguagem TypeScript; </br>
-   Foi necessário aprender sobre a linguagem TypeScript para criação dos arquivos service para efetivar as requisições HTTP
-* Protocolo HTTP;
-* Requisições GET, POST, PUT e DELETE; </br>
-   Aprendi mais sobre essas requisições e como efetuar elas utilizando o Angular.
-* Criação de um objeto JSON para envio nas requisições;
-* Aprendi como fazer requisições no backend utilizando a api httpClient do Angular;
-* Aprofundamento em aprendizados de banco de dados, DML, DQL, criação arquitetura de tabelas ;   
-* Criação de um projeto em Angular; </br>
-   Foi necessário aprender a estrutura de pastas de um projeto em Angular.</br>
-   
-
-  Os conhecimentos adquiridos em aula foram essencias para desenvolvimento desse projeto, aplicamos os conhecimentos aprendidos para seguir os padrões de arquitetura, torná-lo componentizável e seguindo modos de construção comuns aos utilizados no mercado e comunidade. Criação do banco de dados utilizado na aplicação, seguindo o padrão de chaves primaria e estrangeiras nas tabelas, criação do modelo e entidades do banco. Criação do padrão de pastas tanto no frontend como no backend. Aprendizados dos frameworks utilizados, Angular e spring.
+Os conhecimentos adquiridos em aula foram fundamentais para o desenvolvimento do projeto, incluindo a aplicação dos padrões de arquitetura, tornando-o componentizável e seguindo modos de construção comuns utilizados no mercado e comunidade. Também foi necessário criar o banco de dados utilizado na aplicação, seguindo o padrão de chaves primárias e estrangeiras nas tabelas, bem como a criação do modelo e entidades do banco. Aprendizados sobre os frameworks utilizados, Angular e Spring, também foram importantes para o sucesso do projeto.
 
 
 
