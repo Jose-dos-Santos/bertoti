@@ -324,8 +324,12 @@ no carrinho de compras
       determinado produto que esteja em uma promoção, esse retorno é devolvido para camada controller que por sua vez devolve 
       o resultado para a interface.
 
+</details>  
 
- 2. Validação da promoção a ser aplicada no carrinho.
+
+<details open><summary></summary>
+
+2. Validação da promoção a ser aplicada no carrinho.
    
    ```java
    
@@ -374,13 +378,13 @@ no carrinho de compras
 		}
    ``` 
 	
-   - O objetivo deste método é analisar as promoções presentes no carrinho de compras e aplicar
+   * O objetivo deste método é analisar as promoções presentes no carrinho de compras e aplicar
      validações para atribuir o melhor desconto possível a um determinado produto.
 	
-   - Com base nos dados recebidos nos parâmetros, este método calcula e retorna o valor máximo do desconto para um produto, 
+   * Com base nos dados recebidos nos parâmetros, este método calcula e retorna o valor máximo do desconto para um produto, 
      considerando as promoções disponíveis e as regras estabelecidas.
 	
-   - Uma outra validação é que o produto estando em mais de uma promoção após passar por esse método, será devolvido como retorno 
+   * Uma outra validação é que o produto estando em mais de uma promoção após passar por esse método, será devolvido como retorno 
      a melhor promoção que se aplica para esse produto.
 
 Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
