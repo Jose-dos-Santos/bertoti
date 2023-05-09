@@ -325,6 +325,64 @@ no carrinho de compras
       o resultado para a interface.
 
 
+ 2. Validação da promoção a ser aplicada no carrinho.
+   
+   ```java
+   
+   public ResponseEntity<?> retornaProdutoPromocao(@RequestBody Integer id, Integer quantidade, Integer total,
+			Integer categoria) {
+
+		List<ProductPromotion> promotios = productPromotionRepository.findAll();
+
+		List<ProductPromotion> productPromotion = new ArrayList<ProductPromotion>();
+
+		Product product = productService.findById(id);
+
+		productPromotion.addAll(product.getProductPromotions());
+		int n = productPromotion.size();
+
+		int i = 0;
+		Double desconto = 0.0;
+		Double valor = 0.0;
+		Double valor2 = 0.0;
+
+		if (total > 0) {
+			System.out.println("Total");
+			for (ProductPromotion promocao : promotios) {
+				System.out.println("Total");
+				if (promocao.getReceivePromotion().getCode() == 2 && total > promocao.getTotalCompra()) {
+					if (promocao.getTypePromotion().getCode() == 1) {
+						valor2 = promocao.getDiscount();
+
+						if (valor2 > valor) {
+							desconto = valor2;
+
+						}
+					}
+
+					if (promocao.getTypePromotion().getCode() == 2) {
+						valor2 = ((promocao.getDiscount() / 100) *  total );
+
+						if (valor2 > valor) {
+							desconto = valor2;
+
+						}
+						System.out.println(desconto);
+					}
+				}
+			}
+		}
+   ``` 
+	
+   - O objetivo deste método é analisar as promoções presentes no carrinho de compras e aplicar
+     validações para atribuir o melhor desconto possível a um determinado produto.
+	
+   - Com base nos dados recebidos nos parâmetros, este método calcula e retorna o valor máximo do desconto para um produto, 
+     considerando as promoções disponíveis e as regras estabelecidas.
+	
+   - Uma outra validação é que o produto estando em mais de uma promoção após passar por esse método, será devolvido como retorno 
+     a melhor promoção que se aplica para esse produto.
+
 Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
 - O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
 
