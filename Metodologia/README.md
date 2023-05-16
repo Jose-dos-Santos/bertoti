@@ -230,6 +230,33 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 	
    - Também foi utilizado a manipulação de array e formataçõa de string para que o retorno se enquadrace no resultado espedo.	
 	
+    ```java	
+	        package conectar;
+
+		import java.io.IOException;
+		import java.sql.Connection;
+		import java.util.logging.Level;
+		import java.util.logging.Logger;
+
+		public class Conn {
+
+			public static Connection getConnection() {
+
+				Fileconnect connect = new Fileconnect();
+				try {
+					return connect.read();
+
+				}catch (IOException ex) {
+					Logger.getLogger(Conn.class.getName()).log(Level.SEVERE,null,ex);
+				}
+
+				return null;
+			}
+
+
+		}
+	 
+	```
 
 Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/blob/main/api1.2/src/conectar/Csv.java) para mais detalhes :)
 - O link acima traz detalhes da implementação do algoritmo
