@@ -228,10 +228,14 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 	
    - Esse algoritmo valida as informações de retorno da query, padronizando esse resultado conforme número de colunas e linhas, para ser salvo no formato csv.
 	
-   - Também foi utilizado a manipulação de array e formataçõa de string para que o retorno se enquadrace no resultado espedo.	
+   - Também foi utilizado a manipulação de array e formataçõa de string para que o retorno se enquadrace no resultado espedo.
+	  
 </details>
 	
+	
 <details open><summary></summary>
+	
+	
     ```java	
 	        package conectar;
 
@@ -259,7 +263,9 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 		}
 	 
 	```
+	
 </details>
+	
 Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/blob/main/api1.2/src/conectar/Csv.java) para mais detalhes :)
 - O link acima traz detalhes da implementação do algoritmo
 
