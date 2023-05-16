@@ -224,8 +224,11 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 					st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
 							quantidadeColuna[i - 1]);    
    ```
-   
-   - Esse algoritmo valida as informações de retorno da query, padronizando esse resultado conforme número de colunas e linhas, para ser salvo no formato csv. 
+   - Apicamos o conhecimentos de como lidar com bloco de condições else if, validando as possiveis entrada de dados e realizado o tratamento	
+	
+   - Esse algoritmo valida as informações de retorno da query, padronizando esse resultado conforme número de colunas e linhas, para ser salvo no formato csv.
+	
+   - Também foi utilizado a manipulação de array e formataçõa de string para que o retorno se enquadrace no resultado espedo.	
 	
 
 Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/blob/main/api1.2/src/conectar/Csv.java) para mais detalhes :)
