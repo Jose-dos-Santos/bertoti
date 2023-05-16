@@ -266,7 +266,7 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 	
 </details>
 	
-Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/blob/main/api1.2/src/conectar/Csv.java) para mais detalhes :)
+Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/tree/main/api1.2/src/conectar) para mais detalhes :)
 - O link acima traz detalhes da implementação do algoritmo
 
 </details>
