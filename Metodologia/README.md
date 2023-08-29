@@ -667,5 +667,556 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 * O armazenamento do banco de dados na Oracle Cloud foi um grande desafio, mas trouxe muitos benefícios, como a facilidade de gerenciamento e a alta disponibilidade dos dados. Para garantir a segurança dos dados, aprendi sobre a configuração de políticas de segurança, backup e recuperação de dados, além de ter conhecimentos em gerenciamento de infraestrutura em nuvem.
 
 * Aprendi sobre a importância dos padrões de projetos, que são soluções pré-definidas para problemas comuns de desenvolvimento de software. Com a aplicação desses padrões em nosso projeto, foi possível melhorar a manutenibilidade, escalabilidade e modularidade do código, tornando-o mais organizado e fácil de entender. Isso resultou em um código mais eficiente, redução de erros e melhor qualidade de software em geral.
+
+
+ # Projeto 4: 2º semestre de 2022
  
+ 
+ ## Parceiro Acadêmico
+Subiter</br>
+
+![image](https://github.com/Doc-Docker/APISubiter/blob/main/docs/Imagens/logosubiter.png?raw=true)
+##### *Figura 01. Fonte(https://www.subiter.com/)*
+
+A Subiter é uma empresa de base tecnológica especializada em visão infravermelha. Nossa missão é ajudar a indústria a alcançar excelência em seus processos produtivos. Por meio de sistemas inteligentes de inspeção e monitoramento, podemos observar fenômenos que estão além da capacidade dos olhos humanos.
+
+
+### Visão do Projeto
+
+Temos um desafio de sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados, e confusão na interpretação dos indicadores comerciais e financeiros.
+
+ * Cadastros de Usuários, Equipamentos e Horários;
+ * Usuários devem ter perfis diferentes (administrador, suporte, cliente);
+ * Registro de chamados;
+ * Acompanhamento de chamados de ponta a ponta;
+ * Front-End para entrada e interpretação de dados.
+
+
+##### *Figura 02. Fonte(https://github.com/Doc-Docker/APISubiter)*
+
+### Tecnologias utilizadas:
+
+<div style="display: inline_block"><br> 
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="100" height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/oracle/oracle-original.svg"  width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width="100" height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vuejs/vuejs-original.svg" width="100" height="100"  />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="100" height="100" />
+</div>
+
+</br>
+
+Para o front-end foi utilizado o Vue.js , para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
+
+
+
+### Contribuições pessoais
+- Nesse projeto atuei de forma integral no time do back-end, ajudando na criação das ORMS e toda a estrutura do back, criando algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
+
+ <details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
+     
+   ```java
+   
+   @Autowired
+	private EquipamentoSerieRepository equipamentoSerieRepository;
+
+	public Agendamento save(Agendamento agendamento) {
+
+		Chamado chamado = chamadoRepository.getById(agendamento.getChamadoAgendamento().getId());
+
+		if (chamado.getAgendamento() != null) {
+
+			if (chamado.getAgendamento().getId() != 0) {
+
+				return agendamentoRepository.findById(-1)
+						.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+								"Esse Chamado já possui um agendamento"));
+
+			}
+		}
+   
+   ```
+   
+   - Esse método está na camada service, com a simples tarefa de verificar a tentativa de inserção de um novo Agendamento.
+     Como um agendamento tem relação direta com chamado, sempre que houver uma tentativa de inserção será verificado se existe um chamado existente. 
+     
+   - Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
+
+
+Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
+* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
+
+</details>   
+
+ <details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
+     
+   ```java
+   
+   public Chamado updateChamadoById(Integer id, Chamado chamado) {
+		Chamado chamadoSelector = this.getChamadoById(id);
+		String Ns = "";
+		if(chamadoSelector.getAgendamento() != null) {
+			Ns = chamadoSelector.getAgendamento().getNumerosSerie();
+		}
+		
+
+		EquipamentoSerie equipamentoSerie = this.equipamentoSerie.getById(Ns);
+
+		if (chamado.getSituacaoChamado().equals("F") || chamado.getSituacaoChamado().equals("f")) {
+
+			equipamentoSerie.setDisponibilidade(true);
+			chamadoSelector.setEncerramentoChamado(LocalDate.now());
+			this.equipamentoSerie.save(equipamentoSerie);
+
+		}
+
+		chamadoSelector.setCriticidadeChamado(chamado.getCriticidadeChamado());
+
+		chamadoSelector.setDataChamado(chamado.getDataChamado());
+
+		chamadoSelector.setDescricaoChamado(chamado.getDescricaoChamado());
+
+		chamadoSelector.setSituacaoChamado(chamado.getSituacaoChamado());
+
+		chamadoSelector.setSolucaoChamado(chamado.getSolucaoChamado());
+
+		
+
+		return chamadoRepository.save(chamadoSelector);
+	}
+   
+   ```
+   
+* Verificação da disponibilidade do equipamento: <br>
+O método inicia com uma verificação da disponibilidade do equipamento associado ao chamado, por meio do número de série (variável "Ns"). Caso o agendamento do chamado já tenha um número de série definido, esse valor é atribuído à variável "Ns". Em seguida, é feita uma busca no banco de dados pelo equipamento com o número de série informado.<br>
+Se a situação do chamado informada for "F" ou "f" (ou seja, o chamado está sendo finalizado), o equipamento é marcado como disponível e a data de encerramento do chamado é definida como a data atual. Em seguida, é feito o salvamento do equipamento no banco de dados.
+
+* Atualização das informações do chamado: <br>
+Após a verificação da disponibilidade do equipamento, são atualizadas as informações do chamado com base nos valores informados pelo usuário. As informações atualizadas incluem a criticidade do chamado, a data do chamado, a descrição do chamado, a situação do chamado e a solução do chamado.
+
+* Salvamento das alterações no banco de dados: <br>
+Por fim, o método realiza o salvamento das informações atualizadas no banco de dados e retorna o objeto do tipo Chamado atualizado.
+
+
+Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/ChamadoService.java) para mais detalhes :)
+* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
+
+</details> 
+
+
+<details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
+     
+   ```java
+   
+	  @PreAuthorize("hasAnyRole('CLIENT', 'SUPORTE')")
+	    @PatchMapping("/{id}")
+	    @JsonView(View.ChamadoView.class)
+	    public Chamado updateChamadoById(@PathVariable Integer id, @RequestBody Chamado chamado){
+
+		return chamadoService.updateChamadoById(id, chamado);
+	    }
+
+   ```
+   
+* Esse código apresenta uma implementação de segurança por meio do uso da anotação @PreAuthorize, que permite limitar o acesso aos endpoints da API somente a usuários com permissões específicas. No caso desse método, somente usuários com as roles "CLIENT" ou "SUPORTE" têm acesso ao endpoint.
+
+* Além disso, a anotação @PatchMapping é utilizada para indicar que esse endpoint está preparado para receber requisições HTTP do tipo PATCH, que permitem a atualização parcial de recursos existentes. Já a anotação @JsonView é utilizada para limitar o conteúdo da resposta à visualização definida na classe View.ChamadoView.
+
+* Por fim, o método chama o serviço chamadoService.updateChamadoById, que é responsável por atualizar um chamado existente no banco de dados com as informações passadas no corpo da requisição.
+
+</details> 
+
+
+### Aprendizados Efetivos 
+
+
+
+* O Framework Spring-Boot foi utilizado como a principal tecnologia para back-end, sendo uma ferramenta que oferece diversos recursos para facilitar o ambiente de programação em Java. O aprendizado foi aprimorado em relação à linguagem Java e à utilização desse framework, que apresenta recursos que facilitam muito a construção do projeto, por meio do Spring Initializr [start.spring.io](https://start.spring.io/) para mais detalhes.
+
+* Aprendemos a aprimorar o conhecimento na API REST, que é um recurso da programação que trabalhamos pelo segundo semestre consecutivo. Essa tecnologia padroniza a forma que os dados são trafegados entre o cliente e o servidor.
+
+* A implementação da camada de segurança da aplicação foi um passo importante para garantir a proteção dos dados e informações dos usuários. Aprendi sobre as melhores práticas de segurança, como criptografia de dados, controle de acesso, autenticação e autorização. Com isso, foi possível criar um ambiente mais seguro e confiável para os usuários, minimizando riscos de ataques e vazamentos de dados.
+
+* O armazenamento do banco de dados na Oracle Cloud foi um grande desafio, mas trouxe muitos benefícios, como a facilidade de gerenciamento e a alta disponibilidade dos dados. Para garantir a segurança dos dados, aprendi sobre a configuração de políticas de segurança, backup e recuperação de dados, além de ter conhecimentos em gerenciamento de infraestrutura em nuvem.
+
+* Aprendi sobre a importância dos padrões de projetos, que são soluções pré-definidas para problemas comuns de desenvolvimento de software. Com a aplicação desses padrões em nosso projeto, foi possível melhorar a manutenibilidade, escalabilidade e modularidade do código, tornando-o mais organizado e fácil de entender. Isso resultou em um código mais eficiente, redução de erros e melhor qualidade de software em geral.
+
+
+ 
+
+# Projeto 4: 2º semestre de 2022
+ 
+ 
+ ## Parceiro Acadêmico
+Subiter</br>
+
+![image](https://github.com/Doc-Docker/APISubiter/blob/main/docs/Imagens/logosubiter.png?raw=true)
+##### *Figura 01. Fonte(https://www.subiter.com/)*
+
+A Subiter é uma empresa de base tecnológica especializada em visão infravermelha. Nossa missão é ajudar a indústria a alcançar excelência em seus processos produtivos. Por meio de sistemas inteligentes de inspeção e monitoramento, podemos observar fenômenos que estão além da capacidade dos olhos humanos.
+
+
+### Visão do Projeto
+
+Temos um desafio de sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados, e confusão na interpretação dos indicadores comerciais e financeiros.
+
+ * Cadastros de Usuários, Equipamentos e Horários;
+ * Usuários devem ter perfis diferentes (administrador, suporte, cliente);
+ * Registro de chamados;
+ * Acompanhamento de chamados de ponta a ponta;
+ * Front-End para entrada e interpretação de dados.
+
+
+##### *Figura 02. Fonte(https://github.com/Doc-Docker/APISubiter)*
+
+### Tecnologias utilizadas:
+
+<div style="display: inline_block"><br> 
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="100" height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/oracle/oracle-original.svg"  width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width="100" height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vuejs/vuejs-original.svg" width="100" height="100"  />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="100" height="100" />
+</div>
+
+</br>
+
+Para o front-end foi utilizado o Vue.js , para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
+
+
+
+### Contribuições pessoais
+- Nesse projeto atuei de forma integral no time do back-end, ajudando na criação das ORMS e toda a estrutura do back, criando algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
+
+ <details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
+     
+   ```java
+   
+   @Autowired
+	private EquipamentoSerieRepository equipamentoSerieRepository;
+
+	public Agendamento save(Agendamento agendamento) {
+
+		Chamado chamado = chamadoRepository.getById(agendamento.getChamadoAgendamento().getId());
+
+		if (chamado.getAgendamento() != null) {
+
+			if (chamado.getAgendamento().getId() != 0) {
+
+				return agendamentoRepository.findById(-1)
+						.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+								"Esse Chamado já possui um agendamento"));
+
+			}
+		}
+   
+   ```
+   
+   - Esse método está na camada service, com a simples tarefa de verificar a tentativa de inserção de um novo Agendamento.
+     Como um agendamento tem relação direta com chamado, sempre que houver uma tentativa de inserção será verificado se existe um chamado existente. 
+     
+   - Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
+
+
+Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
+* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
+
+</details>   
+
+ <details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
+     
+   ```java
+   
+   public Chamado updateChamadoById(Integer id, Chamado chamado) {
+		Chamado chamadoSelector = this.getChamadoById(id);
+		String Ns = "";
+		if(chamadoSelector.getAgendamento() != null) {
+			Ns = chamadoSelector.getAgendamento().getNumerosSerie();
+		}
+		
+
+		EquipamentoSerie equipamentoSerie = this.equipamentoSerie.getById(Ns);
+
+		if (chamado.getSituacaoChamado().equals("F") || chamado.getSituacaoChamado().equals("f")) {
+
+			equipamentoSerie.setDisponibilidade(true);
+			chamadoSelector.setEncerramentoChamado(LocalDate.now());
+			this.equipamentoSerie.save(equipamentoSerie);
+
+		}
+
+		chamadoSelector.setCriticidadeChamado(chamado.getCriticidadeChamado());
+
+		chamadoSelector.setDataChamado(chamado.getDataChamado());
+
+		chamadoSelector.setDescricaoChamado(chamado.getDescricaoChamado());
+
+		chamadoSelector.setSituacaoChamado(chamado.getSituacaoChamado());
+
+		chamadoSelector.setSolucaoChamado(chamado.getSolucaoChamado());
+
+		
+
+		return chamadoRepository.save(chamadoSelector);
+	}
+   
+   ```
+   
+* Verificação da disponibilidade do equipamento: <br>
+O método inicia com uma verificação da disponibilidade do equipamento associado ao chamado, por meio do número de série (variável "Ns"). Caso o agendamento do chamado já tenha um número de série definido, esse valor é atribuído à variável "Ns". Em seguida, é feita uma busca no banco de dados pelo equipamento com o número de série informado.<br>
+Se a situação do chamado informada for "F" ou "f" (ou seja, o chamado está sendo finalizado), o equipamento é marcado como disponível e a data de encerramento do chamado é definida como a data atual. Em seguida, é feito o salvamento do equipamento no banco de dados.
+
+* Atualização das informações do chamado: <br>
+Após a verificação da disponibilidade do equipamento, são atualizadas as informações do chamado com base nos valores informados pelo usuário. As informações atualizadas incluem a criticidade do chamado, a data do chamado, a descrição do chamado, a situação do chamado e a solução do chamado.
+
+* Salvamento das alterações no banco de dados: <br>
+Por fim, o método realiza o salvamento das informações atualizadas no banco de dados e retorna o objeto do tipo Chamado atualizado.
+
+
+Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/ChamadoService.java) para mais detalhes :)
+* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
+
+</details> 
+
+
+<details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
+     
+   ```java
+   
+	  @PreAuthorize("hasAnyRole('CLIENT', 'SUPORTE')")
+	    @PatchMapping("/{id}")
+	    @JsonView(View.ChamadoView.class)
+	    public Chamado updateChamadoById(@PathVariable Integer id, @RequestBody Chamado chamado){
+
+		return chamadoService.updateChamadoById(id, chamado);
+	    }
+
+   ```
+   
+* Esse código apresenta uma implementação de segurança por meio do uso da anotação @PreAuthorize, que permite limitar o acesso aos endpoints da API somente a usuários com permissões específicas. No caso desse método, somente usuários com as roles "CLIENT" ou "SUPORTE" têm acesso ao endpoint.
+
+* Além disso, a anotação @PatchMapping é utilizada para indicar que esse endpoint está preparado para receber requisições HTTP do tipo PATCH, que permitem a atualização parcial de recursos existentes. Já a anotação @JsonView é utilizada para limitar o conteúdo da resposta à visualização definida na classe View.ChamadoView.
+
+* Por fim, o método chama o serviço chamadoService.updateChamadoById, que é responsável por atualizar um chamado existente no banco de dados com as informações passadas no corpo da requisição.
+
+</details> 
+
+
+### Aprendizados Efetivos 
+
+
+
+* O Framework Spring-Boot foi utilizado como a principal tecnologia para back-end, sendo uma ferramenta que oferece diversos recursos para facilitar o ambiente de programação em Java. O aprendizado foi aprimorado em relação à linguagem Java e à utilização desse framework, que apresenta recursos que facilitam muito a construção do projeto, por meio do Spring Initializr [start.spring.io](https://start.spring.io/) para mais detalhes.
+
+* Aprendemos a aprimorar o conhecimento na API REST, que é um recurso da programação que trabalhamos pelo segundo semestre consecutivo. Essa tecnologia padroniza a forma que os dados são trafegados entre o cliente e o servidor.
+
+* A implementação da camada de segurança da aplicação foi um passo importante para garantir a proteção dos dados e informações dos usuários. Aprendi sobre as melhores práticas de segurança, como criptografia de dados, controle de acesso, autenticação e autorização. Com isso, foi possível criar um ambiente mais seguro e confiável para os usuários, minimizando riscos de ataques e vazamentos de dados.
+
+* O armazenamento do banco de dados na Oracle Cloud foi um grande desafio, mas trouxe muitos benefícios, como a facilidade de gerenciamento e a alta disponibilidade dos dados. Para garantir a segurança dos dados, aprendi sobre a configuração de políticas de segurança, backup e recuperação de dados, além de ter conhecimentos em gerenciamento de infraestrutura em nuvem.
+
+* Aprendi sobre a importância dos padrões de projetos, que são soluções pré-definidas para problemas comuns de desenvolvimento de software. Com a aplicação desses padrões em nosso projeto, foi possível melhorar a manutenibilidade, escalabilidade e modularidade do código, tornando-o mais organizado e fácil de entender. Isso resultou em um código mais eficiente, redução de erros e melhor qualidade de software em geral.
+
+# Projeto 5: 1º semestre de 2023
+ 
+ 
+ ## Parceiro Acadêmico
+MidAll</br>
+
+![image](https://static.wixstatic.com/media/456d95_16b15ab71cf54b9aa97150aaefefbbde~mv2.png/v1/fill/w_178,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%2520MidAll_edited.png)
+##### *Figura 01. Fonte(www.midall.com.br)*
+
+A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
+
+### Visão do Projeto
+
+Temos um desafio de sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados, e confusão na interpretação dos indicadores comerciais e financeiros.
+
+ * Cadastros de Usuários, Equipamentos e Horários;
+ * Usuários devem ter perfis diferentes (administrador, suporte, cliente);
+ * Registro de chamados;
+ * Acompanhamento de chamados de ponta a ponta;
+ * Front-End para entrada e interpretação de dados.
+
+
+##### *Figura 02. Fonte(https://github.com/Doc-Docker/APISubiter)*
+
+### Tecnologias utilizadas:
+
+<div style="display: inline_block"><br> 
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="100" height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/oracle/oracle-original.svg"  width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width="100" height="100" />
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vuejs/vuejs-original.svg" width="100" height="100"  />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="100" height="100" />
+</div>
+
+</br>
+
+Para o front-end foi utilizado o Vue.js , para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
+
+
+
+### Contribuições pessoais
+- Nesse projeto atuei de forma integral no time do back-end, ajudando na criação das ORMS e toda a estrutura do back, criando algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
+
+ <details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
+     
+   ```java
+   
+   @Autowired
+	private EquipamentoSerieRepository equipamentoSerieRepository;
+
+	public Agendamento save(Agendamento agendamento) {
+
+		Chamado chamado = chamadoRepository.getById(agendamento.getChamadoAgendamento().getId());
+
+		if (chamado.getAgendamento() != null) {
+
+			if (chamado.getAgendamento().getId() != 0) {
+
+				return agendamentoRepository.findById(-1)
+						.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+								"Esse Chamado já possui um agendamento"));
+
+			}
+		}
+   
+   ```
+   
+   - Esse método está na camada service, com a simples tarefa de verificar a tentativa de inserção de um novo Agendamento.
+     Como um agendamento tem relação direta com chamado, sempre que houver uma tentativa de inserção será verificado se existe um chamado existente. 
+     
+   - Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
+
+
+Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
+* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
+
+</details>   
+
+ <details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
+     
+   ```java
+   
+   public Chamado updateChamadoById(Integer id, Chamado chamado) {
+		Chamado chamadoSelector = this.getChamadoById(id);
+		String Ns = "";
+		if(chamadoSelector.getAgendamento() != null) {
+			Ns = chamadoSelector.getAgendamento().getNumerosSerie();
+		}
+		
+
+		EquipamentoSerie equipamentoSerie = this.equipamentoSerie.getById(Ns);
+
+		if (chamado.getSituacaoChamado().equals("F") || chamado.getSituacaoChamado().equals("f")) {
+
+			equipamentoSerie.setDisponibilidade(true);
+			chamadoSelector.setEncerramentoChamado(LocalDate.now());
+			this.equipamentoSerie.save(equipamentoSerie);
+
+		}
+
+		chamadoSelector.setCriticidadeChamado(chamado.getCriticidadeChamado());
+
+		chamadoSelector.setDataChamado(chamado.getDataChamado());
+
+		chamadoSelector.setDescricaoChamado(chamado.getDescricaoChamado());
+
+		chamadoSelector.setSituacaoChamado(chamado.getSituacaoChamado());
+
+		chamadoSelector.setSolucaoChamado(chamado.getSolucaoChamado());
+
+		
+
+		return chamadoRepository.save(chamadoSelector);
+	}
+   
+   ```
+   
+* Verificação da disponibilidade do equipamento: <br>
+O método inicia com uma verificação da disponibilidade do equipamento associado ao chamado, por meio do número de série (variável "Ns"). Caso o agendamento do chamado já tenha um número de série definido, esse valor é atribuído à variável "Ns". Em seguida, é feita uma busca no banco de dados pelo equipamento com o número de série informado.<br>
+Se a situação do chamado informada for "F" ou "f" (ou seja, o chamado está sendo finalizado), o equipamento é marcado como disponível e a data de encerramento do chamado é definida como a data atual. Em seguida, é feito o salvamento do equipamento no banco de dados.
+
+* Atualização das informações do chamado: <br>
+Após a verificação da disponibilidade do equipamento, são atualizadas as informações do chamado com base nos valores informados pelo usuário. As informações atualizadas incluem a criticidade do chamado, a data do chamado, a descrição do chamado, a situação do chamado e a solução do chamado.
+
+* Salvamento das alterações no banco de dados: <br>
+Por fim, o método realiza o salvamento das informações atualizadas no banco de dados e retorna o objeto do tipo Chamado atualizado.
+
+
+Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/ChamadoService.java) para mais detalhes :)
+* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
+
+</details> 
+
+
+<details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
+     
+   ```java
+   
+	  @PreAuthorize("hasAnyRole('CLIENT', 'SUPORTE')")
+	    @PatchMapping("/{id}")
+	    @JsonView(View.ChamadoView.class)
+	    public Chamado updateChamadoById(@PathVariable Integer id, @RequestBody Chamado chamado){
+
+		return chamadoService.updateChamadoById(id, chamado);
+	    }
+
+   ```
+   
+* Esse código apresenta uma implementação de segurança por meio do uso da anotação @PreAuthorize, que permite limitar o acesso aos endpoints da API somente a usuários com permissões específicas. No caso desse método, somente usuários com as roles "CLIENT" ou "SUPORTE" têm acesso ao endpoint.
+
+* Além disso, a anotação @PatchMapping é utilizada para indicar que esse endpoint está preparado para receber requisições HTTP do tipo PATCH, que permitem a atualização parcial de recursos existentes. Já a anotação @JsonView é utilizada para limitar o conteúdo da resposta à visualização definida na classe View.ChamadoView.
+
+* Por fim, o método chama o serviço chamadoService.updateChamadoById, que é responsável por atualizar um chamado existente no banco de dados com as informações passadas no corpo da requisição.
+
+</details> 
+
+
+### Aprendizados Efetivos 
+
+
+
+* O Framework Spring-Boot foi utilizado como a principal tecnologia para back-end, sendo uma ferramenta que oferece diversos recursos para facilitar o ambiente de programação em Java. O aprendizado foi aprimorado em relação à linguagem Java e à utilização desse framework, que apresenta recursos que facilitam muito a construção do projeto, por meio do Spring Initializr [start.spring.io](https://start.spring.io/) para mais detalhes.
+
+* Aprendemos a aprimorar o conhecimento na API REST, que é um recurso da programação que trabalhamos pelo segundo semestre consecutivo. Essa tecnologia padroniza a forma que os dados são trafegados entre o cliente e o servidor.
+
+* A implementação da camada de segurança da aplicação foi um passo importante para garantir a proteção dos dados e informações dos usuários. Aprendi sobre as melhores práticas de segurança, como criptografia de dados, controle de acesso, autenticação e autorização. Com isso, foi possível criar um ambiente mais seguro e confiável para os usuários, minimizando riscos de ataques e vazamentos de dados.
+
+* O armazenamento do banco de dados na Oracle Cloud foi um grande desafio, mas trouxe muitos benefícios, como a facilidade de gerenciamento e a alta disponibilidade dos dados. Para garantir a segurança dos dados, aprendi sobre a configuração de políticas de segurança, backup e recuperação de dados, além de ter conhecimentos em gerenciamento de infraestrutura em nuvem.
+
+* Aprendi sobre a importância dos padrões de projetos, que são soluções pré-definidas para problemas comuns de desenvolvimento de software. Com a aplicação desses padrões em nosso projeto, foi possível melhorar a manutenibilidade, escalabilidade e modularidade do código, tornando-o mais organizado e fácil de entender. Isso resultou em um código mais eficiente, redução de erros e melhor qualidade de software em geral.
+ 
+
+
 
