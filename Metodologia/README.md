@@ -524,37 +524,36 @@ Temos um desafio de sincronização dos dados administrativos, financeiros e ope
 
 </br>
 
-Para o front-end foi utilizado o Vue.js , para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
+Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela criação das interfaces de interação com o cliente e pela realização das requisições à API. No lado do back-end, optou-se pelo framework Flask para a criação da API, englobando o desenvolvimento das rotas HTTP, a conexão com o banco de dados, o tratamento de erros e a implementação das regras de negócio. Quanto ao banco de dados, optou-se pelo SQL Server, hospedado na plataforma Azure da Microsoft.
 
 
 
 ### Contribuições pessoais
-- Nesse projeto atuei de forma integral no time do back-end, ajudando na criação das ORMS e toda a estrutura do back, criando algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
+- Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de nossas classes do back-end, utilizando o pytest como framework para a criação dos testes.
 
  <details open><summary>Informações código Back-End</summary>
   
   
    1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
      
-   ```java
+   ```python
    
-   @Autowired
-	private EquipamentoSerieRepository equipamentoSerieRepository;
-
-	public Agendamento save(Agendamento agendamento) {
-
-		Chamado chamado = chamadoRepository.getById(agendamento.getChamadoAgendamento().getId());
-
-		if (chamado.getAgendamento() != null) {
-
-			if (chamado.getAgendamento().getId() != 0) {
-
-				return agendamentoRepository.findById(-1)
-						.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
-								"Esse Chamado já possui um agendamento"));
-
-			}
-		}
+   class TestAzure:
+    def test_save_new_file_transfer(self, mocker):
+        mock_session = mocker.Mock()
+        mocker.patch.object(db_instance, "session", mock_session)
+        file_transfer = FileTransferModel(
+            name="test_file",
+            size=100,
+            format="pdf",
+            date_upload="2022-01-01",
+            data_transfer="2022-01-02",
+            status = 'ok'
+        )
+        file_transfer.save()
+        mock_session.merge.assert_called_once_with(file_transfer)
+        mock_session.commit.assert_called_once()
+		
    
    ```
    
