@@ -534,7 +534,7 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
  <details open><summary>Informações código Back-End</summary>
   
   
-   1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
+   1.Nessa classe, realizamos os testes de unidade para validar os métodos existentes na classe original.
      
    ```python
    
@@ -557,10 +557,16 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
    
    ```
    
-   - Esse método está na camada service, com a simples tarefa de verificar a tentativa de inserção de um novo Agendamento.
-     Como um agendamento tem relação direta com chamado, sempre que houver uma tentativa de inserção será verificado se existe um chamado existente. 
-     
-   - Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
+   - 1. Finalidade do Método de Teste:
+
+O método test_save_new_file_transfertem o objetivo de testar se o método saveda classe FileTransferModelfunciona corretamente.
+
+   - 2. Funcionamento do Método de Teste:
+
+Um objeto de sessão falsa (mock) é criado para simular a interação com o banco de dados.
+O método saveé chamado em um objeto file_transfer.
+Duas verificações são realizadas para garantir que o método mergefoi chamado com os argumentos corretos e que o método commitfoi chamado exatamente uma vez.
+Esse teste garante que o salvamento de dados no banco de dados funcione conforme o esperado, sem modificar o banco de dados real.
 
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
