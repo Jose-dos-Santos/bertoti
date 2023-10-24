@@ -529,45 +529,39 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
 
 
 ### Contribuições pessoais
-- Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de nossas classes do back-end, utilizando o pytest como framework para a criação dos testes.
+- Nesse projeto atuei de forma integral no time do back-end, ajudando na criação das ORMS e toda a estrutura do back, criando algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
 
  <details open><summary>Informações código Back-End</summary>
   
   
-   1.Nessa classe, realizamos os testes de unidade para validar os métodos existentes na classe original.
+   1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
      
-   ```python
+   ```java
    
-   class TestAzure:
-    def test_save_new_file_transfer(self, mocker):
-        mock_session = mocker.Mock()
-        mocker.patch.object(db_instance, "session", mock_session)
-        file_transfer = FileTransferModel(
-            name="test_file",
-            size=100,
-            format="pdf",
-            date_upload="2022-01-01",
-            data_transfer="2022-01-02",
-            status = 'ok'
-        )
-        file_transfer.save()
-        mock_session.merge.assert_called_once_with(file_transfer)
-        mock_session.commit.assert_called_once()
-		
+   @Autowired
+	private EquipamentoSerieRepository equipamentoSerieRepository;
+
+	public Agendamento save(Agendamento agendamento) {
+
+		Chamado chamado = chamadoRepository.getById(agendamento.getChamadoAgendamento().getId());
+
+		if (chamado.getAgendamento() != null) {
+
+			if (chamado.getAgendamento().getId() != 0) {
+
+				return agendamentoRepository.findById(-1)
+						.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+								"Esse Chamado já possui um agendamento"));
+
+			}
+		}
    
    ```
    
-   - 1. Finalidade do Método de Teste:
-
-O método test_save_new_file_transfertem o objetivo de testar se o método saveda classe FileTransferModelfunciona corretamente.
-
-   - 2. Funcionamento do Método de Teste:
-
-Um objeto de sessão falsa (mock) é criado para simular a interação com o banco de dados.
-O método saveé chamado em um objeto file_transfer.
-Duas verificações são realizadas para garantir que o método mergefoi chamado com os argumentos corretos e que o método commitfoi chamado exatamente uma vez.
-Esse teste garante que o salvamento de dados no banco de dados funcione conforme o esperado, sem modificar o banco de dados real.
-
+   - Esse método está na camada service, com a simples tarefa de verificar a tentativa de inserção de um novo Agendamento.
+     Como um agendamento tem relação direta com chamado, sempre que houver uma tentativa de inserção será verificado se existe um chamado existente. 
+     
+   - Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
 * O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
@@ -716,39 +710,45 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
 
 
 ### Contribuições pessoais
-- Nesse projeto atuei de forma integral no time do back-end, ajudando na criação das ORMS e toda a estrutura do back, criando algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
+- Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de nossas classes do back-end, utilizando o pytest como framework para a criação dos testes.
 
  <details open><summary>Informações código Back-End</summary>
   
   
-   1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
+   1.Nessa classe, realizamos os testes de unidade para validar os métodos existentes na classe original.
      
-   ```java
+   ```python
    
-   @Autowired
-	private EquipamentoSerieRepository equipamentoSerieRepository;
-
-	public Agendamento save(Agendamento agendamento) {
-
-		Chamado chamado = chamadoRepository.getById(agendamento.getChamadoAgendamento().getId());
-
-		if (chamado.getAgendamento() != null) {
-
-			if (chamado.getAgendamento().getId() != 0) {
-
-				return agendamentoRepository.findById(-1)
-						.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
-								"Esse Chamado já possui um agendamento"));
-
-			}
-		}
+   class TestAzure:
+    def test_save_new_file_transfer(self, mocker):
+        mock_session = mocker.Mock()
+        mocker.patch.object(db_instance, "session", mock_session)
+        file_transfer = FileTransferModel(
+            name="test_file",
+            size=100,
+            format="pdf",
+            date_upload="2022-01-01",
+            data_transfer="2022-01-02",
+            status = 'ok'
+        )
+        file_transfer.save()
+        mock_session.merge.assert_called_once_with(file_transfer)
+        mock_session.commit.assert_called_once()
+		
    
    ```
    
-   - Esse método está na camada service, com a simples tarefa de verificar a tentativa de inserção de um novo Agendamento.
-     Como um agendamento tem relação direta com chamado, sempre que houver uma tentativa de inserção será verificado se existe um chamado existente. 
-     
-   - Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
+   - 1. Finalidade do Método de Teste:
+
+O método test_save_new_file_transfertem o objetivo de testar se o método saveda classe FileTransferModelfunciona corretamente.
+
+   - 2. Funcionamento do Método de Teste:
+
+Um objeto de sessão falsa (mock) é criado para simular a interação com o banco de dados.
+O método saveé chamado em um objeto file_transfer.
+Duas verificações são realizadas para garantir que o método mergefoi chamado com os argumentos corretos e que o método commitfoi chamado exatamente uma vez.
+Esse teste garante que o salvamento de dados no banco de dados funcione conforme o esperado, sem modificar o banco de dados real.
+
 
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
