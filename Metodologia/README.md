@@ -789,40 +789,22 @@ Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f954
   
    1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
      
-   ```java
+   ```python
    
-   public Chamado updateChamadoById(Integer id, Chamado chamado) {
-		Chamado chamadoSelector = this.getChamadoById(id);
-		String Ns = "";
-		if(chamadoSelector.getAgendamento() != null) {
-			Ns = chamadoSelector.getAgendamento().getNumerosSerie();
-		}
-		
+   class FileTransferModel(db_instance.Model):
+    __tablename__ = 'file_transfer'
 
-		EquipamentoSerie equipamentoSerie = this.equipamentoSerie.getById(Ns);
-
-		if (chamado.getSituacaoChamado().equals("F") || chamado.getSituacaoChamado().equals("f")) {
-
-			equipamentoSerie.setDisponibilidade(true);
-			chamadoSelector.setEncerramentoChamado(LocalDate.now());
-			this.equipamentoSerie.save(equipamentoSerie);
-
-		}
-
-		chamadoSelector.setCriticidadeChamado(chamado.getCriticidadeChamado());
-
-		chamadoSelector.setDataChamado(chamado.getDataChamado());
-
-		chamadoSelector.setDescricaoChamado(chamado.getDescricaoChamado());
-
-		chamadoSelector.setSituacaoChamado(chamado.getSituacaoChamado());
-
-		chamadoSelector.setSolucaoChamado(chamado.getSolucaoChamado());
-
-		
-
-		return chamadoRepository.save(chamadoSelector);
-	}
+    file_id = db_instance.Column(db_instance.Integer, primary_key=True)
+    name = db_instance.Column(db_instance.String(100))
+    size = db_instance.Column(db_instance.Integer)
+    format = db_instance.Column(db_instance.String(100))
+    date_upload = db_instance.Column(db_instance.Date)
+    data_transfer = db_instance.Column(db_instance.Date)
+    status = db_instance.Column(db_instance.String(100))
+    
+    @db_persist
+    def save(self):
+        db_instance.session.merge(self)
    
    ```
    
