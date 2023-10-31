@@ -780,7 +780,7 @@ Esse teste garante que o salvamento de dados no banco de dados funcione conforme
 
 
 Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f95472e88c78db8ec2812cfa427947fd0e2/tests/test_azure.py) para mais detalhes :)
-* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
+* O link acima traz detalhes da implementação da classe TestAzure responsável cobertura de testes de unidade da classe Azure
 
 </details>   
 
