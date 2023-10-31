@@ -1,6 +1,11 @@
 
-# Projeto 1: 1º semestre de 2021
+# Projeto I
  
+<details>
+
+<summary>
+	Mais Detalhes do Projeto I
+</summary>
  
  ## Fatec
 
@@ -137,8 +142,15 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
 * Foi iniciado o aprendizado da lógica de programação, buscando encontrar a melhor solução computacional para a resolução de problemas.
 * Houve a introdução às primeiras estruturas de dados utilizadas no projeto, tendo como base a linguagem Python.
 
-# Projeto 2: 2º semestre de 2022
- 
+</details>
+
+# Projeto II
+
+<details>
+
+<summary>
+	Mais Detalhes do Projeto II
+</summary>
  
  ## Parceiro Acadêmico
 Nector</br>
@@ -279,9 +291,15 @@ Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/tree/main/api
 * Esse foi o primeiro contato com um sistema gerenciador de banco de dados (SGBD), especificamente o PostGreSQL, e com a linguagem SQL. Nesse sentido, foi realizada a criação do banco de dados e a construção de consultas para atender aos requisitos do projeto.
 * Outro aspecto relevante foi a conexão do software desenvolvido com o banco de dados, possibilitando a coleta de entradas por meio da implementação e o armazenamento desses dados. Com base nesses dados, foram construídas as métricas necessárias para atender às exigências do projeto.
 
+</details>
 
-# Projeto 3: 1º semestre de 2022
- 
+# Projeto III
+
+ <details>
+
+<summary>
+	Mais Detalhes do Projeto III
+</summary>
  
  ## Parceiro Acadêmico
 MidAll</br>
@@ -484,10 +502,15 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 
 Os conhecimentos adquiridos em aula foram fundamentais para o desenvolvimento do projeto, incluindo a aplicação dos padrões de arquitetura, tornando-o componentizável e seguindo modos de construção comuns utilizados no mercado e comunidade. Também foi necessário criar o banco de dados utilizado na aplicação, seguindo o padrão de chaves primárias e estrangeiras nas tabelas, bem como a criação do modelo e entidades do banco. Aprendizados sobre os frameworks utilizados, Angular e Spring, também foram importantes para o sucesso do projeto.
 
+</details>
 
-
-# Projeto 4: 2º semestre de 2022
+# Projeto IV
  
+<details>
+
+<summary>
+	Mais Detalhes do Projeto IV
+</summary>
  
  ## Parceiro Acadêmico
 Subiter</br>
@@ -667,10 +690,15 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 
 * Aprendi sobre a importância dos padrões de projetos, que são soluções pré-definidas para problemas comuns de desenvolvimento de software. Com a aplicação desses padrões em nosso projeto, foi possível melhorar a manutenibilidade, escalabilidade e modularidade do código, tornando-o mais organizado e fácil de entender. Isso resultou em um código mais eficiente, redução de erros e melhor qualidade de software em geral.
 
+</details>
 
+# Projeto V
 
-# Projeto 5: 1º semestre de 2023
- 
+ <details>
+
+<summary>
+	Mais Detalhes do Projeto V
+</summary>
  
  ## Parceiro Acadêmico
 MidAll</br>
