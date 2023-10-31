@@ -1,5 +1,5 @@
 
-# Projeto I
+## <b> Projeto I </b> 
  
 <details>
 
@@ -144,7 +144,7 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
 
 </details>
 
-# Projeto II
+## <b> Projeto II </b> 
 
 <details>
 
@@ -293,7 +293,7 @@ Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/tree/main/api
 
 </details>
 
-# Projeto III
+## <b> Projeto III </b> 
 
  <details>
 
@@ -504,7 +504,7 @@ Os conhecimentos adquiridos em aula foram fundamentais para o desenvolvimento do
 
 </details>
 
-# Projeto IV
+## <b> Projeto IV </b> 
  
 <details>
 
@@ -692,7 +692,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 
 </details>
 
-# Projeto V
+## <b> Projeto V </b> 
 
  <details>
 
