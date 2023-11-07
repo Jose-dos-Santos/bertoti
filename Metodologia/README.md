@@ -787,7 +787,7 @@ Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f954
  <details open><summary>Informações código Back-End</summary>
   
   
-   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
+   2.Classe FileTransferModel para gerenciar informações de transferência de arquivos.
      
    ```python
    
@@ -808,15 +808,9 @@ Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f954
    
    ```
    
-* Verificação da disponibilidade do equipamento: <br>
-O método inicia com uma verificação da disponibilidade do equipamento associado ao chamado, por meio do número de série (variável "Ns"). Caso o agendamento do chamado já tenha um número de série definido, esse valor é atribuído à variável "Ns". Em seguida, é feita uma busca no banco de dados pelo equipamento com o número de série informado.<br>
-Se a situação do chamado informada for "F" ou "f" (ou seja, o chamado está sendo finalizado), o equipamento é marcado como disponível e a data de encerramento do chamado é definida como a data atual. Em seguida, é feito o salvamento do equipamento no banco de dados.
+* A classe FileTransferModelrepresenta um modelo de dados para o gerenciamento de transferências de arquivos em um sistema. Ela define atributos que exigem informações de cada transferência de arquivo, como o nome do arquivo, tamanho, formato, dados de envio e transferência, e o status da transferência. 
 
-* Atualização das informações do chamado: <br>
-Após a verificação da disponibilidade do equipamento, são atualizadas as informações do chamado com base nos valores informados pelo usuário. As informações atualizadas incluem a criticidade do chamado, a data do chamado, a descrição do chamado, a situação do chamado e a solução do chamado.
-
-* Salvamento das alterações no banco de dados: <br>
-Por fim, o método realiza o salvamento das informações atualizadas no banco de dados e retorna o objeto do tipo Chamado atualizado.
+* Além disso, possui um método chamado savedecorado com @db_persist, que é usado para persistir (salvar ou atualizar) instâncias dessa classe no banco de dados. Portanto, essa classe é usada para armazenar informações sobre arquivos transferidos e possibilita a interação com um banco de dados para gerenciar essas informações.
 
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/ChamadoService.java) para mais detalhes :)
