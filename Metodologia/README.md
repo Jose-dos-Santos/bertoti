@@ -346,12 +346,13 @@ Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typesc
 
 
 ### Participação Direta
-- Fui responsável pela implementação da lógica do motor de regras da API,
-criei um algoritmo capaz de calcular os valores recebidos como parâmetro, 
+- Fui responsável pela implementação da lógica do motor de regras da API.
+- Criação do algoritmo capaz de calcular os valores recebidos como parâmetro, 
 devolvendo como resultado a melhor promoção a ser aplicada
-no carrinho de compras
+no carrinho de compras.
+- Participação na integração do front-end com back-end
 
- <details open><summary>Informações código Back-End</summary>
+ <details open><summary>Back-End</summary>
   
   
    1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
