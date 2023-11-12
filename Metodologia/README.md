@@ -352,42 +352,11 @@ devolvendo como resultado a melhor promoção a ser aplicada
 no carrinho de compras.
 - Participação na integração do front-end com back-end
 
- <details open><summary>Back-End</summary>
+ <details open><summary>Back-End - ProductPromotionService - retornaProdutoPromocao</summary>
   
-  
-   1. Criação do algoritmos de cálculo para retorno dos valores das promoções.
-     
-   ```java
-   
-   public ResponseEntity<?> retornaProdutoPromocao(@RequestBody Integer id, Integer quantidade, Integer total,
-			  Integer categoria) {
-
-		       List<ProductPromotion> promotios = productPromotionRepository.findAll();
-		       List<ProductPromotion> productPromotion = new ArrayList<ProductPromotion>();
-
-		       Product product = productService.findById(id);
-		       productPromotion.addAll(product.getProductPromotions());
-		       int n = productPromotion.size();
-         
-         
-         return new ResponseEntity<>(desconto, HttpStatus.OK);     
-   ```
-   
-   - Esse método foi implementado na camada de service, por questão de organização do projeto.
-     Sendo consumido na camada controller através de um método com uma anotação HTTP, no caso dessa
-     requisição foi utilizado o verbo HttpPost. 
-     
-   - O algoritmo implementado é responsável por receber os parâmetros vindos do front end, 
-      esses parâmetros são filtrados por uma camada de condições, verificando o melhor valor de retorno para uma 
-      determinado produto que esteja em uma promoção, esse retorno é devolvido para camada controller que por sua vez devolve 
-      o resultado para a interface.
-
-</details>  
-
-
-<details open><summary></summary>
-
-2. Validação da promoção a ser aplicada no carrinho.
+<br> O objetivo deste método é analisar as promoções presentes no carrinho de compras e aplicar
+     validações para atribuir o melhor desconto possível a um determinado produto.
+	
    
    ```java
    
@@ -436,10 +405,10 @@ no carrinho de compras.
 		}
    ``` 
 	
-	
-* O objetivo deste método é analisar as promoções presentes no carrinho de compras e aplicar
-     validações para atribuir o melhor desconto possível a um determinado produto.
-	
+* Esse método foi implementado na camada de service, por questão de organização do projeto.
+     Sendo consumido na camada controller através de um método com uma anotação HTTP, no caso dessa
+     requisição foi utilizado o verbo HttpPost.
+   	
 * Com base nos dados recebidos nos parâmetros, este método calcula e retorna o valor máximo do desconto para um produto, 
      considerando as promoções disponíveis e as regras estabelecidas.
 	
@@ -453,13 +422,13 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 
 - Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
 
- <details open><summary>Informações código Front-End</summary>
+ <details open><summary>Front-End</summary>
   
   
-   1. Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
+<br>Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
    
      
-   ```java
+   ```JavaScript
    
         this.total = this.noDiscount += (element.price  * element.quantidade);
 
