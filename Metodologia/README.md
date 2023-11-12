@@ -59,7 +59,7 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 ### Participação Direta
 - Fui responsável pela implementação da funcionalidade "Metas financeiras".
 - Refatoração.
-- Teste da aplicação para validar desempenho e performace.
+- Teste da aplicação para validar desempenho.
 
  <details open><summary>Função responsavel por coletar informações do investimento.</summary>
   
@@ -201,12 +201,14 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 
 
 ### Participação Direta
-- Fui responsável pela implementação do algoritmo que parametriza as informações vindas do banco e com esses parâmetros salva os resultados no formato csv.
+- Fui responsável pela implementação do algoritmo que parametriza as informações vindas do banco.
+- Criação da logica para leitura do arquivo de configuração do banco de dados.
+- Participação no desenvolvimento da forma de exibição dos dados retornados do banco
 
- <details open><summary>Informações código Back-End</summary>
-  
+ <details open><summary>Algoritmos de parametrização dos dados</summary>
+	 
+  <br>Com base no parâmetro fornecido, o algoritmo ajusta a formatação dos dados para a apresentação mais adequada.
   <details open><summary></summary>
-   1. Criação do algoritmos de parametrização dos dados.
      
    ```java
    
@@ -234,7 +236,7 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 					st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
 							quantidadeColuna[i - 1]);    
    ```
-   - Apicamos o conhecimentos de como lidar com bloco de condições else if, validando as possiveis entrada de dados e realizado o tratamento	
+   - Aplicamos o conhecimentos de como lidar com bloco de condições else if, validando as possiveis entrada de dados e realizado o tratamento	
 	
    - Esse algoritmo valida as informações de retorno da query, padronizando esse resultado conforme número de colunas e linhas, para ser salvo no formato csv.
 	
@@ -243,40 +245,41 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 </details>
 	
 	
-<details open><summary></summary>
-	
+<details open><summary>Conexão com banco</summary>
+<br> Para estabelecer a conexão com o banco de dados, é realizado a validação no arquivo de configuração que contém todas as parâmetros essenciais para a realização da conexão.
 	
     ```java	
-	        package conectar;
-
-		import java.io.IOException;
-		import java.sql.Connection;
-		import java.util.logging.Level;
-		import java.util.logging.Logger;
-
-		public class Conn {
-
-			public static Connection getConnection() {
-
-				Fileconnect connect = new Fileconnect();
-				try {
-					return connect.read();
-
-				}catch (IOException ex) {
-					Logger.getLogger(Conn.class.getName()).log(Level.SEVERE,null,ex);
-				}
-
-				return null;
-			}
-
-
-		}
+	       //BUSCA E LE ARQUIVO CONEXAO
+        public Connection read() throws FileNotFoundException, IOException{
+	
+	FileWriter fw = new FileWriter(filepath,true);
+	BufferedWriter bw = new BufferedWriter(fw);
+	Scanner scan = new Scanner(System.in);
+	BufferedReader br = new BufferedReader(new FileReader(filepath));
+	Properties p = new Properties();
+	p.load(br);
+	String connection=p.getProperty("connection");
+	String user=p.getProperty("user");
+	String pass=p.getProperty("pass");
+	
+	try {
+		String driver = "org.postgresql.Driver";
+		Class.forName(driver);
+		return DriverManager.getConnection(connection,user,pass);
+		
+	} catch(Exception e){
+		e.printStackTrace();
+	}
+	
+	return null;
 	 
 	```
-	
+
+ - O código abre e lê um arquivo de configuração que contém informações necessárias para a conexão com o banco de dados, como URL de conexão, nome de usuário e senha.
+ - Usando as informações lidas do arquivo de configuração, o código carrega o driver do banco de dados PostgreSQL e estabelece uma conexão com o banco de dados
 </details>
 	
-Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/tree/main/api1.2/src/conectar) para mais detalhes :)
+Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api1.2/src/conectar/Fileconnect.java) para mais detalhes :)
 - O link acima traz detalhes da implementação do algoritmo
 
 </details>
@@ -284,7 +287,7 @@ Click aqui [GitHub](https://github.com/DolphinDatabase/SGBD_Health/tree/main/api
 ### Aprendizados Efetivos 
 
 
-* O projeto inaugural de desenvolvimento em Java consistiu em aplicar os conceitos aprendidos em aula para implementar classes e métodos, seguindo as exigências do semestre.
+* O projeto desenvolvimento em Java consistiu em aplicar os conceitos aprendidos em aula para implementar classes e métodos, seguindo as exigências do semestre.
 * Durante esse período, foi adotado o paradigma de programação orientada a objetos (POO) para desenvolver o projeto, conhecendo e aplicando seus conceitos.
 * Esse foi o primeiro contato com um sistema gerenciador de banco de dados (SGBD), especificamente o PostGreSQL, e com a linguagem SQL. Nesse sentido, foi realizada a criação do banco de dados e a construção de consultas para atender aos requisitos do projeto.
 * Outro aspecto relevante foi a conexão do software desenvolvido com o banco de dados, possibilitando a coleta de entradas por meio da implementação e o armazenamento desses dados. Com base nesses dados, foram construídas as métricas necessárias para atender às exigências do projeto.
@@ -342,7 +345,7 @@ Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typesc
 
 
 
-### Contribuições pessoais
+### Participação Direta
 - Fui responsável pela implementação da lógica do motor de regras da API,
 criei um algoritmo capaz de calcular os valores recebidos como parâmetro, 
 devolvendo como resultado a melhor promoção a ser aplicada
@@ -549,7 +552,7 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
 
 
 
-### Contribuições pessoais
+### Participação Direta
 - Nesse projeto atuei de forma integral no time do back-end, ajudando na criação das ORMS e toda a estrutura do back, criando algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
 
  <details open><summary>Informações código Back-End</summary>
@@ -735,7 +738,7 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
 
 
 
-### Contribuições pessoais
+### Participação Direta
 - Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de nossas classes do back-end, utilizando o pytest como framework para a criação dos testes.
 
  <details open><summary>Informações código Back-End</summary>
