@@ -56,14 +56,15 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 - Google-api-python-client API utilizada para usufruir dos recursos de reconhecimento de voz do Google.
 - Pycoingecko  utilizada para conversão de moedas utilizando código do Banco Central.
 
-### Contribuições pessoais
-- Fui responsável pela implementação da funcionalidade "Metas financeiras", também pela refatoração e teste da aplicação para melhor desempenho e performace.
+### Participação Direta
+- Fui responsável pela implementação da funcionalidade "Metas financeiras".
+- Refatoração.
+- Teste da aplicação para validar desempenho e performace.
 
- <details open><summary>Informações código Back-End</summary>
+ <details open><summary>Função responsavel por coletar informações do investimento.</summary>
   
-  
-   1. Função responsavel por coletar informações do investimento.
-     
+   <br>O método foi desenvolvido para prover uma experiência de usuário mais intuitiva durante o processo de inicialização do investimento, simulando a rentabilidade do investimento em um período definido.
+	  
    ```py
    
    def calculadora():
@@ -95,22 +96,21 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
         sai_som(resposta_erro_aleatoria)      
               
    ```
-	
-  * O método foi desenvolvido para prover uma experiência de usuário mais intuitiva durante o processo de inicialização do investimento, simulando a rentabilidade do      investimento em um período definido.
-	
+
   * Este algoritmo recebe entradas de dados inseridas pelo usuário e responde por meio de uma saída de voz.
 	
   *  Adicionalmente, foi criada uma função que trata possíveis erros ou perguntas incompreensíveis, retornando uma mensagem de erro personalizada para o usuário.
-	
+  
 </details>
 
    
-  
+<details open><summary>Função para calcular as metas.</summary>
    
+	
+A função "metas" é um algoritmo simples que tem como objetivo calcular o tempo necessário para alcançar uma meta de investimento mensal com base no valor a 
+ser investido e na meta a ser alcançada.
 
-<details open><summary>Metas</summary>
-    1. Função para calcular as metas.
-     
+ 
    ```py
 	def metas():
 
@@ -124,8 +124,6 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 	   sai_som(f'Você vai alcançar R${num2:.2f} em cerca de {Vf:.2f} meses se investir R${num1:.2f} por mês! ')
    ```
  
-A função "metas" é um algoritmo simples que tem como objetivo calcular o tempo necessário para alcançar uma meta de investimento mensal com base no valor a ser investido e na meta a ser alcançada. A função pode ser dividida em dois tópicos:
-
 * Inputs e cálculos: <br>
 A função começa solicitando ao usuário o valor que deseja investir e o valor que deseja alcançar. Esses valores são armazenados nas variáveis num1 e num2, respectivamente. Em seguida, é feito um cálculo simples para determinar o tempo necessário para alcançar a meta, com base na razão entre o valor desejado e o valor a ser investido mensalmente. O resultado é armazenado na variável Vf.
 
@@ -202,7 +200,7 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 
 
 
-### Contribuições pessoais
+### Participação Direta
 - Fui responsável pela implementação do algoritmo que parametriza as informações vindas do banco e com esses parâmetros salva os resultados no formato csv.
 
  <details open><summary>Informações código Back-End</summary>
