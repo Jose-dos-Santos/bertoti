@@ -523,12 +523,13 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
 
 
 ### Participação Direta
-- Nesse projeto atuei de forma integral no time do back-end, ajudando na criação das ORMS e toda a estrutura do back, criando algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
+- Nesse projeto atuei de forma integral no time do back-end
+- Participei da criação das ORMS e toda a estrutura do back
+- Criação de algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
 
- <details open><summary>Informações código Back-End</summary>
+ <details open><summary> Classe AgendamentoService</summary>
   
-  
-   1.Classe AgendamentoService, responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
+ <br>Responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
      
    ```java
    
@@ -562,10 +563,10 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 
 </details>   
 
- <details open><summary>Informações código Back-End</summary>
+ <details open><summary>Classe ChamadoService</summary>
   
   
-   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
+<br>Responsável por gerenciar e controlar os dados relacionado a um chamado.
      
    ```java
    
@@ -617,32 +618,6 @@ Por fim, o método realiza o salvamento das informações atualizadas no banco d
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/ChamadoService.java) para mais detalhes :)
 * O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
-
-</details> 
-
-
-<details open><summary>Informações código Back-End</summary>
-  
-  
-   1.Classe ChamadoService, responsável por gerenciar e controlar os dados relacionado a um chamado.
-     
-   ```java
-   
-	  @PreAuthorize("hasAnyRole('CLIENT', 'SUPORTE')")
-	    @PatchMapping("/{id}")
-	    @JsonView(View.ChamadoView.class)
-	    public Chamado updateChamadoById(@PathVariable Integer id, @RequestBody Chamado chamado){
-
-		return chamadoService.updateChamadoById(id, chamado);
-	    }
-
-   ```
-   
-* Esse código apresenta uma implementação de segurança por meio do uso da anotação @PreAuthorize, que permite limitar o acesso aos endpoints da API somente a usuários com permissões específicas. No caso desse método, somente usuários com as roles "CLIENT" ou "SUPORTE" têm acesso ao endpoint.
-
-* Além disso, a anotação @PatchMapping é utilizada para indicar que esse endpoint está preparado para receber requisições HTTP do tipo PATCH, que permitem a atualização parcial de recursos existentes. Já a anotação @JsonView é utilizada para limitar o conteúdo da resposta à visualização definida na classe View.ChamadoView.
-
-* Por fim, o método chama o serviço chamadoService.updateChamadoById, que é responsável por atualizar um chamado existente no banco de dados com as informações passadas no corpo da requisição.
 
 </details> 
 
