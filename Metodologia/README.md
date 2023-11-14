@@ -684,7 +684,8 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
 
 
 ### Participação Direta
-- Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de nossas classes do back-end, utilizando o pytest como framework para a criação dos testes.
+- Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de cada classes do back-end.
+- Utilizei o pytest como framework para a criação dos testes.
 
  <details open><summary>Informações código Back-End</summary>
   
