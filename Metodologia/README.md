@@ -687,10 +687,10 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
 - Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de cada classes do back-end.
 - Utilizei o pytest como framework para a criação dos testes.
 
- <details open><summary>Informações código Back-End</summary>
+ <details open><summary>classe TestAzure</summary>
   
   
-   1.Nessa classe, realizamos os testes de unidade para validar os métodos existentes na classe original.
+   <br>Nessa classe, realizamos os testes de unidade para validar os métodos existentes na classe original.
      
    ```python
    
@@ -731,10 +731,11 @@ Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f954
 
 </details>   
 
- <details open><summary>Informações código Back-End</summary>
+ <details open><summary>Classe FileTransferModel(</summary>
   
   
-   2.Classe FileTransferModel para gerenciar informações de transferência de arquivos.
+<br> A classe representa um modelo de dados para transferência de arquivos. A função save utiliza um decorador para persistir os dados no banco de dados, garantindo a integridade e atualização eficiente das informações.
+  
      
    ```python
    
@@ -769,7 +770,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 ### Aprendizados Efetivos 
 
 
-* Optei por empregar o robusto Framework Flask em Python como a principal tecnologia para desenvolver o back-end. Essa escolha não só agilizou o processo de programação, mas também proporcionou uma variedade de recursos que contribuíram para a solidez do nosso projeto.
+* Optamos por utilizar o Framework Flask em Python como a principal tecnologia para desenvolver o back-end. Essa escolha não só agilizou o processo de programação, mas também proporcionou uma variedade de recursos que contribuíram para a solidez do nosso projeto.
 
 * Desempenhei um papel crucial na implementação de práticas de DevOps, concentrando-me especialmente na execução de testes de unidade usando a biblioteca Pytest. Essa abordagem não apenas garantiu a estabilidade do código, mas também facilitou a integração contínua e a entrega contínua, promovendo uma cultura de desenvolvimento ágil.
   
