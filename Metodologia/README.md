@@ -24,7 +24,7 @@ Projeto Julius consiste em um assistente virtual que auxilia o usuário na tomad
 
 - -  -  -  -  -  - 
 
-*  Responder a comando de voz ou sons específicos (palma, estalar de dedos, etc.);
+* Responder a comando de voz ou sons específicos (palma, estalar de dedos, etc.);
 * Possuir no mínimo 8 ações distintas e de natureza distintas;
 * Ser mobile, web ou desktop;
 * Retornar o comando em qualquer forma (som, texto ou ação);
@@ -139,7 +139,6 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
 * O paradigma de programação imperativo foi adotado na construção do projeto, seguindo uma abordagem estrutural.
 * Foi iniciado o aprendizado da lógica de programação, buscando encontrar a melhor solução computacional para a resolução de problemas.
 * Houve a introdução às primeiras estruturas de dados utilizadas no projeto, tendo como base a linguagem Python.
-
 </details>
 
 ## <b> Projeto II </b> 
@@ -638,21 +637,21 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 
 </details>
 
-## <b> Projeto V </b> 
+## <b> Projeto VI </b> 
 
  <details>
 
 <summary>
-	Mais Detalhes do Projeto V
+	Mais Detalhes do Projeto VI
 </summary>
  
  ## Parceiro Acadêmico
-MidAll</br>
+Visiona</br>
 
-![image](https://static.wixstatic.com/media/456d95_16b15ab71cf54b9aa97150aaefefbbde~mv2.png/v1/fill/w_178,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%2520MidAll_edited.png)
-##### *Figura 01. Fonte(www.midall.com.br)*
+![image](https://visionaespacial.com/wp-content/themes/VisionaEspacial/assets/img/logo-branca-completa.svg)
+##### *Figura 01. Fonte(https://visionaespacial.com/)*
 
-A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
+A Visiona Tecnologia Espacial é uma joint-venture entre a Embraer Defesa & Segurança e a Telebras, voltada para a integração de sistemas espaciais, criada em 2012 para atender os objetivos do Programa Nacional de Atividades Espaciais (PNAE) e do Programa Estratégico de Sistemas Espaciais (PESE). A empresa foi a responsável pelo Programa do Satélite Geoestacionário de Defesa e Comunicações Estratégicas, o SGDC, lançado em 2017. Em 2018, a Visiona anunciou o programa do primeiro satélite projetado integralmente pela indústria nacional, o VCUB1, e concluiu com êxito o primeiro Sistema de Controle de Órbita e Atitude de satélites desenvolvido no Brasil. A Visiona também fornece produtos e serviços de Sensoriamento Remoto e Telecomunicações por satélite, bem como Aerolevantamento SAR nas Bandas X e P.
 
 ### Visão do Projeto
 
@@ -777,6 +776,8 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 * Adquiri e apliquei conhecimentos fundamentais em data warehousing, utilizando ferramentas como Looker Studio para o tratamento eficiente dos dados. A integração bem-sucedida desses conceitos no projeto não só enriqueceu minha compreensão, mas também resultou em uma manipulação de dados mais eficaz e informada.
   
 * Desenvolvi uma compreensão abrangente de testes, abordando não apenas os testes de unidade, mas também os de integração e interface. A aplicação prática desses conhecimentos se destacou especialmente nos testes de unidade, onde minha abordagem meticulosa contribuiu significativamente para a confiabilidade e qualidade do código.
+
+  
 
 
 
