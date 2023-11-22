@@ -655,16 +655,26 @@ A Visiona Tecnologia Espacial é uma joint-venture entre a Embraer Defesa & Segu
 
 ### Visão do Projeto
 
-Temos um desafio de sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados, e confusão na interpretação dos indicadores comerciais e financeiros.
-
- * Cadastros de Usuários, Equipamentos e Horários;
- * Usuários devem ter perfis diferentes (administrador, suporte, cliente);
- * Registro de chamados;
- * Acompanhamento de chamados de ponta a ponta;
- * Front-End para entrada e interpretação de dados.
+Propomos uma solução abrangente que envolve a coleta e o refinamento dos dados públicos do ProAgro, a reestruturação eficiente da base de dados e o desenvolvimento de um Sistema de Informação Geográfica (SIG) personalizado, fornecendo informações de forma mais simples e organizada para o usuário. Essa abordagem busca facilitar a compreensão e análise dos dados, contribuindo para melhorias nos processos internos da empresa.
 
 
-##### *Figura 02. Fonte(https://github.com/Doc-Docker/APISubiter)*
+* Modelar um banco de dados relacionais espaciais a partir de tabelas do Proagro;
+* Traçar o perímetro das parcelas informadas nas tabelas do Proagro no sistema de informações geográficas;
+* Atribuir informação agrícola relevante às parcelas plotadas num sistema de informação geográfica;
+* Cruzar as informações espaciais da Gleba com sua localização (Município e Estado);
+* Conecte e consuma a API Visiona Vegetation Index Time Series;
+* A consulta da API Visiona deve retornar uma série temporal para cada parcela consultada;
+* Salvar séries temporais consumidas/consultadas no banco de dados;
+* Desenvolva um front end simples que mostre as parcelas distribuídas espacialmente, um botão de seleção de parcelas e o gráfico do índice de acúmulo;
+* A série temporal do índice de vegetação deverá ser apresentada por dados definidos entre 30 dias antes dos dados do plantio e 30 dias após os dados da colheita 
+informados nas tabelas do Proagro e organizados no banco de dados.
+* O tempo de resposta do site deve ser inferior a 1,5 minutos em 99,99% das obrigações;
+* O mecanismo de consulta da aplicação deverá gerar trilhas no formato JSON (opcional);
+* Documentação (Requisito Fatec)
+* O sistema deve conter análises que ajudem a observar seu comportamento: Quantidade de requisições, tempo de resposta, quantidade e % de falhas na obtenção de dados do Golden Sources.
+
+
+##### *Figura 02. Fonte(https://github.com/TechVisionn/tech-parent)*
 
 ### Tecnologias utilizadas:
 
@@ -678,36 +688,40 @@ Temos um desafio de sincronização dos dados administrativos, financeiros e ope
 
 </br>
 
-Para o front-end foi utilizado o Vue.js , para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
-
-
 
 ### Participação Direta
-- Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de cada classes do back-end.
-- Utilizei o pytest como framework para a criação dos testes.
+- Participei na estruturação do back-end.
+- Auxiliei na criação das regras para implementação da LGPD.
 
- <details open><summary>classe TestAzure</summary>
+
+ <details open><summary>Classe TokenResource</summary>
   
   
-   <br>Nessa classe, realizamos os testes de unidade para validar os métodos existentes na classe original.
+   <br>Nessa classe, ocorre algumas validações do usuário, sempre que ocorre o processo de login. Com base no termo de aceite, o sistema realiza o registro conforme a escolha do usuário.
      
    ```python
    
-   class TestAzure:
-    def test_save_new_file_transfer(self, mocker):
-        mock_session = mocker.Mock()
-        mocker.patch.object(db_instance, "session", mock_session)
-        file_transfer = FileTransferModel(
-            name="test_file",
-            size=100,
-            format="pdf",
-            date_upload="2022-01-01",
-            data_transfer="2022-01-02",
-            status = 'ok'
-        )
-        file_transfer.save()
-        mock_session.merge.assert_called_once_with(file_transfer)
-        mock_session.commit.assert_called_once()
+	   term = self.term_instance.find_one(user_history["id_term"])
+	        if latest_term["version"] != term["version"] or _term is False:
+	            if _term is None:
+	                return make_response({"message": "User needs to update terms"})
+	            if _term is False:
+	                self.user_history.insert_one(
+	                    {
+	                        "id_user": user["_id"],
+	                        "id_term": term["_id"],
+	                        "accepted_term": _term,
+	                        "update_date": datetime.today().strftime("%Y-%m-%d %H:%M:%S"),
+	                        "parameters": {
+	                            "option_one": False
+	                            if _term_option_one is None
+	                            else _term_option_one,
+	                            "option_second": False
+	                            if _term_option_second is None
+	                            else _term_option_second,
+	                        },
+	                    }
+	                )
 		
    
    ```
@@ -733,7 +747,7 @@ Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f954
  <details open><summary>Classe FileTransferModel(</summary>
   
   
-<br> A classe representa um modelo de dados para transferência de arquivos. A função save utiliza um decorador para persistir os dados no banco de dados, garantindo a integridade e atualização eficiente das informações.
+<br> O objetivo do código é garantir que os usuários estejam sempre cientes e concordem com os termos de serviço mais recentes antes de usar o sistema.
   
      
    ```python
@@ -755,12 +769,13 @@ Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f954
    
    ```
    
-* A classe FileTransferModelrepresenta um modelo de dados para o gerenciamento de transferências de arquivos em um sistema. Ela define atributos que exigem informações de cada transferência de arquivo, como o nome do arquivo, tamanho, formato, dados de envio e transferência, e o status da transferência. 
+* Recupera o termo atual do banco de dados com base no ID do usuário.
+* Compara a versão do termo atual com a versão do termo mais recente.
+* Se as versões forem diferentes, verifica se o usuário já aceitou os novos termos.
+* Se o usuário não tiver aceitado os novos termos, atualiza o registro de histórico do usuário.
 
-* Além disso, possui um método chamado savedecorado com @db_persist, que é usado para persistir (salvar ou atualizar) instâncias dessa classe no banco de dados. Portanto, essa classe é usada para armazenar informações sobre arquivos transferidos e possibilita a interação com um banco de dados para gerenciar essas informações.
 
-
-Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/ChamadoService.java) para mais detalhes :)
+Click aqui [GitHub](https://github.com/TechVisionn/tech-backend/blob/main/flaskr/resources/token.py) para mais detalhes :)
 * O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
 
 </details> 
