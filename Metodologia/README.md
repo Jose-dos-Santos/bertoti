@@ -624,17 +624,15 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 ### Aprendizados Efetivos 
 
 
+* Optamos por utilizar o Framework Flask em Python como a principal tecnologia para desenvolver o back-end. Essa escolha não só agilizou o processo de programação, mas também proporcionou uma variedade de recursos que contribuíram para a solidez do nosso projeto.
 
-* O Framework Spring-Boot foi utilizado como a principal tecnologia para back-end, sendo uma ferramenta que oferece diversos recursos para facilitar o ambiente de programação em Java. O aprendizado foi aprimorado em relação à linguagem Java e à utilização desse framework, que apresenta recursos que facilitam muito a construção do projeto, por meio do Spring Initializr [start.spring.io](https://start.spring.io/) para mais detalhes.
+* Ajudei na implementação de práticas de DevOps, concentrando-me especialmente na execução de testes de unidade usando a biblioteca Pytest. Essa abordagem não apenas garantiu a estabilidade do código, mas também facilitou a integração contínua e a entrega contínua, promovendo uma cultura de desenvolvimento ágil.
+  
+* Adquiri e apliquei conhecimentos fundamentais em data warehousing, utilizando ferramentas como Looker Studio para o tratamento eficiente dos dados. A integração bem-sucedida desses conceitos no projeto não só enriqueceu minha compreensão, mas também resultou em uma manipulação de dados mais eficaz e informada.
+  
+* Desenvolvi uma compreensão abrangente de testes, abordando não apenas os testes de unidade, mas também os de integração e interface. A aplicação prática desses conhecimentos se destacou especialmente nos testes de unidade, onde minha abordagem meticulosa contribuiu significativamente para a confiabilidade e qualidade do código.
 
-* Aprendemos a aprimorar o conhecimento na API REST, que é um recurso da programação que trabalhamos pelo segundo semestre consecutivo. Essa tecnologia padroniza a forma que os dados são trafegados entre o cliente e o servidor.
-
-* A implementação da camada de segurança da aplicação foi um passo importante para garantir a proteção dos dados e informações dos usuários. Aprendi sobre as melhores práticas de segurança, como criptografia de dados, controle de acesso, autenticação e autorização. Com isso, foi possível criar um ambiente mais seguro e confiável para os usuários, minimizando riscos de ataques e vazamentos de dados.
-
-* O armazenamento do banco de dados na Oracle Cloud foi um grande desafio, mas trouxe muitos benefícios, como a facilidade de gerenciamento e a alta disponibilidade dos dados. Para garantir a segurança dos dados, aprendi sobre a configuração de políticas de segurança, backup e recuperação de dados, além de ter conhecimentos em gerenciamento de infraestrutura em nuvem.
-
-* Aprendi sobre a importância dos padrões de projetos, que são soluções pré-definidas para problemas comuns de desenvolvimento de software. Com a aplicação desses padrões em nosso projeto, foi possível melhorar a manutenibilidade, escalabilidade e modularidade do código, tornando-o mais organizado e fácil de entender. Isso resultou em um código mais eficiente, redução de erros e melhor qualidade de software em geral.
-
+  
 </details>
 
 ## <b> Projeto VI </b> 
@@ -739,13 +737,7 @@ Click aqui [GitHub](https://github.com/TechVisionn/tech-backend/blob/main/flaskr
 ### Aprendizados Efetivos 
 
 
-* Optamos por utilizar o Framework Flask em Python como a principal tecnologia para desenvolver o back-end. Essa escolha não só agilizou o processo de programação, mas também proporcionou uma variedade de recursos que contribuíram para a solidez do nosso projeto.
 
-* Desempenhei um papel crucial na implementação de práticas de DevOps, concentrando-me especialmente na execução de testes de unidade usando a biblioteca Pytest. Essa abordagem não apenas garantiu a estabilidade do código, mas também facilitou a integração contínua e a entrega contínua, promovendo uma cultura de desenvolvimento ágil.
-  
-* Adquiri e apliquei conhecimentos fundamentais em data warehousing, utilizando ferramentas como Looker Studio para o tratamento eficiente dos dados. A integração bem-sucedida desses conceitos no projeto não só enriqueceu minha compreensão, mas também resultou em uma manipulação de dados mais eficaz e informada.
-  
-* Desenvolvi uma compreensão abrangente de testes, abordando não apenas os testes de unidade, mas também os de integração e interface. A aplicação prática desses conhecimentos se destacou especialmente nos testes de unidade, onde minha abordagem meticulosa contribuiu significativamente para a confiabilidade e qualidade do código.
 
   
 
