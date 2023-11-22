@@ -726,49 +726,6 @@ informados nas tabelas do Proagro e organizados no banco de dados.
    
    ```
    
-* Finalidade do Método de Teste:
-
-O método test_save_new_file_transfertem o objetivo de testar se o método saveda classe FileTransferModelfunciona corretamente.
-
-* Funcionamento do Método de Teste:
-
-Um objeto de sessão falsa (mock) é criado para simular a interação com o banco de dados.
-O método saveé chamado em um objeto file_transfer.
-Duas verificações são realizadas para garantir que o método mergefoi chamado com os argumentos corretos e que o método commitfoi chamado exatamente uma vez.
-Esse teste garante que o salvamento de dados no banco de dados funcione conforme o esperado, sem modificar o banco de dados real.
-
-
-
-Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f95472e88c78db8ec2812cfa427947fd0e2/tests/test_azure.py) para mais detalhes :)
-* O link acima traz detalhes da implementação da classe TestAzure responsável cobertura de testes de unidade da classe Azure
-
-</details>   
-
- <details open><summary>Classe FileTransferModel(</summary>
-  
-  
-<br> O objetivo do código é garantir que os usuários estejam sempre cientes e concordem com os termos de serviço mais recentes antes de usar o sistema.
-  
-     
-   ```python
-   
-   class FileTransferModel(db_instance.Model):
-    __tablename__ = 'file_transfer'
-
-    file_id = db_instance.Column(db_instance.Integer, primary_key=True)
-    name = db_instance.Column(db_instance.String(100))
-    size = db_instance.Column(db_instance.Integer)
-    format = db_instance.Column(db_instance.String(100))
-    date_upload = db_instance.Column(db_instance.Date)
-    data_transfer = db_instance.Column(db_instance.Date)
-    status = db_instance.Column(db_instance.String(100))
-    
-    @db_persist
-    def save(self):
-        db_instance.session.merge(self)
-   
-   ```
-   
 * Recupera o termo atual do banco de dados com base no ID do usuário.
 * Compara a versão do termo atual com a versão do termo mais recente.
 * Se as versões forem diferentes, verifica se o usuário já aceitou os novos termos.
@@ -776,9 +733,7 @@ Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f954
 
 
 Click aqui [GitHub](https://github.com/TechVisionn/tech-backend/blob/main/flaskr/resources/token.py) para mais detalhes :)
-* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
-
-</details> 
+* O link acima traz detalhes da implementação da classe TestAzure responsável cobertura de testes de unidade da classe Azure
 
 
 ### Aprendizados Efetivos 
