@@ -733,7 +733,7 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 
 
 Click aqui [GitHub](https://github.com/TechVisionn/tech-backend/blob/main/flaskr/resources/token.py) para mais detalhes :)
-* O link acima traz detalhes da implementação da classe TestAzure responsável cobertura de testes de unidade da classe Azure
+* O link acima traz detalhes da implementação da classe TokenResource
 
 
 ### Aprendizados Efetivos 
