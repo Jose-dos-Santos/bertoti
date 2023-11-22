@@ -680,10 +680,10 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 
 <div style="display: inline_block"><br> 
  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" width="100"    height="100" />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"  width="100" height="100" /> 
- <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vuejs/vuejs-original.svg" width="100" height="100"  />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="100" height="100" />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="100" height="100" />
+ <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg" width="100" height="100" /> 
+ <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" width="100" height="100"  />
+ <img src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original.svg" width="100" height="100" />
+ <img src="https://github.com/devicons/devicon/blob/master/icons/redis/redis-original.svg" width="100" height="100" />
 </div>
 
 </br>
