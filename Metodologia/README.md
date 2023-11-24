@@ -56,7 +56,7 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 - Google-api-python-client API utilizada para usufruir dos recursos de reconhecimento de voz do Google.
 - Pycoingecko  utilizada para conversão de moedas utilizando código do Banco Central.
 
-### Iniciativas Implementadas
+### Contribuições Pessoais
 - Fui responsável pela implementação da funcionalidade "Metas financeiras".
 - Refatoração.
 - Teste da aplicação para validar desempenho.
@@ -199,7 +199,7 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 
 
 
-### Iniciativas Implementadas
+### Contribuições Pessoais
 - Fui responsável pela implementação do algoritmo que parametriza as informações vindas do banco.
 - Criação da logica para leitura do arquivo de configuração do banco de dados.
 - Participação no desenvolvimento da forma de exibição dos dados retornados do banco
@@ -344,7 +344,7 @@ Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typesc
 
 
 
-### Iniciativas Implementadas
+### Contribuições Pessoais
 - Fui responsável pela implementação da lógica do motor de regras da API.
 - Criação do algoritmo capaz de calcular os valores recebidos como parâmetro, 
 devolvendo como resultado a melhor promoção a ser aplicada
@@ -521,7 +521,7 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
 
 
 
-### Iniciativas Implementadas
+### Contribuições Pessoais
 - Nesse projeto atuei de forma integral no time do back-end
 - Participei da criação das ORMS e toda a estrutura do back
 - Criação de algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
@@ -682,7 +682,7 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
 
 
 
-### Iniciativas Implementadas
+### Contribuições Pessoais
 - Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de cada classes do back-end.
 - Utilizei o pytest como framework para a criação dos testes.
 
@@ -830,7 +830,7 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 </br>
 
 
-### Iniciativas Implementadas
+### Contribuições Pessoais
 - Participei na estruturação do back-end.
 - Auxiliei na criação das regras para implementação da LGPD.
 
