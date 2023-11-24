@@ -635,6 +635,148 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
   
 </details>
 
+
+## <b> Projeto V </b> 
+
+ <details>
+
+<summary>
+	Mais Detalhes do Projeto V
+</summary>
+ 
+ ## Parceiro Acadêmico
+MidAll</br>
+
+![image](https://static.wixstatic.com/media/456d95_16b15ab71cf54b9aa97150aaefefbbde~mv2.png/v1/fill/w_178,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%2520MidAll_edited.png)
+##### *Figura 01. Fonte(www.midall.com.br)*
+
+A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
+
+### Visão do Projeto
+
+Temos um desafio de sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados, e confusão na interpretação dos indicadores comerciais e financeiros.
+
+ * Cadastros de Usuários, Equipamentos e Horários;
+ * Usuários devem ter perfis diferentes (administrador, suporte, cliente);
+ * Registro de chamados;
+ * Acompanhamento de chamados de ponta a ponta;
+ * Front-End para entrada e interpretação de dados.
+
+
+##### *Figura 02. Fonte(https://github.com/Doc-Docker/APISubiter)*
+
+### Tecnologias utilizadas:
+
+<div style="display: inline_block"><br> 
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" width="100"    height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"  width="100" height="100" /> 
+ <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vuejs/vuejs-original.svg" width="100" height="100"  />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="100" height="100" />
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="100" height="100" />
+</div>
+
+</br>
+
+Para o front-end foi utilizado o Vue.js , para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
+
+
+
+### Participação Direta
+- Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de cada classes do back-end.
+- Utilizei o pytest como framework para a criação dos testes.
+
+ <details open><summary>Informações código Back-End</summary>
+  
+  
+   1.Nessa classe, realizamos os testes de unidade para validar os métodos existentes na classe original.
+     
+   ```python
+   
+   class TestAzure:
+    def test_save_new_file_transfer(self, mocker):
+        mock_session = mocker.Mock()
+        mocker.patch.object(db_instance, "session", mock_session)
+        file_transfer = FileTransferModel(
+            name="test_file",
+            size=100,
+            format="pdf",
+            date_upload="2022-01-01",
+            data_transfer="2022-01-02",
+            status = 'ok'
+        )
+        file_transfer.save()
+        mock_session.merge.assert_called_once_with(file_transfer)
+        mock_session.commit.assert_called_once()
+		
+   
+   ```
+   
+* Finalidade do Método de Teste:
+
+O método test_save_new_file_transfertem o objetivo de testar se o método saveda classe FileTransferModelfunciona corretamente.
+
+* Funcionamento do Método de Teste:
+
+Um objeto de sessão falsa (mock) é criado para simular a interação com o banco de dados.
+O método saveé chamado em um objeto file_transfer.
+Duas verificações são realizadas para garantir que o método mergefoi chamado com os argumentos corretos e que o método commitfoi chamado exatamente uma vez.
+Esse teste garante que o salvamento de dados no banco de dados funcione conforme o esperado, sem modificar o banco de dados real.
+
+
+
+Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f95472e88c78db8ec2812cfa427947fd0e2/tests/test_azure.py) para mais detalhes :)
+* O link acima traz detalhes da implementação da classe TestAzure responsável cobertura de testes de unidade da classe Azure
+
+</details>   
+
+ <details open><summary>Informações código Back-End</summary>
+  
+  
+   2.Classe FileTransferModel para gerenciar informações de transferência de arquivos.
+     
+   ```python
+   
+   class FileTransferModel(db_instance.Model):
+    __tablename__ = 'file_transfer'
+
+    file_id = db_instance.Column(db_instance.Integer, primary_key=True)
+    name = db_instance.Column(db_instance.String(100))
+    size = db_instance.Column(db_instance.Integer)
+    format = db_instance.Column(db_instance.String(100))
+    date_upload = db_instance.Column(db_instance.Date)
+    data_transfer = db_instance.Column(db_instance.Date)
+    status = db_instance.Column(db_instance.String(100))
+    
+    @db_persist
+    def save(self):
+        db_instance.session.merge(self)
+   
+   ```
+   
+* A classe FileTransferModelrepresenta um modelo de dados para o gerenciamento de transferências de arquivos em um sistema. Ela define atributos que exigem informações de cada transferência de arquivo, como o nome do arquivo, tamanho, formato, dados de envio e transferência, e o status da transferência. 
+
+* Além disso, possui um método chamado savedecorado com @db_persist, que é usado para persistir (salvar ou atualizar) instâncias dessa classe no banco de dados. Portanto, essa classe é usada para armazenar informações sobre arquivos transferidos e possibilita a interação com um banco de dados para gerenciar essas informações.
+
+
+Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/ChamadoService.java) para mais detalhes :)
+* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
+
+</details> 
+
+
+### Aprendizados Efetivos 
+
+
+* Optei por empregar o robusto Framework Flask em Python como a principal tecnologia para desenvolver o back-end. Essa escolha não só agilizou o processo de programação, mas também proporcionou uma variedade de recursos que contribuíram para a solidez do nosso projeto.
+
+* Desempenhei um papel crucial na implementação de práticas de DevOps, concentrando-me especialmente na execução de testes de unidade usando a biblioteca Pytest. Essa abordagem não apenas garantiu a estabilidade do código, mas também facilitou a integração contínua e a entrega contínua, promovendo uma cultura de desenvolvimento ágil.
+  
+* Adquiri e apliquei conhecimentos fundamentais em data warehousing, utilizando ferramentas como Looker Studio para o tratamento eficiente dos dados. A integração bem-sucedida desses conceitos no projeto não só enriqueceu minha compreensão, mas também resultou em uma manipulação de dados mais eficaz e informada.
+  
+* Desenvolvi uma compreensão abrangente de testes, abordando não apenas os testes de unidade, mas também os de integração e interface. A aplicação prática desses conhecimentos se destacou especialmente nos testes de unidade, onde minha abordagem meticulosa contribuiu significativamente para a confiabilidade e qualidade do código.
+
+
+
 ## <b> Projeto VI </b> 
 
  <details>
