@@ -56,7 +56,7 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 - Google-api-python-client API utilizada para usufruir dos recursos de reconhecimento de voz do Google.
 - Pycoingecko  utilizada para conversão de moedas utilizando código do Banco Central.
 
-### Participação Direta
+### Iniciativas Implementadas
 - Fui responsável pela implementação da funcionalidade "Metas financeiras".
 - Refatoração.
 - Teste da aplicação para validar desempenho.
@@ -199,7 +199,7 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 
 
 
-### Participação Direta
+### Iniciativas Implementadas
 - Fui responsável pela implementação do algoritmo que parametriza as informações vindas do banco.
 - Criação da logica para leitura do arquivo de configuração do banco de dados.
 - Participação no desenvolvimento da forma de exibição dos dados retornados do banco
@@ -344,7 +344,7 @@ Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typesc
 
 
 
-### Participação Direta
+### Iniciativas Implementadas
 - Fui responsável pela implementação da lógica do motor de regras da API.
 - Criação do algoritmo capaz de calcular os valores recebidos como parâmetro, 
 devolvendo como resultado a melhor promoção a ser aplicada
@@ -521,7 +521,7 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
 
 
 
-### Participação Direta
+### Iniciativas Implementadas
 - Nesse projeto atuei de forma integral no time do back-end
 - Participei da criação das ORMS e toda a estrutura do back
 - Criação de algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
@@ -638,7 +638,8 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 
 ## <b> Projeto V </b> 
 
- <details>
+ 
+<details>
 
 <summary>
 	Mais Detalhes do Projeto V
@@ -681,7 +682,7 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
 
 
 
-### Participação Direta
+### Iniciativas Implementadas
 - Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de cada classes do back-end.
 - Utilizei o pytest como framework para a criação dos testes.
 
@@ -775,11 +776,11 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
   
 * Desenvolvi uma compreensão abrangente de testes, abordando não apenas os testes de unidade, mas também os de integração e interface. A aplicação prática desses conhecimentos se destacou especialmente nos testes de unidade, onde minha abordagem meticulosa contribuiu significativamente para a confiabilidade e qualidade do código.
 
-
+</details>
 
 ## <b> Projeto VI </b> 
 
- <details>
+<details>
 
 <summary>
 	Mais Detalhes do Projeto VI
@@ -829,7 +830,7 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 </br>
 
 
-### Participação Direta
+### Iniciativas Implementadas
 - Participei na estruturação do back-end.
 - Auxiliei na criação das regras para implementação da LGPD.
 
@@ -878,7 +879,7 @@ Click aqui [GitHub](https://github.com/TechVisionn/tech-backend/blob/main/flaskr
 
 ### Aprendizados Efetivos 
 
-
+</details>
 
 
   
