@@ -56,7 +56,7 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 - Google-api-python-client API utilizada para usufruir dos recursos de reconhecimento de voz do Google.
 - Pycoingecko  utilizada para conversão de moedas utilizando código do Banco Central.
 
-### Contribuições Pessoais
+### Tarefas executadas
 - Fui responsável pela implementação da funcionalidade "Metas financeiras".
 - Refatoração.
 - Teste da aplicação para validar desempenho.
