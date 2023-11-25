@@ -20,9 +20,9 @@ De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envo
 
 ### Visão do Projeto
 
-Projeto Julius consiste em um assistente virtual que auxilia o usuário na tomada de decisões relacionadas a investimentos financeiros. Entre as funcionalidades estão código de ações, cotação do dia, conversor de moedas entre outros. O diferencial de nossa aplicação é trazer informações em tempo real entregando o máximo de interatividade ao cliente. O nosso aplicativo traz o que há de mais inovador no mercado financeiro nacional.
+O projeto Julius consiste em um assistente virtual que auxilia o usuário na tomada de decisões relacionadas a investimentos financeiros. Entre as funcionalidades estão código de ações, cotação do dia, conversor de moedas. O diferencial desta nossa aplicação é trazer informações em tempo real entregando o máximo de interatividade ao cliente.
 
-- -  -  -  -  -  - 
+#### Requisitos do Projeto
 
 * Responder a comando de voz ou sons específicos (palma, estalar de dedos, etc.);
 * Possuir no mínimo 8 ações distintas e de natureza distintas;
@@ -33,7 +33,7 @@ Projeto Julius consiste em um assistente virtual que auxilia o usuário na tomad
 * Não pode utilizar de plataforma de implementação de terceiros, seja gratuita ou não.
 
 
-Dessa forma, foi desenvolvido o Assistente Virtual Julius
+Dessa forma, foi desenvolvido o Assistente Virtual Julius.
 
 <img src ="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/julius.png?raw=true" width="200" height="200" />
 
@@ -50,17 +50,21 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
 
 </br>
 
-- Beautifulsoup4, selenium e requests foram usadas para requisição de informações de páginas HTML para possuir a informação correta e atualizada.
 - SpeechRecognition foi usada para reconhecimento e voz usando microfone.
-- Pyttsx3: Foi usada para síntese de texto-voz.
-- Google-api-python-client API utilizada para usufruir dos recursos de reconhecimento de voz do Google.
-- Pycoingecko  utilizada para conversão de moedas utilizando código do Banco Central.
+- Pyttsx3 foi usada para síntese de texto-voz.
+- Google-api-python-client API foi utilizada para usufruir dos recursos de reconhecimento de voz do Google.
+- Pycoingecko foi utilizada para conversão de moedas utilizando código do Banco Central.
 
 ### Tarefas executadas
 - Fui responsável pela implementação da funcionalidade "Metas financeiras".
+ <br> Um algoritmo que recebe na sua entrada valores informados pelo usuário e exibe os resultados com base nos valores informados. 
 - Refatoração.
+  <br>Alteração em alguns trechos no código fonte para seguir boas práticas e melhora no desempenho. Modificação de nomenclatura de variáveis, ajustes em estruturas condicionais, validação em loops verificando suas condições de parada e validar retorno das funções.
 - Teste da aplicação para validar desempenho.
+<br>Submeter as funcionalidades a diferentes situações, fornecendo dados de entrada para validar o resultado de saída.
 
+
+### Código
  <details open><summary>Função responsavel por coletar informações do investimento.</summary>
   
    <br>O método foi desenvolvido para prover uma experiência de usuário mais intuitiva durante o processo de inicialização do investimento, simulando a rentabilidade do investimento em um período definido.
@@ -100,7 +104,12 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius
   * Este algoritmo recebe entradas de dados inseridas pelo usuário e responde por meio de uma saída de voz.
 	
   *  Adicionalmente, foi criada uma função que trata possíveis erros ou perguntas incompreensíveis, retornando uma mensagem de erro personalizada para o usuário.
+
+ 
+  Click aqui [GitHub](https://github.com/Jose-dos-Santos/Julius/blob/89400bb0b61aa541c2742da0ddafe0d55fd56cba/2)%20Backend/metas.py) para mais detalhes :)
+- O link acima traz detalhes da implementação do algoritmo
   
+
 </details>
 
    
@@ -154,14 +163,13 @@ Nector</br>
 
 ![image](https://user-images.githubusercontent.com/80851038/133914328-794317fa-31e1-4279-afb0-d986acb5db45.png)
 ##### *Figura 01. Fonte(https://necto.com.br/)*
-Necto Systems foi criada para prover soluções de software.
-A principal ferramenta desde de 2006 é a linguagem Python.
-Participamos de grandes projetos em diferentes áreas, desenvolvendo soluções de software que dão suporte a processos complexos com engenharia de dados e "DataScience"
-
+A Necto Systems é uma empresa de tecnologia com o objetivo de desenvolver soluções de software inovadoras e eficientes.
 
 ### Visão do Projeto
 
-É uma aplicação de monitoramento voltada somente à SGBDs, focada na performance e desempenho. Através da coleta de dados do SGBD (memória, tempo de consultas, espaço em disco, transações, evolução da memória, caches e registros) que influenciam na saúde e manutenção periódica:
+Desenvolver uma aplicação de monitoramento voltada somente para SGBDs, com foco na performance e desempenho. Isso será feito através da coleta de dados do SGBD (memória, tempo de consultas, espaço em disco, transações, evolução da memória, caches e registros), que influenciam na saúde e manutenção periódica.
+
+#### Requisitos do Projeto
 
 * Conexão SGBD;
 * Coleta de métricas de um ou mais SGBDs (PostgreSQL) remoto;
@@ -200,9 +208,9 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 
 
 ### Contribuições Pessoais
-- Fui responsável pela implementação do algoritmo que parametriza as informações vindas do banco.
-- Criação da logica para leitura do arquivo de configuração do banco de dados.
-- Participação no desenvolvimento da forma de exibição dos dados retornados do banco
+- Implementei o algoritmo que parametriza as informações vindas do banco.
+- Criei da logica para leitura do arquivo de configuração do banco de dados.
+- Participei no desenvolvimento da forma de exibição dos dados retornados do banco
 
  <details open><summary>Algoritmos de parametrização dos dados</summary>
 	 
