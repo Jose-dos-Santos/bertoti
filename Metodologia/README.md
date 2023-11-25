@@ -264,12 +264,13 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 
 
 Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api1.2/src/conectar/Csv.java) para mais detalhes :)
-- O link acima traz detalhes da implementação do algoritmo
+- O link acima traz detalhes da implementação.
 
 </details>
 	
 	
 <details Close><summary>Conexão com banco</summary>
+	
 <br> Para estabelecer a conexão com o banco de dados, é realizado a validação no arquivo de configuração que contém todas as parâmetros essenciais para a realização da conexão.
 	
     ```java	
@@ -301,11 +302,10 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api
 
  - O código abre e lê um arquivo de configuração que contém informações necessárias para a conexão com o banco de dados, como URL de conexão, nome de usuário e senha.
  - Usando as informações lidas do arquivo de configuração, o código carrega o driver do banco de dados PostgreSQL e estabelece uma conexão com o banco de dados
-</details>
 	
 Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api1.2/src/conectar/Fileconnect.java) para mais detalhes :)
-- O link acima traz detalhes da implementação do algoritmo
-
+- O link acima traz detalhes da implementação.
+  
 </details>
 
 ### Aprendizados Efetivos 
