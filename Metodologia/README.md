@@ -374,12 +374,17 @@ Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typesc
 
 ### Tarefas executadas
 
-- Implementei da lógica do motor de regras da API.
+- Participei da criação da lógica do motor de regras da API.
+  <br> Compreendi o requisito principal do projeto, que é a habilidade de escolher a melhor promoção para o cliente.
+  <br>Estudei a estrutura necessária para realizar as validações essenciais ao correto funcionamento.
+  <br>Pesquisei formas de resolver o problema proposto e, com base nessas pesquisas, criei alguns algoritmos de teste para escolher a melhor abordagem para a aplicação.
 
 - Criei o algoritmo capaz de calcular os valores recebidos como parâmetro, 
-devolvendo como resultado a melhor promoção a ser aplicada
-no carrinho de compras.
-- Participei da integração do front-end com back-end
+  devolvendo como resultado a melhor promoção a ser aplicada no carrinho de compras.
+  <br>  Esse algoritmo valida todas as possibilidades de promoção do sistema e retorna para o front-end os dados que devem ser exibidos ao usuário.
+
+- Participei da integração do front-end com back-end.
+  <br>Realizei a integração do Front-End com o Back-End, criando alguns métodos e realizando testes para a validação das requisições.
 
 #### Código
  <details close><summary>Back-End - ProductPromotionService - retornaProdutoPromocao</summary>
@@ -449,7 +454,6 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 - O link acima traz detalhes da implementação. 
 </details>   
 
-- Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
 
  <details close><summary>Front-End - cart.service.ts</summary>
   
@@ -494,13 +498,11 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 
 
 * O Framework Spring-Boot foi a tecnologia principal utilizada para iniciar o projeto, oferecendo diversos recursos para facilitar o ambiente de programação ao codificar em Java. Foi utilizado o Spring Initializr (start.spring.io) para criar o projeto inicial com facilidade.
-* API REST, também conhecida como API RESTful, é uma interface de programação de aplicações que segue as restrições do estilo de arquitetura REST, permitindo interação com serviços web RESTful. REST significa Transferência Representacional de Estado.
+* Adquiri conhecimentos fundamentais sobre API REST. Compreendi que uma API REST, ou API RESTful, é uma interface de programação de aplicações que adere às restrições do estilo arquitetônico REST (Transferência Representacional de Estado). Essa abordagem permite a interação eficiente com serviços web RESTful, proporcionando uma estrutura robusta para o desenvolvimento e a comunicação entre sistemas.
 * No desenvolvimento do sistema de E-commerce para a MidAll, foi possível adquirir novos aprendizados e aprofundar outros, incluindo o desenvolvimento de telas com Angular, utilizando HTML e CSS, além do framework Bootstrap para o frontend.
 * Também foi necessário aprender sobre a linguagem TypeScript para criar os arquivos service e efetivar as requisições HTTP, além de aprofundar conhecimentos sobre o protocolo HTTP e as requisições GET, POST, PUT e DELETE.
 * Outros aprendizados incluíram a criação de um objeto JSON para envio nas requisições, como fazer requisições no backend utilizando a API httpClient do Angular e aprofundamento em aprendizados de banco de dados, DML, DQL e criação de arquitetura de tabelas.
 * A criação do projeto em Angular exigiu conhecimento sobre a estrutura de pastas utilizada na plataforma.
-
-Os conhecimentos adquiridos em aula foram fundamentais para o desenvolvimento do projeto, incluindo a aplicação dos padrões de arquitetura, tornando-o componentizável e seguindo modos de construção comuns utilizados no mercado e comunidade. Também foi necessário criar o banco de dados utilizado na aplicação, seguindo o padrão de chaves primárias e estrangeiras nas tabelas, bem como a criação do modelo e entidades do banco. Aprendizados sobre os frameworks utilizados, Angular e Spring, também foram importantes para o sucesso do projeto.
 
 </details>
 
