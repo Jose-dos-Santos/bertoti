@@ -553,10 +553,17 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
 
 
 
-### Contribuições Pessoais
+### Tarefas executadas
 - Atuei de forma integral no time do back-end
-- Participei da criação das ORMS e toda a estrutura do back
-- Criei algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
+<br>Participei da estruturação inicial do back-end, ajudando na criação da arquitetura do projeto.
+<br> Escolhas das tecnologias que utilizadas.
+<br> Responsável por criar o crud de algumas entidades do sistema.
+- Participei da criação das ORMs e toda a estrutura do back
+<br> Criei o mapeamento objeto-relacional de algumas entidades do banco. 
+- Criei algumas regras de negócio responsável por gerenciar a transição de dados da aplicação.
+<br> Criação da camada service para separação das regras de negócio.
+<br> Criação da camada DTO para que os dados transitados sejam apenas os necessários para cada rota. 
+
 
 #### Código
  <details close><summary> Classe AgendamentoService</summary>
