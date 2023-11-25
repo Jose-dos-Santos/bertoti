@@ -598,8 +598,7 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
    - Nessa classe ainda tem outros três métodos para completar o crud, cada um com suas validações e regras necessárias para que uma informação possa ser consultada, persistida, alterada ou eliminada do banco de dados da aplicação.
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/AgendamentoService.java) para mais detalhes :)
-* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
-
+* O link acima traz detalhes da implementação.
 </details>   
 
  <details close><summary>Classe ChamadoService</summary>
@@ -656,8 +655,7 @@ Por fim, o método realiza o salvamento das informações atualizadas no banco d
 
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/ChamadoService.java) para mais detalhes :)
-* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
-
+* O link acima traz detalhes da implementação.
 </details> 
 
 
@@ -808,8 +806,7 @@ Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f954
 
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubiterBackend/src/main/java/com/subiter/backend/APISubiterBackend/service/ChamadoService.java) para mais detalhes :)
-* O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos para um agendamento
-
+* O link acima traz detalhes da implementação.
 </details> 
 
 
