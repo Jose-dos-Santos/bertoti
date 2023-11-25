@@ -22,7 +22,7 @@ De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envo
 
 O projeto Julius consiste em um assistente virtual que auxilia o usuário na tomada de decisões relacionadas a investimentos financeiros. Entre as funcionalidades estão código de ações, cotação do dia, conversor de moedas. O diferencial desta nossa aplicação é trazer informações em tempo real entregando o máximo de interatividade ao cliente.
 
-#### Requisitos do Projeto
+#### Principais requisitos do projeto
 
 * Responder a comando de voz ou sons específicos (palma, estalar de dedos, etc.);
 * Possuir no mínimo 8 ações distintas e de natureza distintas;
@@ -176,7 +176,7 @@ A Necto Systems é uma empresa de tecnologia com o objetivo de desenvolver solu�
 
 Desenvolver uma aplicação de monitoramento voltada somente para SGBDs, com foco na performance e desempenho. Isso será feito através da coleta de dados do SGBD (memória, tempo de consultas, espaço em disco, transações, evolução da memória, caches e registros), que influenciam na saúde e manutenção periódica.
 
-#### Requisitos do Projeto
+#### Principais requisitos do projeto
 
 * Conexão SGBD;
 * Coleta de métricas de um ou mais SGBDs (PostgreSQL) remoto;
@@ -337,7 +337,10 @@ A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tec
 
 ### Visão do Projeto
 
-Criação de um motor de promoções em um Ecommerce, onde a criação, edição e exclusão de promoções possam ser feitas de forma ágil e intuitiva. Com requisitos funcionais:
+A ideia é criar um mini motor de regras com uma interface onde as regras das promoções possam ser cadastradas e aplicadas no momento que os itens forem para o carrinho de compras. Alguns exemplos de mecânicas: compre 2 produtos e tenha 10% de desconto. Na compra de 2 produtos, ganhe mais 1. Na compra de 3 produtos, ganhe 50% de desconto no item de menor valor.
+
+#### Principais requisitos do projeto
+
 * Interface de cadastro de produtos e promoções;
 * Edição de produtos;
 * Carrinho de compras;
@@ -365,18 +368,21 @@ Dessa forma, foi desenvolvido o PromoAll
 
 </br>
 
-Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typescript, para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 que é um sistema de gerenciamento de banco de dados relacional em memória
+Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typescript, para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 que é um sistema de gerenciamento de banco de dados relacional em memória.
 
 
 
-### Contribuições Pessoais
-- Fui responsável pela implementação da lógica do motor de regras da API.
-- Criação do algoritmo capaz de calcular os valores recebidos como parâmetro, 
+### Tarefas executadas
+
+- Implementei da lógica do motor de regras da API.
+
+- Criei o algoritmo capaz de calcular os valores recebidos como parâmetro, 
 devolvendo como resultado a melhor promoção a ser aplicada
 no carrinho de compras.
-- Participação na integração do front-end com back-end
+- Participei da integração do front-end com back-end
 
- <details open><summary>Back-End - ProductPromotionService - retornaProdutoPromocao</summary>
+#### Código
+ <details close><summary>Back-End - ProductPromotionService - retornaProdutoPromocao</summary>
   
 <br> O objetivo deste método é analisar as promoções presentes no carrinho de compras e aplicar
      validações para atribuir o melhor desconto possível a um determinado produto.
@@ -440,13 +446,12 @@ no carrinho de compras.
      a melhor promoção que se aplica para esse produto.
 
 Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backend-midall/src/main/java/com/backend/backend/service/ProductPromotionService.java) para mais detalhes :)
-- O link acima traz detalhes da implementação da classe de serviço responsável por todos os métodos da promoção
-
+- O link acima traz detalhes da implementação. 
 </details>   
 
 - Participei de forma efetiva da integração do Front-End com Back-End, criando alguns métodos e realizando testes para validação das requisições.
 
- <details open><summary>Front-End</summary>
+ <details close><summary>Front-End - cart.service.ts</summary>
   
   
 <br>Trecho do código responsável de receber o retorno do back-end, da explicação citada acima.
@@ -479,7 +484,7 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/APIMidAll/blob/main/backe
 <details close></summary></summary>
 
 Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-midall/src/app/cart.service.ts) para mais detalhes :)
--O link acima traz detalhes da implementação do método responsável por enviar a requisição para back-end. 
+-O link acima traz detalhes da implementação.
 </details>
 
 
