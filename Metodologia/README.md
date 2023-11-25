@@ -697,6 +697,8 @@ A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tec
 
 Temos um desafio de sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados, e confusão na interpretação dos indicadores comerciais e financeiros.
 
+#### Principais requisitos do Projeto
+
  * Cadastros de Usuários, Equipamentos e Horários;
  * Usuários devem ter perfis diferentes (administrador, suporte, cliente);
  * Registro de chamados;
@@ -722,14 +724,15 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
 
 
 
-### Contribuições Pessoais
+### Tarefas executadas
 - Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de cada classes do back-end.
 - Utilizei o pytest como framework para a criação dos testes.
 
- <details open><summary>Informações código Back-End</summary>
+#### Código
+ <details close><summary>Classe TestAzure</summary>
   
   
-   1.Nessa classe, realizamos os testes de unidade para validar os métodos existentes na classe original.
+   Nessa classe, realizamos os testes de unidade para validar os métodos existentes na classe original.
      
    ```python
    
@@ -766,11 +769,11 @@ Esse teste garante que o salvamento de dados no banco de dados funcione conforme
 
 
 Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f95472e88c78db8ec2812cfa427947fd0e2/tests/test_azure.py) para mais detalhes :)
-* O link acima traz detalhes da implementação da classe TestAzure responsável cobertura de testes de unidade da classe Azure
+* O link acima traz detalhes da implementação.
 
 </details>   
 
- <details open><summary>Informações código Back-End</summary>
+ <details close><summary> Classe FileTransferModel</summary>
   
   
    2.Classe FileTransferModel para gerenciar informações de transferência de arquivos.
