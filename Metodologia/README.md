@@ -228,7 +228,7 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
  <details close><summary>Algoritmos de parametrização dos dados</summary>
 	 
   <br>Com base no parâmetro fornecido, o algoritmo ajusta a formatação dos dados para a apresentação mais adequada.
-  <details open><summary></summary>
+
      
    ```java
    
