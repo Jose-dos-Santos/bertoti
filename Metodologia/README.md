@@ -520,13 +520,13 @@ Subiter</br>
 ![image](https://github.com/Doc-Docker/APISubiter/blob/main/docs/Imagens/logosubiter.png?raw=true)
 ##### *Figura 01. Fonte(https://www.subiter.com/)*
 
-A Subiter é uma empresa de base tecnológica especializada em visão infravermelha. Nossa missão é ajudar a indústria a alcançar excelência em seus processos produtivos. Por meio de sistemas inteligentes de inspeção e monitoramento, podemos observar fenômenos que estão além da capacidade dos olhos humanos.
-
+A Subiter é uma empresa de base tecnológica especializada em visão infravermelha. Por meio de sistemas inteligentes de inspeção e monitoramento, que podem observar fenômenos que estão além da capacidade dos olhos humanos.
 
 ### Visão do Projeto
 
-Temos um desafio de sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados, e confusão na interpretação dos indicadores comerciais e financeiros.
+O propósito do projeto consiste em abordar a problemática da sincronização dos dados administrativos, financeiros e operacionais relacionados aos serviços oferecidos pela empresa. A falta de organização dessas informações resulta em lentidão na resposta a desafios, além de dificultar a interpretação dos indicadores comerciais e financeiros. Foi implementado um sistema de gerenciamento integrado que centralizou dados relevantes por meio de um banco de dados robusto, proporcionando uma análise precisa dos indicadores comerciais e financeiros. Essa abordagem facilitou a tomada de decisões estratégicas.
 
+#### Principais requisitos do Projeto
  * Cadastros de Usuários, Equipamentos e Horários;
  * Usuários devem ter perfis diferentes (administrador, suporte, cliente);
  * Registro de chamados;
@@ -554,11 +554,12 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
 
 
 ### Contribuições Pessoais
-- Nesse projeto atuei de forma integral no time do back-end
+- Atuei de forma integral no time do back-end
 - Participei da criação das ORMS e toda a estrutura do back
-- Criação de algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
+- Criei algumas regras de negócio responsável por gerenciar o transição de dados da aplicação.
 
- <details open><summary> Classe AgendamentoService</summary>
+#### Código
+ <details close><summary> Classe AgendamentoService</summary>
   
  <br>Responsável por gerenciar e controlar os inputs e outputs, com toda regra de negócio para que um agendamento seja realizado.
      
@@ -594,7 +595,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 
 </details>   
 
- <details open><summary>Classe ChamadoService</summary>
+ <details close><summary>Classe ChamadoService</summary>
   
   
 <br>Responsável por gerenciar e controlar os dados relacionado a um chamado.
@@ -656,7 +657,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 ### Aprendizados Efetivos 
 
 
-* Optamos por utilizar o Framework Flask em Python como a principal tecnologia para desenvolver o back-end. Essa escolha não só agilizou o processo de programação, mas também proporcionou uma variedade de recursos que contribuíram para a solidez do nosso projeto.
+* Optei por utilizar o Framework Flask em Python como a principal tecnologia para desenvolver o back-end. Essa escolha não só agilizou o processo de programação, mas também proporcionou uma variedade de recursos que contribuíram para a solidez do nosso projeto.
 
 * Ajudei na implementação de práticas de DevOps, concentrando-me especialmente na execução de testes de unidade usando a biblioteca Pytest. Essa abordagem não apenas garantiu a estabilidade do código, mas também facilitou a integração contínua e a entrega contínua, promovendo uma cultura de desenvolvimento ágil.
   
