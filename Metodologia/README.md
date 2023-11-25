@@ -106,7 +106,10 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius.
   *  Adicionalmente, foi criada uma função que trata possíveis erros ou perguntas incompreensíveis, retornando uma mensagem de erro personalizada para o usuário.
 
  
-  Click aqui [GitHub](https://github.com/Jose-dos-Santos/Julius/blob/89400bb0b61aa541c2742da0ddafe0d55fd56cba/2%20Backend/metas.py) para mais detalhes :)
+  Click aqui [GitHub](https://github.com/Jose-dos-Santos/Julius/blob/89400bb0b61aa541c2742da0ddafe0d55fd56cba/2%20Backend/metas.py)
+ para mais detalhes :)
+
+  
 - O link acima traz detalhes da implementação do algoritmo
   
 
