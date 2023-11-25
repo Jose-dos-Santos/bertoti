@@ -725,8 +725,13 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
 
 
 ### Tarefas executadas
-- Atuei na construção dos testes de unidades responsáveis ​​por testar cada método isolado de cada classes do back-end.
+- Atuei na construção dos testes de unidades.
+<br> Criei métodos de testes para as principais classes do back-end, visando validar as regras especificas de cada método dentro da sua classe.
+<br> Fui responsável por apresentar em sala de aula o conceito de teste de unidade aplicado no projeto, para validação do grupo nesse item de DevOps.
 - Utilizei o pytest como framework para a criação dos testes.
+<br> Realizei pesquisas para encontrar o melhor framework para utilizar nos testes de unidade.
+<br> Estudei os recursos disponíveis no Pytest para aplicar no projeto e também para a apresentação realizada em sala, como parte da validação da equipe em um item de DevOps.
+
 
 #### Código
  <details close><summary>Classe TestAzure</summary>
