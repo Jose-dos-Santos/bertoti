@@ -65,7 +65,7 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius.
 
 
 ### Código
- <details open><summary>Função responsavel por coletar informações do investimento.</summary>
+ <details close><summary>Função responsavel por coletar informações do investimento.</summary>
   
    <br>O método foi desenvolvido para prover uma experiência de usuário mais intuitiva durante o processo de inicialização do investimento, simulando a rentabilidade do investimento em um período definido.
 	  
@@ -106,17 +106,16 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius.
   *  Adicionalmente, foi criada uma função que trata possíveis erros ou perguntas incompreensíveis, retornando uma mensagem de erro personalizada para o usuário.
 
  
-  Click aqui [GitHub](https://github.com/Jose-dos-Santos/Julius/blob/89400bb0b61aa541c2742da0ddafe0d55fd56cba/2\)%20Backend/metas.py) para mais detalhes :)
+  Click aqui [GitHub](https://github.com/Jose-dos-Santos/Julius/blob/main/2\)%20Backend/calculadora.py) para mais detalhes :)
+                      
 
-
-  
-- O link acima traz detalhes da implementação do algoritmo
+  - O link acima traz detalhes da implementação.
   
 
 </details>
 
    
-<details open><summary>Função para calcular as metas.</summary>
+<details close><summary>Função para calcular as metas.</summary>
    
 	
 A função "metas" é um algoritmo simples que tem como objetivo calcular o tempo necessário para alcançar uma meta de investimento mensal com base no valor a 
@@ -141,6 +140,11 @@ A função começa solicitando ao usuário o valor que deseja investir e o valor
 
 * Output:<br>
 Por fim, a função imprime uma mensagem informando ao usuário quanto tempo será necessário para alcançar a meta, considerando o valor investido mensalmente. A mensagem é impressa com a função sai_som, que converte a mensagem em áudio, além de ser impressa no console.
+
+ Click aqui [GitHub](https://github.com/Jose-dos-Santos/Julius/blob/89400bb0b61aa541c2742da0ddafe0d55fd56cba/2\)%20Backend/metas.py) para mais detalhes :)
+
+  - O link acima traz detalhes da implementação.
+
 </details>
 
 
