@@ -735,7 +735,7 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
  <details close><summary>Classe TestAzure</summary>
   
   
-   Nessa classe, realizamos os testes de unidade para validar os métodos existentes na classe original.
+   Nessa classe, realizei os testes de unidade para validar os métodos existentes na classe original.
      
    ```python
    
@@ -779,7 +779,7 @@ Click aqui [GitHub](https://github.com/TechNinjass/midall-backend/blob/ec433f954
  <details close><summary> Classe FileTransferModel</summary>
   
   
-   2.Classe FileTransferModel para gerenciar informações de transferência de arquivos.
+   Classe FileTransferModel para gerenciar informações de transferência de arquivos.
      
    ```python
    
@@ -843,7 +843,7 @@ A Visiona Tecnologia Espacial é uma joint-venture entre a Embraer Defesa & Segu
 
 Propomos uma solução abrangente que envolve a coleta e o refinamento dos dados públicos do ProAgro, a reestruturação eficiente da base de dados e o desenvolvimento de um Sistema de Informação Geográfica (SIG) personalizado, fornecendo informações de forma mais simples e organizada para o usuário. Essa abordagem busca facilitar a compreensão e análise dos dados, contribuindo para melhorias nos processos internos da empresa.
 
-
+#### Principais requisitos do Projeto
 * Modelar um banco de dados relacionais espaciais a partir de tabelas do Proagro;
 * Traçar o perímetro das parcelas informadas nas tabelas do Proagro no sistema de informações geográficas;
 * Atribuir informação agrícola relevante às parcelas plotadas num sistema de informação geográfica;
@@ -875,7 +875,7 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 </br>
 
 
-### Contribuições Pessoais
+### Tarefas executadas
 - Participei na estruturação do back-end.
 - Auxiliei na criação das regras para implementação da LGPD.
 
@@ -919,8 +919,7 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 
 
 Click aqui [GitHub](https://github.com/TechVisionn/tech-backend/blob/main/flaskr/resources/token.py) para mais detalhes :)
-* O link acima traz detalhes da implementação da classe TokenResource
-
+* O link acima traz detalhes da implementação.
 
 ### Aprendizados Efetivos 
 
