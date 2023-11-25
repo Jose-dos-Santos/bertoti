@@ -56,12 +56,12 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius.
 - Pycoingecko foi utilizada para conversão de moedas utilizando código do Banco Central.
 
 ### Tarefas executadas
-- Fui responsável pela implementação da funcionalidade "Metas financeiras".
- <br> Um algoritmo que recebe na sua entrada valores informados pelo usuário e exibe os resultados com base nos valores informados. 
-- Refatoração.
-  <br>Alteração em alguns trechos no código fonte para seguir boas práticas e melhora no desempenho. Modificação de nomenclatura de variáveis, ajustes em estruturas condicionais, validação em loops verificando suas condições de parada e validar retorno das funções.
+-  Fui responsável pela implementação da funcionalidade "Metas financeiras".
+	-  Um algoritmo que recebe na sua entrada valores informados pelo usuário e exibe os resultados com base nos valores informados. 
+-  Refatoração.
+	-  Alteração em alguns trechos no código fonte para seguir boas práticas e melhora no desempenho. Modificação de nomenclatura de variáveis, ajustes em estruturas condicionais, validação em loops verificando suas condições de parada e validar retorno das funções.
 - Teste da aplicação para validar desempenho.
-<br>Submeter as funcionalidades a diferentes situações, fornecendo dados de entrada para validar o resultado de saída.
+	-  Submeter as funcionalidades a diferentes situações, fornecendo dados de entrada para validar o resultado de saída.
 
 
 ### Código
@@ -216,11 +216,11 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 
 ### Tarefas executadas
 - Implementei o algoritmo que parametriza as informações vindas do banco.
-<br> Essa funcionalidade valida os dados retornados das consultas ao banco de dados e organiza a forma como essas informações serão exibidas.
+	- Essa funcionalidade valida os dados retornados das consultas ao banco de dados e organiza a forma como essas informações serão exibidas.
 - Criei da lógica para leitura do arquivo de configuração do sistema.
-<br> As configurações do sistema, como as informações de login do banco e a forma de visualização dos dados, foram armazenadas em um arquivo de texto. Dessa forma, a aplicação utiliza esse arquivo para realizar validações.
+	- As configurações do sistema, como as informações de login do banco e a forma de visualização dos dados, foram armazenadas em um arquivo de texto. Dessa forma, a aplicação utiliza esse arquivo para realizar validações.
 - Participei no desenvolvimento da forma de exibição dos dados retornados do banco
-<br>  A visualização dos dados pode ser feita por meio de um arquivo CSV ou através do terminal. A segunda opção exigiu uma atenção especial para definir a estrutura visual.
+	- A visualização dos dados pode ser feita por meio de um arquivo CSV ou através do terminal. A segunda opção exigiu uma atenção especial para definir a estrutura visual.
 
 
 #### Código
@@ -375,16 +375,16 @@ Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typesc
 ### Tarefas executadas
 
 - Participei da criação da lógica do motor de regras da API.
-  <br> Compreendi o requisito principal do projeto, que é a habilidade de escolher a melhor promoção para o cliente.
-  <br>Estudei a estrutura necessária para realizar as validações essenciais para o correto funcionamento da aplicação.
-  <br>Pesquisei formas de resolver o problema proposto e, com base nessas pesquisas, criei alguns algoritmos de teste para escolher a melhor abordagem para a aplicação.
+	- Compreendi o requisito principal do projeto, que é a habilidade de escolher a melhor promoção para o cliente.
+ 	- Estudei a estrutura necessária para realizar as validações essenciais para o correto funcionamento da aplicação.
+  	- Pesquisei formas de resolver o problema proposto e, com base nessas pesquisas, criei alguns algoritmos de teste para escolher a melhor abordagem para a aplicação.
 
 - Criei o algoritmo capaz de calcular os valores recebidos como parâmetro, 
   devolvendo como resultado a melhor promoção a ser aplicada no carrinho de compras.
-  <br>  Esse algoritmo valida todas as possibilidades de promoção do sistema e retorna para o front-end os dados que devem ser exibidos ao usuário.
+	- Esse algoritmo valida todas as possibilidades de promoção do sistema e retorna para o front-end os dados que devem ser exibidos ao usuário.
 
 - Participei da integração do front-end com back-end.
-  <br>Realizei a integração do Front-End com o Back-End, criando alguns métodos e realizando testes para a validação das requisições.
+	- Realizei a integração do Front-End com o Back-End, criando alguns métodos e realizando testes para a validação das requisições.
 
 #### Código
  <details close><summary>Back-End - ProductPromotionService - retornaProdutoPromocao</summary>
@@ -555,14 +555,14 @@ Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela cr
 
 ### Tarefas executadas
 - Atuei de forma integral no time do back-end
-<br>Participei da estruturação inicial do back-end, ajudando na criação da arquitetura do projeto.
-<br> Escolhas das tecnologias que utilizadas.
-<br> Responsável por criar o crud de algumas entidades do sistema.
+	- Participei da estruturação inicial do back-end, ajudando na criação da arquitetura do projeto.
+	- Escolhas das tecnologias que utilizadas.
+	- Responsável por criar o crud de algumas entidades do sistema.
 - Participei da criação das ORMs e toda a estrutura do back
-<br> Criei o mapeamento objeto-relacional de algumas entidades do banco. 
+	- Criei o mapeamento objeto-relacional de algumas entidades do banco. 
 - Criei algumas regras de negócio responsável por gerenciar a transição de dados da aplicação.
-<br> Criação da camada service para separação das regras de negócio.
-<br> Criação da camada DTO para que os dados transitados sejam apenas os necessários para cada rota. 
+	- Criação da camada service para separação das regras de negócio.
+	- Criação da camada DTO para que os dados transitados sejam apenas os necessários para cada rota. 
 
 
 #### Código
@@ -726,11 +726,11 @@ Para o front-end foi utilizado o Vue.js , para criação das telas de interaçã
 
 ### Tarefas executadas
 - Atuei na construção dos testes de unidades.
-<br> Criei métodos de testes para as principais classes do back-end, visando validar as regras especificas de cada método dentro da sua classe.
-<br> Fui responsável por apresentar em sala de aula o conceito de teste de unidade aplicado no projeto, para validação do grupo nesse item de DevOps.
+	- Criei métodos de testes para as principais classes do back-end, visando validar as regras especificas de cada método dentro da sua classe.
+	- Fui responsável por apresentar em sala de aula o conceito de teste de unidade aplicado no projeto, para validação do grupo nesse item de DevOps.
 - Utilizei o pytest como framework para a criação dos testes.
-<br> Realizei pesquisas para encontrar o melhor framework para utilizar nos testes de unidade.
-<br> Estudei os recursos disponíveis no Pytest para aplicar no projeto e também para a apresentação realizada em sala, como parte da validação da equipe em um item de DevOps.
+	- Realizei pesquisas para encontrar o melhor framework para utilizar nos testes de unidade.
+	- Estudei os recursos disponíveis no Pytest para aplicar no projeto e também para a apresentação realizada em sala, como parte da validação da equipe em um item de DevOps.
 
 
 #### Código
