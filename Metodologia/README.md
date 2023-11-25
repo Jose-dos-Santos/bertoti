@@ -214,12 +214,18 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 
 
 
-### Contribuições Pessoais
+### Tarefas executadas
 - Implementei o algoritmo que parametriza as informações vindas do banco.
-- Criei da logica para leitura do arquivo de configuração do banco de dados.
+<br> Essa funcionalidade valida os dados retornados das consultas ao banco de dados e organiza a forma como essas informações serão exibidas.
+- Criei da lógica para leitura do arquivo de configuração do sistema.
+<br> As configurações do sistema, como as informações de login do banco e a forma de visualização dos dados, foram armazenadas em um arquivo de texto. Dessa forma, a aplicação utiliza esse arquivo para realizar validações.
 - Participei no desenvolvimento da forma de exibição dos dados retornados do banco
+<br>  A visualização dos dados pode ser feita por meio de um arquivo CSV ou através do terminal. A segunda opção exigiu uma atenção especial para definir a estrutura visual.
 
- <details open><summary>Algoritmos de parametrização dos dados</summary>
+
+#### Código
+
+ <details close><summary>Algoritmos de parametrização dos dados</summary>
 	 
   <br>Com base no parâmetro fornecido, o algoritmo ajusta a formatação dos dados para a apresentação mais adequada.
   <details open><summary></summary>
@@ -250,16 +256,20 @@ Como foi uma aplicação voltada para métricas de um servidor monitorando o sis
 					st.addRow(quantidadeColuna[i - 4], quantidadeColuna[i - 3], quantidadeColuna[i - 2],
 							quantidadeColuna[i - 1]);    
    ```
-   - Aplicamos o conhecimentos de como lidar com bloco de condições else if, validando as possiveis entrada de dados e realizado o tratamento	
+   - Utilizado bloco de condições else if, validando as possiveis entrada de dados e realizado o tratamento	
 	
    - Esse algoritmo valida as informações de retorno da query, padronizando esse resultado conforme número de colunas e linhas, para ser salvo no formato csv.
 	
    - Também foi utilizado a manipulação de array e formataçõa de string para que o retorno se enquadrace no resultado espedo.
-	  
+
+
+Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api1.2/src/conectar/Csv.java) para mais detalhes :)
+- O link acima traz detalhes da implementação do algoritmo
+
 </details>
 	
 	
-<details open><summary>Conexão com banco</summary>
+<details Close><summary>Conexão com banco</summary>
 <br> Para estabelecer a conexão com o banco de dados, é realizado a validação no arquivo de configuração que contém todas as parâmetros essenciais para a realização da conexão.
 	
     ```java	
@@ -301,7 +311,7 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api
 ### Aprendizados Efetivos 
 
 
-* O projeto desenvolvimento em Java consistiu em aplicar os conceitos aprendidos em aula para implementar classes e métodos, seguindo as exigências do semestre.
+* O desenvolvimento em Java consistiu em aplicar os conceitos aprendidos em aula para implementar classes e métodos, seguindo as exigências do semestre.
 * Durante esse período, foi adotado o paradigma de programação orientada a objetos (POO) para desenvolver o projeto, conhecendo e aplicando seus conceitos.
 * Esse foi o primeiro contato com um sistema gerenciador de banco de dados (SGBD), especificamente o PostGreSQL, e com a linguagem SQL. Nesse sentido, foi realizada a criação do banco de dados e a construção de consultas para atender aos requisitos do projeto.
 * Outro aspecto relevante foi a conexão do software desenvolvido com o banco de dados, possibilitando a coleta de entradas por meio da implementação e o armazenamento desses dados. Com base nesses dados, foram construídas as métricas necessárias para atender às exigências do projeto.
