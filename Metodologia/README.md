@@ -880,7 +880,7 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 - Auxiliei na criação das regras para implementação da LGPD.
 
 
- <details open><summary>Classe TokenResource</summary>
+ <details close><summary>Classe TokenResource</summary>
   
   
    <br>Nessa classe, ocorre algumas validações do usuário, sempre que ocorre o processo de login. Com base no termo de aceite, o sistema realiza o registro conforme a escolha do usuário.
