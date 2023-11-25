@@ -376,7 +376,7 @@ Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typesc
 
 - Participei da criação da lógica do motor de regras da API.
   <br> Compreendi o requisito principal do projeto, que é a habilidade de escolher a melhor promoção para o cliente.
-  <br>Estudei a estrutura necessária para realizar as validações essenciais ao correto funcionamento.
+  <br>Estudei a estrutura necessária para realizar as validações essenciais para o correto funcionamento da aplicação.
   <br>Pesquisei formas de resolver o problema proposto e, com base nessas pesquisas, criei alguns algoritmos de teste para escolher a melhor abordagem para a aplicação.
 
 - Criei o algoritmo capaz de calcular os valores recebidos como parâmetro, 
