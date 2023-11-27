@@ -932,7 +932,20 @@ Click aqui [GitHub](https://github.com/TechVisionn/tech-backend/blob/main/flaskr
 
 ### Aprendizados Efetivos 
 
+- Participei das decisões relacionadas à escolha de tecnologia no desenvolvimento do back-end.
+Colaborei na definição da arquitetura, levando em consideração as necessidades específicas do projeto.
 
+
+- Em conjunto com a equipe, enfrentamos desafios significativos, especialmente relacionados à falta de organização nos dados e à presença de informações sensíveis do ProAgro.
+Trabalhei em equipe para superar esses obstáculos, ressaltando a importância da colaboração e troca de conhecimento.
+
+
+- Participei ativamente na integração da LGPD no projeto, concentrando-me na conformidade com regulamentações de privacidade e segurança de dados.
+Colaborei intensivamente para garantir que as práticas adotadas estivessem alinhadas com as exigências da LGPD.
+
+
+- A experiência compartilhada durante a estruturação do back-end e implementação da LGPD foi crucial para meu aprendizado contínuo.
+Destaquei a importância da colaboração e do trabalho em equipe em ambientes desafiadores, onde cada membro contribuiu de forma valiosa.
 
 
   
