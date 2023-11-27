@@ -874,6 +874,13 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 
 </br>
 
+É um Sistema de Gerenciamento de Banco de Dados (SGBD) relacional que utiliza a linguagem SQL como interface. Lançado sob a licença GPL, foi desenvolvido pela Oracle Corporation e empregado como o Sistema Gerenciador de Banco de Dados (SGBD) no projeto.
+
+Trata-se de um banco de dados NoSQL que armazena dados em documentos flexíveis usando o formato JSON. Proporciona escalabilidade e flexibilidade para lidar com grandes volumes de dados e modelos de dados dinâmicos, sendo utilizado na parte do projeto relacionada à LGPD para o cadastro do usuário. Além disso, o Redis também foi integrado para otimizar o armazenamento em cache e melhorar o desempenho na manipulação de dados em tempo real.
+
+Python, uma linguagem de programação versátil e amplamente utilizada, é reconhecida por sua simplicidade, legibilidade e capacidade de criar aplicativos eficientes. É uma escolha popular para o desenvolvimento de aplicativos web, científicos, de automação, entre outros, devido à sua ampla variedade de bibliotecas e à comunidade ativa de desenvolvedores. Foi utilizado na construção do backend da aplicação.
+
+Utilizado como um framework de código aberto e uma biblioteca JavaScript, o React é empregado para construir interfaces de usuário interativas e dinâmicas em aplicações web. Frequentemente utilizado em projetos para criar componentes reutilizáveis, gerenciar o estado do aplicativo e proporcionar uma experiência de usuário rica, o React é conhecido por sua eficiência e poderosa capacidade de renderização. Tornou-se uma escolha popular entre os desenvolvedores para o desenvolvimento de aplicações web modernas, sendo aplicado como o framework do frontend do projeto.
 
 ### Tarefas executadas
 - Participei na estruturação do back-end.
@@ -921,9 +928,11 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 Click aqui [GitHub](https://github.com/TechVisionn/tech-backend/blob/main/flaskr/resources/token.py) para mais detalhes :)
 * O link acima traz detalhes da implementação.
 
+</details>
+
 ### Aprendizados Efetivos 
 
-</details>
+
 
 
   
