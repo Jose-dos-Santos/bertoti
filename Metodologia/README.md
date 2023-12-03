@@ -499,10 +499,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 
 * O Framework Spring-Boot foi a tecnologia principal utilizada para iniciar o projeto, oferecendo diversos recursos para facilitar o ambiente de programação ao codificar em Java. Foi utilizado o Spring Initializr para criar o projeto inicial com facilidade.
 * Adquiri conhecimentos fundamentais sobre API REST. Compreendi que uma API REST, ou API RESTful, é uma interface de programação de aplicações que adere às restrições do estilo arquitetônico REST (Transferência Representacional de Estado). Essa abordagem permite a interação eficiente com serviços web RESTful, proporcionando uma estrutura robusta para o desenvolvimento e a comunicação entre sistemas.
-* No desenvolvimento do sistema de E-commerce para a MidAll, foi possível adquirir novos aprendizados e aprofundar outros, incluindo o desenvolvimento de telas com Angular, utilizando HTML e CSS, além do framework Bootstrap para o frontend.
-* Também foi necessário aprender sobre a linguagem TypeScript para criar os arquivos service e efetivar as requisições HTTP, além de aprofundar conhecimentos sobre o protocolo HTTP e as requisições GET, POST, PUT e DELETE.
-* Outros aprendizados incluíram a criação de um objeto JSON para envio nas requisições, como fazer requisições no backend utilizando a API httpClient do Angular e aprofundamento em aprendizados de banco de dados, DML, DQL e criação de arquitetura de tabelas.
-* A criação do projeto em Angular exigiu conhecimento sobre a estrutura de pastas utilizada na plataforma.
+* Optei por utilizar o Postman como ferramenta principal para teste de requisições. Isso me permitiu realizar testes eficientes em APIs, enviando diversas requisições HTTP, como GET, POST, PUT e DELETE. Além disso, aprendi a criar objetos JSON para enviar dados nas requisições, explorando a flexibilidade e simplicidade dessa abordagem.
 
 </details>
 
