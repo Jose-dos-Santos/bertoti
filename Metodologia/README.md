@@ -497,7 +497,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 ### Aprendizados Efetivos 
 
 
-* O Framework Spring-Boot foi a tecnologia principal utilizada para iniciar o projeto, oferecendo diversos recursos para facilitar o ambiente de programação ao codificar em Java. Foi utilizado o Spring Initializr (start.spring.io) para criar o projeto inicial com facilidade.
+* O Framework Spring-Boot foi a tecnologia principal utilizada para iniciar o projeto, oferecendo diversos recursos para facilitar o ambiente de programação ao codificar em Java. Foi utilizado o Spring Initializr para criar o projeto inicial com facilidade.
 * Adquiri conhecimentos fundamentais sobre API REST. Compreendi que uma API REST, ou API RESTful, é uma interface de programação de aplicações que adere às restrições do estilo arquitetônico REST (Transferência Representacional de Estado). Essa abordagem permite a interação eficiente com serviços web RESTful, proporcionando uma estrutura robusta para o desenvolvimento e a comunicação entre sistemas.
 * No desenvolvimento do sistema de E-commerce para a MidAll, foi possível adquirir novos aprendizados e aprofundar outros, incluindo o desenvolvimento de telas com Angular, utilizando HTML e CSS, além do framework Bootstrap para o frontend.
 * Também foi necessário aprender sobre a linguagem TypeScript para criar os arquivos service e efetivar as requisições HTTP, além de aprofundar conhecimentos sobre o protocolo HTTP e as requisições GET, POST, PUT e DELETE.
