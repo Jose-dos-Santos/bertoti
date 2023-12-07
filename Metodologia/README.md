@@ -690,7 +690,7 @@ A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tec
 
 ### Visão do Projeto
 
-Temos um desafio de sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados, e confusão na interpretação dos indicadores comerciais e financeiros.
+O projeto tem como desafio a sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados e confusão na interpretação dos indicadores comerciais e financeiros.
 
 #### Principais requisitos do Projeto
 
@@ -715,7 +715,7 @@ Temos um desafio de sincronização dos dados administrativos, financeiros e ope
 
 </br>
 
-Para o front-end foi utilizado o Vue.js , para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
+Para o front-end foi utilizado o Vue.js para criação das telas de interação com o cliente e para a realização das requisições para a API desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, para a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
 
 
 
@@ -838,24 +838,20 @@ A Visiona Tecnologia Espacial é uma joint-venture entre a Embraer Defesa & Segu
 
 ### Visão do Projeto
 
-Propomos uma solução abrangente que envolve a coleta e o refinamento dos dados públicos do ProAgro, a reestruturação eficiente da base de dados e o desenvolvimento de um Sistema de Informação Geográfica (SIG) personalizado, fornecendo informações de forma mais simples e organizada para o usuário. Essa abordagem busca facilitar a compreensão e análise dos dados, contribuindo para melhorias nos processos internos da empresa.
+Neste projeto é proposto uma solução abrangente que envolve a coleta e o refinamento dos dados públicos do ProAgro, a reestruturação eficiente da base de dados e o desenvolvimento de um Sistema de Informação Geográfica (SIG) personalizado, fornecendo informações de forma mais simples e organizada para o usuário. Essa abordagem busca facilitar a compreensão e análise dos dados, contribuindo para melhorias nos processos internos da empresa.
 
 #### Principais requisitos do Projeto
 * Modelar um banco de dados relacionais espaciais a partir de tabelas do Proagro;
 * Traçar o perímetro das parcelas informadas nas tabelas do Proagro no sistema de informações geográficas;
 * Atribuir informação agrícola relevante às parcelas plotadas num sistema de informação geográfica;
 * Cruzar as informações espaciais da Gleba com sua localização (Município e Estado);
-* Conecte e consuma a API Visiona Vegetation Index Time Series;
+* Conectar a API Visiona Vegetation Index Time Series;
 * A consulta da API Visiona deve retornar uma série temporal para cada parcela consultada;
 * Salvar séries temporais consumidas/consultadas no banco de dados;
-* Desenvolva um front end simples que mostre as parcelas distribuídas espacialmente, um botão de seleção de parcelas e o gráfico do índice de acúmulo;
+* Desenvolver um front end simples que mostre as parcelas distribuídas espacialmente, um botão de seleção de parcelas e o gráfico do índice de acúmulo;
 * A série temporal do índice de vegetação deverá ser apresentada por dados definidos entre 30 dias antes dos dados do plantio e 30 dias após os dados da colheita 
 informados nas tabelas do Proagro e organizados no banco de dados.
 * O tempo de resposta do site deve ser inferior a 1,5 minutos em 99,99% das obrigações;
-* O mecanismo de consulta da aplicação deverá gerar trilhas no formato JSON (opcional);
-* Documentação (Requisito Fatec)
-* O sistema deve conter análises que ajudem a observar seu comportamento: Quantidade de requisições, tempo de resposta, quantidade e % de falhas na obtenção de dados do Golden Sources.
-
 
 ##### *Figura 02. Fonte(https://github.com/TechVisionn/tech-parent)*
 
@@ -933,7 +929,7 @@ Click aqui [GitHub](https://github.com/TechVisionn/tech-backend/blob/main/flaskr
 Colaborei na definição da arquitetura, levando em consideração as necessidades específicas do projeto.
 
 
-- Em conjunto com a equipe, enfrentamos desafios significativos, especialmente relacionados à falta de organização nos dados e à presença de informações sensíveis do ProAgro.
+- Em conjunto com a equipe, foram enfrentados desafios significativos, especialmente relacionados à falta de organização nos dados e à presença de informações sensíveis do ProAgro.
 Trabalhei em equipe para superar esses obstáculos, ressaltando a importância da colaboração e troca de conhecimento.
 
 
