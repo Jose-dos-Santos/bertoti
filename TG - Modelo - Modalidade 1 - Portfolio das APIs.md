@@ -7,23 +7,35 @@ Esta mudança representou não apenas uma transição de carreira, mas um mergul
 
 Encarar essa transição não foi apenas uma decisão profissional, mas um comprometimento com a aprendizagem contínua e a busca constante por novos conhecimentos. Estou animado com o que o futuro reserva nesta jornada tecnológica.
 
-## Contatos
-* [GIT](https://github.com/Jose-dos-Santos)
-* [LinkedIn](linkedin.com/in/josé-maria-reis-dos-santos)
 
-
-## Meus Principais Conhecimentos
-Estou em processo de construção de conhecimento como desenvolvedor Back-End, com ênfase principal na linguagem .Net C#. Também tenho experiência em Java, Python e VBA, concentrando meus esforços no desenvolvimento Back-End, especialmente com .Net C#.
-
-No campo dos bancos de dados, estou aprimorando constantemente meu conhecimento em SQL e Oracle, já que essas plataformas são uma parte integrante do meu trabalho diário.
-
-Em relação ao desenvolvimento front-end, estou em estágio inicial com JavaScript, CSS e HTML, buscando oportunidades para aprimorar essas habilidades ao longo do tempo.
-
-No que diz respeito ao controle de versão, utilizo Git para facilitar a colaboração e o gerenciamento eficiente de código.
-
-Adicionalmente, trago experiência em metodologias ágeis, especialmente com o Scrum, que tem sido fundamental para a entrega eficiente de projetos até o momento.
-
-Estou comprometido em expandir meu conjunto de habilidades e permanecer atualizado com as mais recentes tecnologias e práticas do setor.
+## Principais Conhecimentos
+<div style="margin-top: 10px; font-weight: bold;">Tecnologias(Back-End)</div>
+  <div style="display: inline_block">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/dotnetcore/dotnetcore-original.svg" width="85" height="85" />
+    <img src="https://github.com/devicons/devicon/blob/master/icons/csharp/csharp-original.svg" width="85" height="85" />
+    <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" width="85" height="85" />
+  </div>
+  <div>  </div>
+  <div style="margin-top: 10px; font-weight: bold;">Tecnologias (Front-End)</div>
+  <div style="display: inline_block">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/vuejs/vuejs-original.svg" width="85" height="85" />
+    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" width="85" height="85" />  
+    <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original-wordmark.svg" width="85" height="85" />  
+    <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" width="85" height="85" /> 
+  </div>
+  <div>  </div>
+  <div style="margin-top: 10px; font-weight: bold;">Bancos de Dados</div>
+  <div style="display: inline_block">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" width="85" height="85" />
+    <img src="https://github.com/devicons/devicon/blob/master/icons/oracle/oracle-original.svg" width="85" height="85" />
+    <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" width="85" height="85" />  
+    <img src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original-wordmark.svg" width="85" height="85" />
+  </div>
+  <div style="margin-top: 10px; font-weight: bold;">Controle de versão</div>
+  <div style="display: inline_block">
+    <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original-wordmark.svg" width="85" height="85" />
+    <img src="https://github.com/devicons/devicon/blob/master/icons/gitlab/gitlab-original.svg" width="85" height="85" />
+  </div>
 ## Meus Projetos
 
 ### Em 2021-2
@@ -67,6 +79,10 @@ Mesmo formato
 
 ### Em 2023-2
 Mesmo formato
+
+## Contatos
+* [GIT](https://github.com/Jose-dos-Santos)
+* [LinkedIn](linkedin.com/in/josé-maria-reis-dos-santos)
 
 
 
