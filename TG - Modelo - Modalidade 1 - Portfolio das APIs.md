@@ -1,4 +1,6 @@
 # José Maria Reis dos Santos
+<img src="https://github.com/Jose-dos-Santos/bertoti/blob/main/WhatsApp%20Image%202023-12-08%20at%2018.18.06.jpeg?raw=true" height="250" width="250"/>
+
 ## Introdução
 
 Meu nome é José Maria e sou um desenvolvedor Back-End com expertise em .Net C#. No ano de 2021, tomei a decisão corajosa de mudar de área, deixando para trás uma década de experiência em manuteção para ingressar no emocionante campo da Tecnologia da Informação.
