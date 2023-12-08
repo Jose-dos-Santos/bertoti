@@ -193,7 +193,7 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
 </details>
 
 
-#### Hard Skills
+### Aprendizados Efetivos 
 
 * O primeiro contato com uma linguagem de programação ocorreu por meio do uso do Python.
 * Foi realizada a compreensão da metodologia ágil Scrum, buscando entender e aplicar seus conceitos.
@@ -202,7 +202,60 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
 * Houve a introdução às primeiras estruturas de dados utilizadas no projeto, tendo como base a linguagem Python.
 
 
-#### Soft Skills
+ <h3 align="center"> Hard Skills </h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Tecnologia/Metodologia</th>
+      <th width="85px">Nota</th>
+      <th width="200px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Metodologia Ágil Scrum</td>
+      <td>★★☆☆☆</td>
+	<td>Já ouvi falar</td>
+    </tr>
+    <tr>
+      <td>MySQL</td>
+      <td>★★☆☆☆</td>
+	<td>Já ouvi falar</td>
+    </tr>	
+   <tr>
+      <td>Python</td>
+      <td>★★★☆☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>
+    <tr>
+      <td>GIT</td>
+      <td>★★★☆☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>
+  </table>
+  
+  <h3 align="center">Soft Skills</h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Habilidade</th>
+      <th width="280px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Proatividade</td>
+      <td>Precisei estudar bastante sobre desenvolvimento web.</td>
+    </tr>
+    <tr>
+      <td>Conhecimento</td>
+      <td>Precisei aprender a utilizar e aplicar o Scrum no projeto.</td>
+    </tr>
+    <tr>
+      <td>Comunicação</td>
+      <td>Precisei me comunicar sobre a evolução das minhas tarefas.</td>
+    </tr>
+    <tr>
+      <td>Organização</td>
+      <td>Precisei me organizar quanto às tecnologias estudadas.</td>
+    </tr>
+  </table>
+
+
   
 </details>
 
