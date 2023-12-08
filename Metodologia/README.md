@@ -55,7 +55,7 @@ Encarar essa transição não foi apenas uma decisão profissional, mas um compr
 
 ![image](https://user-images.githubusercontent.com/80988756/218878798-d33629bc-acf9-4edb-b463-b14fd8a90404.png)
 
-##### *Figura 01. Fonte([fatecsjc-prd.azurewebsites.net](https://fatecsjc-prd.azurewebsites.net/curso-banco-de-dados.php))*
+##### *Fatec ([fatecsjc](https://fatecsjc-prd.azurewebsites.net/))*
 
 A Fatec é uma Faculdade Pública Estadual e todos os cursos oferecidos são gratuitos.
 De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envolve também, uma base de caráter social, 
