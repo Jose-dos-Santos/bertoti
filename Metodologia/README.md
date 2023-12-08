@@ -70,7 +70,7 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius.
 
 <img src ="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/julius.png?raw=true" width="200" height="200" />
 
-##### *Figura 02. Fonte([TheLooksDatabase/Julius](https://github.com/TheLooksDatabase/Julius))*
+Link do repositório do projeto: [Repositório](https://github.com/TheLooksDatabase/Julius)
 
 #### Principais requisitos do projeto
 
@@ -94,10 +94,10 @@ Dessa forma, foi desenvolvido o Assistente Virtual Julius.
 
 </br>
 
-- SpeechRecognition foi usada para reconhecimento e voz usando microfone.
-- Pyttsx3 foi usada para síntese de texto-voz.
-- Google-api-python-client API foi utilizada para usufruir dos recursos de reconhecimento de voz do Google.
-- Pycoingecko foi utilizada para conversão de moedas utilizando código do Banco Central.
+- Python foi escolhido para a codificação do back-end.
+- O VSCode foi a IDE escolhida para escrever os códigos.
+- GitHub foi utilizado para o controle de versionamento.
+- MySQL foi adotado como o banco de dados da nossa aplicação.
 
 ### Tarefas executadas
 -  Fui responsável pela implementação da funcionalidade "Metas financeiras".
