@@ -271,7 +271,7 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
 Nector</br>
 
 ![image](https://user-images.githubusercontent.com/80851038/133914328-794317fa-31e1-4279-afb0-d986acb5db45.png)
-##### *Figura 01. Fonte(https://necto.com.br/)*
+##### *Nector(https://necto.com.br/)*
 A Necto Systems é uma empresa de tecnologia com o objetivo de desenvolver soluções de software inovadoras e eficientes.
 
 ### Visão do Projeto
@@ -299,12 +299,13 @@ Dessa forma, foi desenvolvido o SGBD Health
 
 <img src ="https://github.com/DolphinDatabase/SGBD_Health/blob/main/Images/LogoPNG.png?raw=true" width="300" height="300"/>
 
-##### *Figura 02. Fonte(https://github.com/DolphinDatabase/SGBD_Health)*
+##### Link do repositório do projeto: [Repositório](https://github.com/DolphinDatabase/SGBD_Health)
 
 ### Tecnologias utilizadas:
 
 <div style="display: inline_block"><br> 
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="100" height="100" />
+ <img src="https://algol.dev/wp-content/uploads/2020/10/logo-eclipse.png" width="100" height="100" />	
  <img src="https://icongr.am/devicon/postgresql-original-wordmark.svg?size=128&color=currentColor" width="100" height="100" />
  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/sqlite/sqlite-original.svg" width="100" height="100" />
  <img src="https://icongr.am/devicon/github-original.svg?size=128&color=currentColor" width="100" height="100" />
@@ -312,11 +313,13 @@ Dessa forma, foi desenvolvido o SGBD Health
 
 </br>
 
-Como foi uma aplicação voltada para métricas de um servidor monitorando o sistema SGBT, utilizamos conexão JDBC do Java para conectar ao SGBD PostgreSql, SqLite para armazenar config da aplicação, GitHub para versionamento do código.
+- Java foi escolhido para a codificação do back-end.
+- O eclipse foi a IDE escolhida para escrever os códigos.
+- GitHub para versionamento do código.
+- PostgreSql e SqLite  foi adotado como o banco de dados da nossa aplicação.
 
+### Contribuições Pessoais
 
-
-### Tarefas executadas
 - Implementei o algoritmo que parametriza as informações vindas do banco.
 	- Essa funcionalidade valida os dados retornados das consultas ao banco de dados e organiza a forma como essas informações serão exibidas.
 - Criei da lógica para leitura do arquivo de configuração do sistema.
