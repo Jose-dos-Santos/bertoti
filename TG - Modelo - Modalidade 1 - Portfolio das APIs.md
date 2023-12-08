@@ -27,9 +27,22 @@ Estou comprometido em expandir meu conjunto de habilidades e permanecer atualiza
 ## Meus Projetos
 
 ### Em 2021-2
-Fale sobre o projeto desenvolvido. Apresente a empresa parceira, o problema e a solução entregue pela equipe (mínimo de um parágrafo por item). Recomenda-se o uso de figuras (ou até mesmo vídeos) para ilustrar os principais projetos.
+ ## Fatec
 
-[GIT](https://www.git.com)
+![image](https://user-images.githubusercontent.com/80988756/218878798-d33629bc-acf9-4edb-b463-b14fd8a90404.png)
+
+##### *Figura 01. Fonte([fatecsjc-prd.azurewebsites.net](https://fatecsjc-prd.azurewebsites.net/curso-banco-de-dados.php))*
+
+A Fatec é uma Faculdade Pública Estadual e todos os cursos oferecidos são gratuitos.
+De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envolve também, uma base de caráter social, 
+ético, filosófico e ambiental que faz deste cidadão um profissional ciente de sua inserção e responsabilidades no meio social que integra.
+
+
+### Visão do Projeto
+
+O projeto Julius consiste em um assistente virtual que auxilia o usuário na tomada de decisões relacionadas a investimentos financeiros. Entre as funcionalidades estão código de ações, cotação do dia, conversor de moedas. O diferencial desta nossa aplicação é trazer informações em tempo real entregando o máximo de interatividade ao cliente.
+
+[GIT](https://github.com/TheLooksDatabase/Julius)
 
 #### Tecnologias Utilizadas
 Apresente brevemente as tecnologias utilizadas. Uma tecnologia por linha. Indique qual a importância de cada tecnologia para o projeto.
