@@ -99,16 +99,17 @@ Link do repositório do projeto: [Repositório](https://github.com/TheLooksDatab
 - GitHub foi utilizado para o controle de versionamento.
 - MySQL foi adotado como o banco de dados da nossa aplicação.
 
-### Tarefas executadas
+### Contribuições Pessoais
 -  Fui responsável pela implementação da funcionalidade "Metas financeiras".
 	-  Um algoritmo que recebe na sua entrada valores informados pelo usuário e exibe os resultados com base nos valores informados. 
+
 -  Refatoração.
 	-  Alteração em alguns trechos no código fonte para seguir boas práticas e melhora no desempenho. Modificação de nomenclatura de variáveis, ajustes em estruturas condicionais, validação em loops verificando suas condições de parada e validar retorno das funções.
 - Teste da aplicação para validar desempenho.
 	-  Submeter as funcionalidades a diferentes situações, fornecendo dados de entrada para validar o resultado de saída.
 
 
-### Código
+#### Código
  <details close><summary>Função responsavel por coletar informações do investimento.</summary>
   
    <br>O método foi desenvolvido para prover uma experiência de usuário mais intuitiva durante o processo de inicialização do investimento, simulando a rentabilidade do investimento em um período definido.
@@ -192,13 +193,17 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
 </details>
 
 
-### Aprendizados Efetivos 
+#### Hard Skills
 
 * O primeiro contato com uma linguagem de programação ocorreu por meio do uso do Python.
 * Foi realizada a compreensão da metodologia ágil Scrum, buscando entender e aplicar seus conceitos.
 * O paradigma de programação imperativo foi adotado na construção do projeto, seguindo uma abordagem estrutural.
 * Foi iniciado o aprendizado da lógica de programação, buscando encontrar a melhor solução computacional para a resolução de problemas.
 * Houve a introdução às primeiras estruturas de dados utilizadas no projeto, tendo como base a linguagem Python.
+
+
+#### Soft Skills
+  
 </details>
 
 ## <b> Projeto II </b> 
