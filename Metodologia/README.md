@@ -985,6 +985,12 @@ Colaborei intensivamente para garantir que as práticas adotadas estivessem alin
 Destaquei a importância da colaboração e do trabalho em equipe em ambientes desafiadores, onde cada membro contribuiu de forma valiosa.
 
 
+</details>
+
+## Contatos
+* [GIT](https://github.com/Jose-dos-Santos)
+* [LinkedIn](linkedin.com/in/josé-maria-reis-dos-santos)
+
   
 
 
