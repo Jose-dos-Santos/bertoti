@@ -66,6 +66,12 @@ De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envo
 
 O projeto Julius consiste em um assistente virtual que auxilia o usuário na tomada de decisões relacionadas a investimentos financeiros. Entre as funcionalidades estão código de ações, cotação do dia, conversor de moedas. O diferencial desta nossa aplicação é trazer informações em tempo real entregando o máximo de interatividade ao cliente.
 
+Dessa forma, foi desenvolvido o Assistente Virtual Julius.
+
+<img src ="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/julius.png?raw=true" width="200" height="200" />
+
+##### *Figura 02. Fonte([TheLooksDatabase/Julius](https://github.com/TheLooksDatabase/Julius))*
+
 #### Principais requisitos do projeto
 
 * Responder a comando de voz ou sons específicos (palma, estalar de dedos, etc.);
@@ -76,12 +82,6 @@ O projeto Julius consiste em um assistente virtual que auxilia o usuário na tom
 * Não pode usar 100% de APIs prontas e disponíveis no mercado, seja gratuita ou não;
 * Não pode utilizar de plataforma de implementação de terceiros, seja gratuita ou não.
 
-
-Dessa forma, foi desenvolvido o Assistente Virtual Julius.
-
-<img src ="https://github.com/TheLooksDatabase/Julius/blob/main/3)%20Images/julius.png?raw=true" width="200" height="200" />
-
-##### *Figura 02. Fonte([TheLooksDatabase/Julius](https://github.com/TheLooksDatabase/Julius))*
 
 ### Tecnologias utilizadas:
 
