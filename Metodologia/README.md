@@ -1256,7 +1256,7 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 </br>
 
 
-### Tarefas executadas
+### Contribuições Pessoais
 - Participei na estruturação do back-end.
 - Auxiliei na criação das regras para implementação da LGPD.
 
