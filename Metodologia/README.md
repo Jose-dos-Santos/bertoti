@@ -223,12 +223,12 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
    <tr>
       <td>Python</td>
       <td>★★★☆☆</td>
-	<td>Sei fazer com ajuda</td>
+	<td>Entendi</td>
     </tr>
     <tr>
       <td>GIT</td>
-      <td>★★★☆☆</td>
-	<td>Sei fazer com ajuda</td>
+      <td>★★☆☆☆</td>
+	<td>Já ouvi falar</td>
     </tr>
   </table>
   
@@ -272,7 +272,7 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
 Nector</br>
 
 ![image](https://user-images.githubusercontent.com/80851038/133914328-794317fa-31e1-4279-afb0-d986acb5db45.png)
-##### *Nector(https://necto.com.br/)*
+##### *Nector([Nector](https://necto.com.br/)*
 A Necto Systems é uma empresa de tecnologia com o objetivo de desenvolver soluções de software inovadoras e eficientes.
 
 ### Visão do Projeto
@@ -432,7 +432,7 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api
     <tr>
       <td>Metodologia Ágil Scrum</td>
       <td>★★★☆☆</td>
-	<td>Sei fazer com ajuda</td>
+	<td>Entendi</td>
     </tr>
     <tr>
       <td>PostGreSQL</td>
@@ -442,12 +442,12 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api
    <tr>
       <td>Java</td>
       <td>★★★☆☆</td>
-	<td>Sei fazer com ajuda</td>
+	<td>Entendi</td>
     </tr>
     <tr>
       <td>GIT</td>
       <td>★★★☆☆</td>
-	<td>Sei fazer com ajuda</td>
+	<td>Entendi</td>
     </tr>
   </table>
   
@@ -490,7 +490,8 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api
 MidAll</br>
 
 ![image](https://static.wixstatic.com/media/456d95_16b15ab71cf54b9aa97150aaefefbbde~mv2.png/v1/fill/w_178,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%2520MidAll_edited.png)
-##### *Figura 01. Fonte(www.midall.com.br)*
+##### *MidAll ([fatecsjc](www.midall.com.br)*
+
 
 A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
 
@@ -498,6 +499,12 @@ A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tec
 ### Visão do Projeto
 
 A ideia é criar um mini motor de regras com uma interface onde as regras das promoções possam ser cadastradas e aplicadas no momento que os itens forem para o carrinho de compras. Alguns exemplos de mecânicas: compre 2 produtos e tenha 10% de desconto. Na compra de 2 produtos, ganhe mais 1. Na compra de 3 produtos, ganhe 50% de desconto no item de menor valor.
+
+Dessa forma, foi desenvolvido o PromoAll
+
+<img src ="https://github.com/Doc-Docker/APIMidAll/blob/main/Images/logo2promoall.png" width="300" height="300"/>
+
+##### Link do repositório do projeto: [Repositório](www.github.com/Doc-Docker/APIMidAll)*
 
 #### Principais requisitos do projeto
 
@@ -508,12 +515,6 @@ A ideia é criar um mini motor de regras com uma interface onde as regras das pr
 * Categoria de promoções;
 * Listagem de produtos e promoções.
 
-
-Dessa forma, foi desenvolvido o PromoAll
-
-<img src ="https://github.com/Doc-Docker/APIMidAll/blob/main/Images/logo2promoall.png" width="300" height="300"/>
-
-##### *Figura 02. Fonte(www.github.com/Doc-Docker/APIMidAll)*
 
 ### Tecnologias utilizadas:
 
@@ -528,11 +529,12 @@ Dessa forma, foi desenvolvido o PromoAll
 
 </br>
 
-Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typescript, para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 que é um sistema de gerenciamento de banco de dados relacional em memória.
+- Para o front-end foi utilizado o Angular que é uma plataforma baseada em Typescript, para criação das telas de interação com o cliente, e para realizar as requisições para a API que foi desenvolvida.
+- O Java com o framework Spring foi utilizado para criação da API de backend, com a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio.
+- Como banco de dados, foi utilizado o H2 que é um sistema de gerenciamento de banco de dados relacional em memória.
 
 
-
-### Tarefas executadas
+### Contribuições Pessoais
 
 - Participei da criação da lógica do motor de regras da API.
 	- Compreendi o requisito principal do projeto, que é a habilidade de escolher a melhor promoção para o cliente.
@@ -827,6 +829,63 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
   
 * Desenvolvi uma compreensão abrangente de testes, abordando não apenas os testes de unidade, mas também os de integração e interface. A aplicação prática desses conhecimentos se destacou especialmente nos testes de unidade, onde minha abordagem meticulosa contribuiu significativamente para a confiabilidade e qualidade do código.
 
+   <h3 align="center"> Hard Skills </h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Tecnologia/Metodologia</th>
+      <th width="85px">Nota</th>
+      <th width="200px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Metodologia Ágil Scrum</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>SQLite</td>
+      <td>★★★★☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>	
+   <tr>
+      <td>Java</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>Spring-Boot</td>
+      <td>★★★★☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>
+    <tr>
+      <td>GIT</td>
+      <td>★★★☆☆</td>
+	<td>Entendi</td>
+    </tr>
+  </table>
+  
+  <h3 align="center">Soft Skills</h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Habilidade</th>
+      <th width="280px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Proatividade</td>
+      <td>Precisei estudar bastante sobre java e conexão com banco de dados com JDBC.</td>
+    </tr>
+    <tr>
+      <td>Pensamento Crítico</td>
+      <td>Precisei desenvolver pensamento crítico para analisar informações de forma objetiva e tomar decisões fundamentadas.</td>
+    </tr>
+    <tr>
+      <td>Comunicação</td>
+      <td>Precisei me comunicar sobre a evolução das minhas tarefas.</td>
+    </tr>
+    <tr>
+      <td>Organização</td>
+      <td>Precisei me organizar quanto às tecnologias estudadas.</td>
+    </tr>
+  </table>
   
 </details>
 
