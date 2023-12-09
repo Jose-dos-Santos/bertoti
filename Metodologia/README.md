@@ -3,7 +3,7 @@
 
 ## Introdução
 
-Meu nome é José Maria e sou um desenvolvedor Back-End com expertise em .Net C#. No ano de 2021, tomei a decisão corajosa de mudar de área, deixando para trás uma década de experiência em manuteção para ingressar no emocionante campo da Tecnologia da Informação.
+Meu nome é José Maria e sou um desenvolvedor Back-End com expertise em .Net C#. No ano de 2021, tomei a decisão corajosa de mudar de área, deixando para trás uma década de experiência em manutenção para ingressar no emocionante campo da Tecnologia da Informação.
 
 Esta mudança representou não apenas uma transição de carreira, mas um mergulho em um novo desafio. Com dois anos de imersão na área de TI, tenho dedicado meu tempo a aprimorar minhas habilidades como desenvolvedor, especialmente no ambiente Back-End utilizando a tecnologia .Net C#.
 
