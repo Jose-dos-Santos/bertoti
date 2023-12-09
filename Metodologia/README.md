@@ -269,10 +269,10 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
 </summary>
  
  ## Parceiro Acadêmico
-Nector</br>
+Necto</br>
 
 ![image](https://user-images.githubusercontent.com/80851038/133914328-794317fa-31e1-4279-afb0-d986acb5db45.png)
-##### *Nector ([Nector](https://necto.com.br/))*
+##### *Necto ([Necto](https://necto.com.br/))*
 A Necto Systems é uma empresa de tecnologia com o objetivo de desenvolver soluções de software inovadoras e eficientes.
 
 ### Visão do Projeto
