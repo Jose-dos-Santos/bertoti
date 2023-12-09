@@ -1015,7 +1015,7 @@ O projeto tem como desafio a sincronização dos dados administrativos, financei
 
 -Para o front-end foi utilizado o Vue.js para criação das telas de interação com o cliente e para a realização das requisições para a API desenvolvida. 
 - Python com framework Flask foi utilizado para criação da API de backend, para a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio.
-- Como banco de dados, foi utilizado o SqlServer implementação do banco da api
+- Como banco de dados, foi utilizado o SqlServer implementação do banco da api.
 - Azure como cloud para hospedar servidor da aplicação.
 - Css e Bootstrap para estilização das telas.
 
@@ -1209,13 +1209,17 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 Visiona</br>
 
 ![image](https://visionaespacial.com/wp-content/themes/VisionaEspacial/assets/img/logo-branca-completa.svg)
-##### *Figura 01. Fonte(https://visionaespacial.com/)*
+
+##### *Visiona ([Visiona](https://visionaespacial.com/))*
 
 A Visiona Tecnologia Espacial é uma joint-venture entre a Embraer Defesa & Segurança e a Telebras, voltada para a integração de sistemas espaciais, criada em 2012 para atender os objetivos do Programa Nacional de Atividades Espaciais (PNAE) e do Programa Estratégico de Sistemas Espaciais (PESE). A empresa foi a responsável pelo Programa do Satélite Geoestacionário de Defesa e Comunicações Estratégicas, o SGDC, lançado em 2017. Em 2018, a Visiona anunciou o programa do primeiro satélite projetado integralmente pela indústria nacional, o VCUB1, e concluiu com êxito o primeiro Sistema de Controle de Órbita e Atitude de satélites desenvolvido no Brasil. A Visiona também fornece produtos e serviços de Sensoriamento Remoto e Telecomunicações por satélite, bem como Aerolevantamento SAR nas Bandas X e P.
 
 ### Visão do Projeto
 
 Neste projeto é proposto uma solução abrangente que envolve a coleta e o refinamento dos dados públicos do ProAgro, a reestruturação eficiente da base de dados e o desenvolvimento de um Sistema de Informação Geográfica (SIG) personalizado, fornecendo informações de forma mais simples e organizada para o usuário. Essa abordagem busca facilitar a compreensão e análise dos dados, contribuindo para melhorias nos processos internos da empresa.
+
+##### Link do repositório do projeto: [Repositório](https://github.com/TechVisionn/tech-parent)*
+
 
 #### Principais requisitos do Projeto
 * Modelar um banco de dados relacionais espaciais a partir de tabelas do Proagro;
@@ -1230,7 +1234,6 @@ Neste projeto é proposto uma solução abrangente que envolve a coleta e o refi
 informados nas tabelas do Proagro e organizados no banco de dados.
 * O tempo de resposta do site deve ser inferior a 1,5 minutos em 99,99% das obrigações;
 
-##### *Figura 02. Fonte(https://github.com/TechVisionn/tech-parent)*
 
 ### Tecnologias utilizadas:
 
