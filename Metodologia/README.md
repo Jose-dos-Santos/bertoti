@@ -504,7 +504,7 @@ Dessa forma, foi desenvolvido o PromoAll
 
 <img src ="https://github.com/Doc-Docker/APIMidAll/blob/main/Images/logo2promoall.png" width="300" height="300"/>
 
-##### Link do repositório do projeto: [Repositório](www.github.com/Doc-Docker/APIMidAll)
+##### Link do repositório do projeto: [Repositório](https://github.com/Jose-dos-Santos/APIMidAll)
 
 #### Principais requisitos do projeto
 
