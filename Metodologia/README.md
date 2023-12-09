@@ -990,7 +990,7 @@ A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tec
 
 O projeto tem como desafio a sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados e confusão na interpretação dos indicadores comerciais e financeiros.
 
-##### Link do repositório do projeto: [Repositório](https://github.com/Doc-Docker/APISubiter)
+##### Link do repositório do projeto: [Repositório](https://github.com/TechNinjass/midall-parent)
 
 #### Principais requisitos do Projeto
 
