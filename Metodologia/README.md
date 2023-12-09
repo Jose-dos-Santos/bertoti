@@ -738,13 +738,16 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 Subiter</br>
 
 ![image](https://github.com/Doc-Docker/APISubiter/blob/main/docs/Imagens/logosubiter.png?raw=true)
-##### *Figura 01. Fonte(https://www.subiter.com/)*
+
+##### *Subiter ([Subiter](https://www.subiter.com/)*
 
 A Subiter é uma empresa de base tecnológica especializada em visão infravermelha. Por meio de sistemas inteligentes de inspeção e monitoramento, que podem observar fenômenos que estão além da capacidade dos olhos humanos.
 
 ### Visão do Projeto
 
 O propósito do projeto consiste em abordar a problemática da sincronização dos dados administrativos, financeiros e operacionais relacionados aos serviços oferecidos pela empresa. A falta de organização dessas informações resulta em lentidão na resposta a desafios, além de dificultar a interpretação dos indicadores comerciais e financeiros. Foi implementado um sistema de gerenciamento integrado que centralizou dados relevantes por meio de um banco de dados robusto, proporcionando uma análise precisa dos indicadores comerciais e financeiros. Essa abordagem facilitou a tomada de decisões estratégicas.
+
+##### Link do repositório do projeto: [Repositório](https://github.com/Doc-Docker/APISubiter)
 
 #### Principais requisitos do Projeto
  * Cadastros de Usuários, Equipamentos e Horários;
@@ -753,8 +756,6 @@ O propósito do projeto consiste em abordar a problemática da sincronização d
  * Acompanhamento de chamados de ponta a ponta;
  * Front-End para entrada e interpretação de dados.
 
-
-##### *Figura 02. Fonte(https://github.com/Doc-Docker/APISubiter)*
 
 ### Tecnologias utilizadas:
 
@@ -769,7 +770,10 @@ O propósito do projeto consiste em abordar a problemática da sincronização d
 
 </br>
 
-Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela criação das interfaces de interação com o cliente e pela realização das requisições à API. No lado do back-end, optou-se pelo framework Flask para a criação da API, englobando o desenvolvimento das rotas HTTP, a conexão com o banco de dados, o tratamento de erros e a implementação das regras de negócio. Quanto ao banco de dados, optou-se pelo SQL Server, hospedado na plataforma Azure da Microsoft.
+- Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela criação das interfaces de interação com o cliente e pela realização das requisições à API.
+- No lado do back-end, optou-se pelo framework Flask para a criação da API, englobando o desenvolvimento das rotas HTTP, a conexão com o banco de dados, o tratamento de erros e a implementação das regras de negócio.
+-  Quanto ao banco de dados, optou-se pelo SQL Server.
+-  Plataforma Azure da Microsoft para hospedar nosso servidor.
 
 
 
