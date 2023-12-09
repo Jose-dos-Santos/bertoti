@@ -1218,7 +1218,7 @@ A Visiona Tecnologia Espacial é uma joint-venture entre a Embraer Defesa & Segu
 
 Neste projeto é proposto uma solução abrangente que envolve a coleta e o refinamento dos dados públicos do ProAgro, a reestruturação eficiente da base de dados e o desenvolvimento de um Sistema de Informação Geográfica (SIG) personalizado, fornecendo informações de forma mais simples e organizada para o usuário. Essa abordagem busca facilitar a compreensão e análise dos dados, contribuindo para melhorias nos processos internos da empresa.
 
-##### Link do repositório do projeto: [Repositório](https://github.com/TechVisionn/tech-parent)*
+##### Link do repositório do projeto: [Repositório](https://github.com/TechVisionn/tech-parent)
 
 
 #### Principais requisitos do Projeto
@@ -1239,21 +1239,22 @@ informados nas tabelas do Proagro e organizados no banco de dados.
 
 <div style="display: inline_block"><br> 
  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" width="100"    height="100" />
+ <img src="https://github.com/devicons/devicon/blob/master/icons/flask/flask-original.svg" width="100" height="100" /> 
  <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg" width="100" height="100" /> 
  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" width="100" height="100"  />
  <img src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original.svg" width="100" height="100" />
  <img src="https://github.com/devicons/devicon/blob/master/icons/redis/redis-original.svg" width="100" height="100" />
 </div>
 
+- Python com framework Flask foi utilizado para criação da API de backend, para a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio.
+- Para o front-end foi utilizado o React para criação das telas de interação com o cliente e para a realização das requisições para a API desenvolvida. 
+- Como banco de dados, foi utilizado o MySQL implementação do banco da api.
+- Azure como cloud para hospedar servidor da aplicação.
+- Utilizado o MongoDB para armazenar os dados dos usuários do sistema.
+-  Redis foi utilizado para armazenar dados em memória, com o propósito de melhorar as respostas às requisições.
+ 
 </br>
 
-É um Sistema de Gerenciamento de Banco de Dados (SGBD) relacional que utiliza a linguagem SQL como interface. Lançado sob a licença GPL, foi desenvolvido pela Oracle Corporation e empregado como o Sistema Gerenciador de Banco de Dados (SGBD) no projeto.
-
-Trata-se de um banco de dados NoSQL que armazena dados em documentos flexíveis usando o formato JSON. Proporciona escalabilidade e flexibilidade para lidar com grandes volumes de dados e modelos de dados dinâmicos, sendo utilizado na parte do projeto relacionada à LGPD para o cadastro do usuário. Além disso, o Redis também foi integrado para otimizar o armazenamento em cache e melhorar o desempenho na manipulação de dados em tempo real.
-
-Python, uma linguagem de programação versátil e amplamente utilizada, é reconhecida por sua simplicidade, legibilidade e capacidade de criar aplicativos eficientes. É uma escolha popular para o desenvolvimento de aplicativos web, científicos, de automação, entre outros, devido à sua ampla variedade de bibliotecas e à comunidade ativa de desenvolvedores. Foi utilizado na construção do backend da aplicação.
-
-Utilizado como um framework de código aberto e uma biblioteca JavaScript, o React é empregado para construir interfaces de usuário interativas e dinâmicas em aplicações web. Frequentemente utilizado em projetos para criar componentes reutilizáveis, gerenciar o estado do aplicativo e proporcionar uma experiência de usuário rica, o React é conhecido por sua eficiência e poderosa capacidade de renderização. Tornou-se uma escolha popular entre os desenvolvedores para o desenvolvimento de aplicações web modernas, sendo aplicado como o framework do frontend do projeto.
 
 ### Tarefas executadas
 - Participei na estruturação do back-end.
