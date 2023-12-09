@@ -1321,6 +1321,99 @@ Colaborei intensivamente para garantir que as práticas adotadas estivessem alin
 - A experiência compartilhada durante a estruturação do back-end e implementação da LGPD foi crucial para meu aprendizado contínuo.
 Destaquei a importância da colaboração e do trabalho em equipe em ambientes desafiadores, onde cada membro contribuiu de forma valiosa.
 
+ <h3 align="center"> Hard Skills </h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Tecnologia/Metodologia</th>
+      <th width="85px">Nota</th>
+      <th width="200px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Metodologia Ágil Scrum</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>MySql</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>	
+   <tr>
+      <td>Python</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>Flask</td>
+      <td>★★★★☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>
+    <tr>
+      <td>GIT</td>
+     <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>React</td>
+     <td>★★☆☆☆</td>
+	<td>Já ouvi falar</td>
+    </tr>
+    <tr>
+      <td>Redis</td>
+     <td>★★☆☆☆</td>
+	<td>Já ouvi falar</td>
+    </tr>
+    <tr>
+      <td>Azure</td>
+     <td>★★★☆☆</td>
+	<td>Entendi</td>
+    </tr>
+    <tr>
+      <td>mongodb</td>
+     <td>★★★☆☆</td>
+	<td>Entendi</td>
+    </tr>
+  </table>
+  
+  <h3 align="center">Soft Skills</h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Habilidade</th>
+      <th width="280px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Proatividade</td>
+      <td>Precisei estudar em plataformas online o framework Flask.</td>
+    </tr>
+    <tr>
+      <td>Pensamento Crítico</td>
+      <td>Precisei desenvolver pensamento crítico para analisar informações de forma objetiva e tomar decisões fundamentadas.</td>
+    </tr>
+    <tr>
+      <td>Comunicação</td>
+      <td>Precisei me comunicar sobre a evolução das minhas tarefas e reuniões sobre mudanças e entendimento do projeto.</td>
+    </tr>
+    <tr>
+      <td>Organização</td>
+      <td>Precisei me organizar quanto às tecnologias estudadas e administrar tempo de estudo e lazer.</td>
+    </tr>
+    <tr>
+      <td>Iniciativa</td>
+      <td>Desenvolvi essa habilidade para assumir responsabilidades em demandas que não tinham responsáveis.</td>
+    </tr>
+  </table>
+  <tr>
+      <td>Resiliência</td>
+      <td>Exerci resiliência ao persistir na busca por soluções, sem desistir dos meus objetivos.</td>
+  </tr>
+  <tr>
+      <td>Inteligência Emocional</td>
+      <td>Evolui essa habilidade para não ser afetado pelos conflitos da equipe.</td>
+  </tr>
+  <tr>
+      <td>Resolução de Conflitos</td>
+      <td>Exerci essa habilidade para manter a equipe unida diante de desafios e conflitos.</td>
+  </tr>
 
 </details>
 
