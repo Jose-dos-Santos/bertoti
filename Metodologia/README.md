@@ -704,6 +704,10 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
       <th width="280px">Descrição</th>
     </tr>
     <tr>
+      <td>Resiliência</td>
+      <td>Exerci resiliência ao persistir na busca por soluções, sem desistir dos meus objetivos.</td>
+    </tr>
+    <tr>
       <td>Proatividade</td>
       <td>Precisei estudar bastante sobre java e conexão com banco de dados com JDBC.</td>
     </tr>
@@ -941,7 +945,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
     </tr>
     <tr>
       <td>Proatividade</td>
-      <td>Precisei estudar Vuejc.</td>
+      <td>Precisei estudar em plataformas online o framework Vuejc.</td>
     </tr>
     <tr>
       <td>Pensamento Crítico</td>
@@ -954,6 +958,10 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
     <tr>
       <td>Organização</td>
       <td>Precisei me organizar quanto às tecnologias estudadas e administrar tempo de estudo e lazer.</td>
+    </tr>
+    <tr>
+      <td>Inteligência Emocional</td>
+      <td>Desenvolvi essa habilidade para não ser afetado pelos conflitos da equipe.</td>
     </tr>
   </table>
   
