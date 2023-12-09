@@ -1414,6 +1414,7 @@ Destaquei a importância da colaboração e do trabalho em equipe em ambientes d
       <td>Resolução de Conflitos</td>
       <td>Exerci essa habilidade para manter a equipe unida diante de desafios e conflitos.</td>
   </tr>
+</table>
 
 </details>
 
