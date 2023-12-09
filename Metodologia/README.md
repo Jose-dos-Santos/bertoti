@@ -781,7 +781,7 @@ O propósito do projeto consiste em abordar a problemática da sincronização d
 
 
 
-### Tarefas executadas
+### Contribuições Pessoais
 - Atuei de forma integral no time do back-end
 	- Participei da estruturação inicial do back-end, ajudando na criação da arquitetura do projeto.
 	- Escolhas das tecnologias que utilizadas.
@@ -1008,15 +1008,20 @@ O projeto tem como desafio a sincronização dos dados administrativos, financei
  <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vuejs/vuejs-original.svg" width="100" height="100"  />
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="100" height="100" />
  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" width="100" height="100" />
+ <img src="https://github.com/devicons/devicon/blob/master/icons/azure/azure-original.svg" width="100" height="100" />
 </div>
 
 </br>
 
--Para o front-end foi utilizado o Vue.js para criação das telas de interação com o cliente e para a realização das requisições para a API desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, para a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
+-Para o front-end foi utilizado o Vue.js para criação das telas de interação com o cliente e para a realização das requisições para a API desenvolvida. 
+- Python com framework Flask foi utilizado para criação da API de backend, para a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio.
+- Como banco de dados, foi utilizado o SqlServer implementação do banco da api
+- Azure como cloud para hospedar servidor da aplicação.
+- Css e Bootstrap para estilização das telas.
 
 
 
-### Tarefas executadas
+### Contribuições Pessoais
 - Atuei na construção dos testes de unidades.
 	- Criei métodos de testes para as principais classes do back-end, visando validar as regras especificas de cada método dentro da sua classe.
 	- Fui responsável por apresentar em sala de aula o conceito de teste de unidade aplicado no projeto, para validação do grupo nesse item de DevOps.
@@ -1114,6 +1119,81 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 * Adquiri e apliquei conhecimentos fundamentais em data warehousing, utilizando ferramentas como Looker Studio para o tratamento eficiente dos dados. A integração bem-sucedida desses conceitos no projeto não só enriqueceu minha compreensão, mas também resultou em uma manipulação de dados mais eficaz e informada.
   
 * Desenvolvi uma compreensão abrangente de testes, abordando não apenas os testes de unidade, mas também os de integração e interface. A aplicação prática desses conhecimentos se destacou especialmente nos testes de unidade, onde minha abordagem meticulosa contribuiu significativamente para a confiabilidade e qualidade do código.
+
+ <h3 align="center"> Hard Skills </h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Tecnologia/Metodologia</th>
+      <th width="85px">Nota</th>
+      <th width="200px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Metodologia Ágil Scrum</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>SqlServer</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>	
+   <tr>
+      <td>Python</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>Flask</td>
+      <td>★★★★☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>
+    <tr>
+      <td>GIT</td>
+     <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>Vuejs</td>
+     <td>★★★☆☆</td>
+	<td>Entendi</td>
+    </tr>
+    <tr>
+      <td>Azure</td>
+     <td>★★★☆☆</td>
+	<td>Entendi</td>
+    </tr>
+  </table>
+  
+  <h3 align="center">Soft Skills</h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Habilidade</th>
+      <th width="280px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Proatividade</td>
+      <td>Precisei estudar em plataformas online o framework Flask.</td>
+    </tr>
+    <tr>
+      <td>Pensamento Crítico</td>
+      <td>Precisei desenvolver pensamento crítico para analisar informações de forma objetiva e tomar decisões fundamentadas.</td>
+    </tr>
+    <tr>
+      <td>Comunicação</td>
+      <td>Precisei me comunicar sobre a evolução das minhas tarefas e reuniões sobre mudanças e entendimento do projeto.</td>
+    </tr>
+    <tr>
+      <td>Organização</td>
+      <td>Precisei me organizar quanto às tecnologias estudadas e administrar tempo de estudo e lazer.</td>
+    </tr>
+    <tr>
+      <td>Iniciativa</td>
+      <td>Desenvolvi essa habilidade para assumir responsabilidades em demandas que não tinham responsáveis.</td>
+    </tr>
+  </table>
+  
+</details>
+
 
 </details>
 
