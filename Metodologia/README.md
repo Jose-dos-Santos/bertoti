@@ -3,7 +3,7 @@
 
 ## Introdução
 
-Meu nome é José Maria e sou um desenvolvedor Back-End com expertise em .Net C#. No ano de 2021, tomei a decisão corajosa de mudar de área, deixando para trás uma década de experiência em manuteção para ingressar no emocionante campo da Tecnologia da Informação.
+Meu nome é José Maria e sou um desenvolvedor Back-End com expertise em .Net C#. No ano de 2020, tomei a decisão corajosa de mudar de área, deixando para trás uma década de experiência em manuteção para ingressar no emocionante campo da Tecnologia da Informação.
 
 Esta mudança representou não apenas uma transição de carreira, mas um mergulho em um novo desafio. Com dois anos de imersão na área de TI, tenho dedicado meu tempo a aprimorar minhas habilidades como desenvolvedor, especialmente no ambiente Back-End utilizando a tecnologia .Net C#.
 
@@ -43,7 +43,7 @@ Encarar essa transição não foi apenas uma decisão profissional, mas um compr
 ## Meus Projetos
 
 
-## <b> Projeto I </b> 
+## <b> Projeto I - 1° Semestre 2021 </b> 
  
 <details>
 
@@ -260,7 +260,7 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
   
 </details>
 
-## <b> Projeto II </b> 
+## <b> Projeto II - 2° Semestre 2021 </b> 
 
 <details>
 
@@ -478,7 +478,7 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api
 
 </details>
 
-## <b> Projeto III </b> 
+## <b> Projeto III - 1° Semestre 2022 </b> 
 
  <details>
 
@@ -730,7 +730,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 
 </details>
 
-## <b> Projeto IV </b> 
+## <b> Projeto IV - 2° Semestre 2022 </b> 
  
 <details>
 
@@ -968,7 +968,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 </details>
 
 
-## <b> Projeto V </b> 
+## <b> Projeto V - 1° Semestre 2023 </b> 
 
  
 <details>
@@ -1197,7 +1197,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 
 </details>
 
-## <b> Projeto VI </b> 
+## <b> Projeto VI - 2° Semestre 2023 </b> 
 
 <details>
 
