@@ -56,7 +56,7 @@ De uma forma geral a formação do Tecnólogo, além de aspectos técnicos, envo
 
 O projeto Julius consiste em um assistente virtual que auxilia o usuário na tomada de decisões relacionadas a investimentos financeiros. Entre as funcionalidades estão código de ações, cotação do dia, conversor de moedas. O diferencial desta nossa aplicação é trazer informações em tempo real entregando o máximo de interatividade ao cliente.
 
-[GIT](https://github.com/TheLooksDatabase/Julius)
+Link do repositório do projeto: [Repositório](https://github.com/TheLooksDatabase/Julius)
 
 #### Tecnologias Utilizadas
 Apresente brevemente as tecnologias utilizadas. Uma tecnologia por linha. Indique qual a importância de cada tecnologia para o projeto.
