@@ -272,7 +272,7 @@ Por fim, a função imprime uma mensagem informando ao usuário quanto tempo ser
 Nector</br>
 
 ![image](https://user-images.githubusercontent.com/80851038/133914328-794317fa-31e1-4279-afb0-d986acb5db45.png)
-##### *Nector([Nector](https://necto.com.br/)*
+##### *Nector ([Nector](https://necto.com.br/))*
 A Necto Systems é uma empresa de tecnologia com o objetivo de desenvolver soluções de software inovadoras e eficientes.
 
 ### Visão do Projeto
@@ -490,7 +490,7 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api
 MidAll</br>
 
 ![image](https://static.wixstatic.com/media/456d95_16b15ab71cf54b9aa97150aaefefbbde~mv2.png/v1/fill/w_178,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%2520MidAll_edited.png)
-##### *MidAll ([fatecsjc](www.midall.com.br)*
+##### *MidAll ([fatecsjc](www.midall.com.br))*
 
 
 A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
@@ -504,7 +504,7 @@ Dessa forma, foi desenvolvido o PromoAll
 
 <img src ="https://github.com/Doc-Docker/APIMidAll/blob/main/Images/logo2promoall.png" width="300" height="300"/>
 
-##### Link do repositório do projeto: [Repositório](www.github.com/Doc-Docker/APIMidAll)*
+##### Link do repositório do projeto: [Repositório](www.github.com/Doc-Docker/APIMidAll)
 
 #### Principais requisitos do projeto
 
@@ -662,6 +662,67 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APIMidAll/blob/main/frontend-m
 * O Framework Spring-Boot foi a tecnologia principal utilizada para iniciar o projeto, oferecendo diversos recursos para facilitar o ambiente de programação ao codificar em Java. Foi utilizado o Spring Initializr para criar o projeto inicial com facilidade.
 * Adquiri conhecimentos fundamentais sobre API REST. Compreendi que uma API REST, ou API RESTful, é uma interface de programação de aplicações que adere às restrições do estilo arquitetônico REST (Transferência Representacional de Estado). Essa abordagem permite a interação eficiente com serviços web RESTful, proporcionando uma estrutura robusta para o desenvolvimento e a comunicação entre sistemas.
 * Optei por utilizar o Postman como ferramenta principal para teste de requisições. Isso me permitiu realizar testes eficientes em APIs, enviando diversas requisições HTTP, como GET, POST, PUT e DELETE. Além disso, aprendi a criar objetos JSON para enviar dados nas requisições, explorando a flexibilidade e simplicidade dessa abordagem.
+
+ <h3 align="center"> Hard Skills </h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Tecnologia/Metodologia</th>
+      <th width="85px">Nota</th>
+      <th width="200px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Metodologia Ágil Scrum</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>SQLite</td>
+      <td>★★★★☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>	
+   <tr>
+      <td>Java</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>Spring-Boot</td>
+      <td>★★★★☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>
+    <tr>
+      <td>GIT</td>
+      <td>★★★☆☆</td>
+	<td>Entendi</td>
+    </tr>
+  </table>
+  
+  <h3 align="center">Soft Skills</h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Habilidade</th>
+      <th width="280px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Proatividade</td>
+      <td>Precisei estudar bastante sobre java e conexão com banco de dados com JDBC.</td>
+    </tr>
+    <tr>
+      <td>Pensamento Crítico</td>
+      <td>Precisei desenvolver pensamento crítico para analisar informações de forma objetiva e tomar decisões fundamentadas.</td>
+    </tr>
+    <tr>
+      <td>Comunicação</td>
+      <td>Precisei me comunicar sobre a evolução das minhas tarefas.</td>
+    </tr>
+    <tr>
+      <td>Organização</td>
+      <td>Precisei me organizar quanto às tecnologias estudadas.</td>
+    </tr>
+  </table>
+  
+</details>
+
 
 </details>
 
