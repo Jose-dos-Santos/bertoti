@@ -953,7 +953,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
     </tr>
     <tr>
       <td>Comunicação</td>
-      <td>Precisei me comunicar sobre a evolução das minhas tarefas.</td>
+      <td>Precisei me comunicar sobre a evolução das minhas tarefas e reuniões sobre mudanças e entendimento do projeto.</td>
     </tr>
     <tr>
       <td>Organização</td>
