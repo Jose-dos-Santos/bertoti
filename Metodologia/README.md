@@ -1401,20 +1401,21 @@ Destaquei a importância da colaboração e do trabalho em equipe em ambientes d
       <td>Iniciativa</td>
       <td>Desenvolvi essa habilidade para assumir responsabilidades em demandas que não tinham responsáveis.</td>
     </tr>
-  </table>
-  <tr>
+    <tr>
       <td>Resiliência</td>
       <td>Exerci resiliência ao persistir na busca por soluções, sem desistir dos meus objetivos.</td>
-  </tr>
-  <tr>
+     </tr>
+     <tr>
       <td>Inteligência Emocional</td>
       <td>Evolui essa habilidade para não ser afetado pelos conflitos da equipe.</td>
-  </tr>
-  <tr>
+     </tr>
+     <tr>
       <td>Resolução de Conflitos</td>
       <td>Exerci essa habilidade para manter a equipe unida diante de desafios e conflitos.</td>
-  </tr>
-</table>
+     </tr>
+  </table>
+ 
+
 
 </details>
 
