@@ -50,7 +50,8 @@ Encarar essa transição não foi apenas uma decisão profissional, mas um compr
 <summary>
 	Mais Detalhes do Projeto I
 </summary>
- 
+
+ ## Parceiro Acadêmico
  ## Fatec
 
 ![image](https://user-images.githubusercontent.com/80988756/218878798-d33629bc-acf9-4edb-b463-b14fd8a90404.png)
@@ -420,6 +421,60 @@ Click aqui [GitHub](https://github.com/Jose-dos-Santos/SGBD_Health/blob/main/api
 * Durante esse período, foi adotado o paradigma de programação orientada a objetos (POO) para desenvolver o projeto, conhecendo e aplicando seus conceitos.
 * Esse foi o primeiro contato com um sistema gerenciador de banco de dados (SGBD), especificamente o PostGreSQL, e com a linguagem SQL. Nesse sentido, foi realizada a criação do banco de dados e a construção de consultas para atender aos requisitos do projeto.
 * Outro aspecto relevante foi a conexão do software desenvolvido com o banco de dados, possibilitando a coleta de entradas por meio da implementação e o armazenamento desses dados. Com base nesses dados, foram construídas as métricas necessárias para atender às exigências do projeto.
+
+ <h3 align="center"> Hard Skills </h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Tecnologia/Metodologia</th>
+      <th width="85px">Nota</th>
+      <th width="200px">Classificação</th>
+    </tr>
+    <tr>
+      <td>Metodologia Ágil Scrum</td>
+      <td>★★★☆☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>
+    <tr>
+      <td>PostGreSQL</td>
+      <td>★★☆☆☆</td>
+	<td>Já ouvi falar</td>
+    </tr>	
+   <tr>
+      <td>Java</td>
+      <td>★★★☆☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>
+    <tr>
+      <td>GIT</td>
+      <td>★★★☆☆</td>
+	<td>Sei fazer com ajuda</td>
+    </tr>
+  </table>
+  
+  <h3 align="center">Soft Skills</h3>
+  <table align="center">
+    <tr>
+      <th width="270px">Habilidade</th>
+      <th width="280px">Descrição</th>
+    </tr>
+    <tr>
+      <td>Proatividade</td>
+      <td>Precisei estudar bastante sobre java e conexão com banco de dados com JDBC.</td>
+    </tr>
+    <tr>
+      <td>Pensamento Crítico</td>
+      <td>Precisei desenvolver pensamento crítico para analisar informações de forma objetiva e tomar decisões fundamentadas.</td>
+    </tr>
+    <tr>
+      <td>Comunicação</td>
+      <td>Precisei me comunicar sobre a evolução das minhas tarefas.</td>
+    </tr>
+    <tr>
+      <td>Organização</td>
+      <td>Precisei me organizar quanto às tecnologias estudadas.</td>
+    </tr>
+  </table>
+
 
 </details>
 
