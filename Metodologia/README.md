@@ -1326,7 +1326,7 @@ Destaquei a importância da colaboração e do trabalho em equipe em ambientes d
 
 ## Contatos
 * [GIT](https://github.com/Jose-dos-Santos)
-* [LinkedIn](linkedin.com/in/josé-maria-reis-dos-santos)
+* [LinkedIn](https://www.linkedin.com/in/jos%C3%A9-maria-reis-dos-santos/)
 
   
 
