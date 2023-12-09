@@ -739,7 +739,7 @@ Subiter</br>
 
 ![image](https://github.com/Doc-Docker/APISubiter/blob/main/docs/Imagens/logosubiter.png?raw=true)
 
-##### *Subiter ([Subiter](https://www.subiter.com/)*
+##### *Subiter ([Subiter](https://www.subiter.com/))*
 
 A Subiter é uma empresa de base tecnológica especializada em visão infravermelha. Por meio de sistemas inteligentes de inspeção e monitoramento, que podem observar fenômenos que estão além da capacidade dos olhos humanos.
 
@@ -907,9 +907,9 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 	<td>Sei fazer com autonomia</td>
     </tr>
     <tr>
-      <td>SQLite</td>
-      <td>★★★★☆</td>
-	<td>Sei fazer com ajuda</td>
+      <td>Oracle</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
     </tr>	
    <tr>
       <td>Java</td>
@@ -918,12 +918,17 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
     </tr>
     <tr>
       <td>Spring-Boot</td>
-      <td>★★★★☆</td>
-	<td>Sei fazer com ajuda</td>
+      <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
     </tr>
     <tr>
       <td>GIT</td>
-      <td>★★★☆☆</td>
+     <td>★★★★★</td>
+	<td>Sei fazer com autonomia</td>
+    </tr>
+    <tr>
+      <td>Vuejs</td>
+     <td>★★★☆☆</td>
 	<td>Entendi</td>
     </tr>
   </table>
@@ -936,7 +941,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
     </tr>
     <tr>
       <td>Proatividade</td>
-      <td>Precisei estudar bastante sobre java e conexão com banco de dados com JDBC.</td>
+      <td>Precisei estudar Vuejc.</td>
     </tr>
     <tr>
       <td>Pensamento Crítico</td>
@@ -948,7 +953,7 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
     </tr>
     <tr>
       <td>Organização</td>
-      <td>Precisei me organizar quanto às tecnologias estudadas.</td>
+      <td>Precisei me organizar quanto às tecnologias estudadas e administrar tempo de estudo e lazer.</td>
     </tr>
   </table>
   
