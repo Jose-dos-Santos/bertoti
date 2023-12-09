@@ -777,8 +777,9 @@ O propósito do projeto consiste em abordar a problemática da sincronização d
 
 - Foi utilizado o Vue.js para o desenvolvimento do front-end, responsável pela criação das interfaces de interação com o cliente e pela realização das requisições à API.
 - No lado do back-end, optou-se pelo framework Flask para a criação da API, englobando o desenvolvimento das rotas HTTP, a conexão com o banco de dados, o tratamento de erros e a implementação das regras de negócio.
--  Quanto ao banco de dados, optou-se pelo SQL Server.
+-  Quanto ao banco de dados, optou-se pelo Oracle.
 -  Plataforma Azure da Microsoft para hospedar nosso servidor.
+-  Para a estilização do front-end, usamos CSS e Bootstrap.
 
 
 
