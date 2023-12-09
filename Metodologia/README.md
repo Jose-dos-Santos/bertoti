@@ -981,13 +981,16 @@ Click aqui [GitHub](https://github.com/Doc-Docker/APISubiter/blob/main/APISubite
 MidAll</br>
 
 ![image](https://static.wixstatic.com/media/456d95_16b15ab71cf54b9aa97150aaefefbbde~mv2.png/v1/fill/w_178,h_141,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Logo%2520MidAll_edited.png)
-##### *Figura 01. Fonte(www.midall.com.br)*
+
+##### *MidAll ([MidAll](https://midall.com.br/))*
 
 A MidAll é uma empresa de serviços e consultoria em TI, com sede no Parque Tecnológico em São José dos Campos. Desenvolve soluções de data driven, transformação digital, agilidade e eficiência e governança e segurança.
 
 ### Visão do Projeto
 
 O projeto tem como desafio a sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados e confusão na interpretação dos indicadores comerciais e financeiros.
+
+##### Link do repositório do projeto: [Repositório](https://github.com/Doc-Docker/APISubiter)
 
 #### Principais requisitos do Projeto
 
@@ -996,9 +999,6 @@ O projeto tem como desafio a sincronização dos dados administrativos, financei
  * Registro de chamados;
  * Acompanhamento de chamados de ponta a ponta;
  * Front-End para entrada e interpretação de dados.
-
-
-##### *Figura 02. Fonte(https://github.com/Doc-Docker/APISubiter)*
 
 ### Tecnologias utilizadas:
 
@@ -1012,7 +1012,7 @@ O projeto tem como desafio a sincronização dos dados administrativos, financei
 
 </br>
 
-Para o front-end foi utilizado o Vue.js para criação das telas de interação com o cliente e para a realização das requisições para a API desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, para a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
+-Para o front-end foi utilizado o Vue.js para criação das telas de interação com o cliente e para a realização das requisições para a API desenvolvida. O Java com o framework Spring foi utilizado para criação da API de backend, para a criação das rotas HTTP, conexão com o banco de dados, tratamento de erros e aplicação das regras de negócio. Como banco de dados, foi utilizado o H2 para testes na implementação e o banco da api foi Oracle cloud um banco em nuvem.
 
 
 
